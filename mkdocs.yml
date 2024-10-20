@@ -74,7 +74,7 @@ extra:
               data: 0
               note: >- 
                 Thanks for your feedback! Help us improve this page by
-                <a href="https://github.com/hummingbot/hummingbot-site/issues/new?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">filing an issue</a>.
+                <a href="" target="_blank" rel="noopener">filing an issue</a>.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ngenue
@@ -136,27 +136,19 @@ markdown_extensions:
 # Navigation
 nav:
   - Home: index.md
-  - Docs:
-    - Docs: about/index.md
-    
-  - Academy:
-    - Academy: academy/index.md
-    - All Articles: academy/all.md
 
-  - Certification:
-    - Certification: certification/index.md
+  - Docs: 
+    - Home: docs/index.md
+    - Template1: template/markdown_syntax_code.md
+    - Template2: template/template.md
+    - Template3: template/procedure_template2.md
+    - Template4: template/procedure1_template.md
 
   - Releases:
-    - Releases: release-notes/index.md
-    
-  - Bounties: 
-    - Bounties: bounties/index.md
-    
-  - Governance:
-    - Governance: governance/index.md
+    - Releases: template/template.md
 
-  - About:
-    - About: about/index.md
+  - Academy:
+    - Academy: academy/index.md
   
   - Blog: 
-    - blog/index.md
+    - template/template.md
