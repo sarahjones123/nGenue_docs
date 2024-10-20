@@ -139,16 +139,16 @@ nav:
 
   - Docs: 
     - Home: docs/index.md
-    - Template1: template/markdown_syntax_code.md
+    - Getting started: template/markdown_syntax_code.md
     - Template2: template/template.md
     - Template3: template/procedure_template2.md
     - Template4: template/procedure1_template.md
 
   - Releases:
-    - Releases: template/template.md
+    - Releases: releases/index.md
 
   - Academy:
     - Academy: academy/index.md
   
   - Blog: 
-    - template/template.md
+    - blog/index.md

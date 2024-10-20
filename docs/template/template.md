@@ -1,7 +1,3 @@
----
-status: deprecated
----
-
 # Few sample code to use
 
 ## Table

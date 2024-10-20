@@ -100,56 +100,8 @@ nGenue has served as a reliable base for us to build custom tools and strategies
 </div>
 
 </br />
-
-## :fontawesome-solid-people-group: Algo Traders & Boutique Firms
-
-<div class="accent" markdown>
-
-### Algorithmic traders and boutique firms leverage nGenue for capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](https://miner.nGenue.io) and earning liquidity mining rewards on [nGenue Miner](https://miner.nGenue.io).
-
-</div>
-
-<div class="grid" markdown>
-
-<span class="quote">
-:material-format-quote-open:
-nGenue allowed me to launch a successful suite of trading strategies managing over $2 billion in trade volume. I can't recommend nGenue enough for any algo trader seeking a 0 to 1 platform.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="" class="headshot centered"/>
-<br/>
-<a href="https://summitoperations.co/" target="_blank" class="author centered">Kollan</a>
-{ .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-Since 2021, I've been a dedicated user of nGenue, primarily utilizing the pure market making strategy. Based on my profitable strategies, I started an algo-trading startup in Saudi Arabia!
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="" class="headshot centered" />
-<br/>
-<span class="author centered">Hyder</span>
-{ .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-nGenue revolutionized my crypto trading. Using advanced strategies, I developed my own successful trading style and consistently ranked at the top of nGenue Miner's leaderboard for months.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="" class="headshot centered" />
-<br/>
-<a href="https://github.com/mlguys" target="_blank" class="author centered">Wojak</a>
-{ .testimonial }
-
-</div>
-
-</br />
-
-
 ---
+
 
 # Stay Ahead with the nGenue newsletter
 

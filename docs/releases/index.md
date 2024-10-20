@@ -3,6 +3,6 @@ hide:
  - toc
 ---
 
-# nGenue Academy
+# nGenue Release Notes
 
 To be added soon.
