@@ -30,7 +30,7 @@ nGenue is a comprehensive software platform designed to streamline and optimize 
 7. **Integration with Utility Systems**  
    Seamlessly integrate with utility data systems, enabling the secure exchange of information related to meter reads, customer data, and payment records.
 
-![alt text](/assets/images/ngenue_overview.png)
+![alt text](/docs/assets/images/ngenue_overview.png)
 
 ## Advantages of Using nGenue
 
