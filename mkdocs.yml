@@ -16,8 +16,8 @@ copyright: Copyright &copy; 2024 nGenue
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/brand/logo.svg
-  favicon: assets/brand/logo-color.png
+  logo: assets/images/ngenue_logo.jpeg
+  favicon: assets/images/ngenue_logo.jpeg
   icon:
     repo: fontawesome/brands/github
   palette:

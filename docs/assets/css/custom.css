@@ -12,7 +12,7 @@
   --md-primary-fg-color--dark:  #E549FF;
   --md-primary-bg-color: rgba(0,0,0,.75);
   --md-primary-bg-color--light: rgba(0,0,0,.54);
-  --md-accent-fg-color: #E549FF;
+  --md-accent-fg-color: #bb0099;
   --pg-light-border: rgb(229, 231, 235);
   --hb-hero-color: rgb(45, 45, 45);
 }
@@ -31,7 +31,7 @@
 
 /* Better contrast link colors */
 [data-md-color-scheme="default"] > * {
-  --md-typeset-a-color: #00B1BB;
+  --md-typeset-a-color: #034686;
 }
 [data-md-color-scheme="slate"] > * {
   --md-typeset-a-color: #5FFFD7;
@@ -105,6 +105,7 @@
 
 h2, h3 {
   font-family: 'Satoshi';
+  color: var(--md-typeset-a-color);
 }
 
 /* Correct page icon size */
