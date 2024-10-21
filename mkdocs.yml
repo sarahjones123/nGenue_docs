@@ -1,13 +1,13 @@
 # Project info
 site_name: nGenue
-site_description: Hummingbot documentation and website
-site_author: Hummingbot Foundation
-site_url: https://hummingbot.org
+site_description: Ngenue documentation portal
+site_author: Dipender Sharma
+site_url: https://ngenue.com
 
 # Repository
-# repo_name: 'hummingbot/hummingbot'
-# repo_url: 'https://github.com/hummingbot/hummingbot'
-# edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
+# repo_name: ''
+# repo_url: ''
+# edit_uri: ''
 
 # Copyright
 copyright: Copyright &copy; 2024 nGenue
