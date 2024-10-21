@@ -21,13 +21,6 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
-    # - media: "(prefers-color-scheme: dark)"
-    - scheme: slate
-      primary: white
-      accent: amber
-      toggle:
-        icon: material/brightness-2
-        name: "Switch to light mode"
     # - media: "(prefers-color-scheme: light)"
     - scheme: default
       primary: white
@@ -35,6 +28,13 @@ theme:
       toggle:
         icon: material/brightness-5
         name: "Switch to dark mode"
+    # - media: "(prefers-color-scheme: dark)"
+    - scheme: slate
+      primary: white
+      accent: amber
+      toggle:
+        icon: material/brightness-2
+        name: "Switch to light mode"
   font:
       text: Noto Sans
       code: Roboto Mono
