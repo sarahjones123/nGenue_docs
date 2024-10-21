@@ -46,13 +46,20 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.indexes
-    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    # - navigation.prune
+    - navigation.footer
     - content.code.copy
     - toc.follow
     - announce.dismiss
     # - content.tabs.link
     # - content.tooltips
     # - search.highlight
+    # - search.share
+    # - search.suggest
 
 
 extra:
@@ -139,10 +146,17 @@ nav:
 
   - Docs: 
     - Home: docs/index.md
-    - Getting started: template/markdown_syntax_code.md
-    - Template2: template/template.md
-    - Template3: template/procedure_template2.md
-    - Template4: template/procedure1_template.md
+    - Overview:
+      - Introduction: docs/overview/introduction.md
+      - Getting started: docs/overview/getting_started.md
+      - Billing: docs/overview/billing.md
+
+    - Authentication:
+      - Sign up: docs/authentication/sign_in.md
+      - Sign in: docs/authentication/sign_up.md
+      - Forgot password: docs/authentication/forgot_password.md
+    
+    - Glossary: docs/glossary/index.md
 
   - Releases:
     - Releases: releases/index.md

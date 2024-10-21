@@ -11,48 +11,48 @@ hide:
 
 <div class="grid cards wide" markdown>
 
--   :material-format-paint:{ .lg .middle } __Craft Cutting-Edge Strategies__
+-   :material-format-paint:{ .lg .middle } __Manage Customer Relationships__
 
     ---
 
-    Design sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
+    Track customer data, handle contracts, and personalize interactions through a centralized CRM, improving customer satisfaction and retention.
 
-    [:octicons-arrow-right-24: Strategy Docs]()
+    [:octicons-arrow-right-24: Know more]()
 
--   :material-upload-network:{ .lg .middle } __Seamless Exchange Integration__
-
-    ---
-
-    nGenue establishes a direct WebSocket connection with many exchanges, including DEXs on L1/L2 blockchain networks.
-
-    [:octicons-arrow-right-24: Connector Docs]()
-
--   :material-satellite-uplink:{ .lg .middle } __Backtest and Deploy with Ease__
+-   :material-upload-network:{ .lg .middle } __Automate Billing and Invoicing__
 
     ---
 
-    Backtest your strategies against historical data and deploy multiple instances with Dashboard, a new web-based user interface and control center.
+    Generate accurate invoices automatically, handle complex billing scenarios, and streamline payment processes to reduce manual errors.
 
-    [:octicons-arrow-right-24: Dashboard Docs]()
+    [:octicons-arrow-right-24: Know more]()
 
--   :material-directions-fork:{ .lg .middle } __Fork, Customize, Innovate__
+-   :material-satellite-uplink:{ .lg .middle } __Forecast Supply and Demand__
 
     ---
 
-    Certification equips you with skills as a nGenue developer, empowering you to earn bounties and customize strategies for yourself and others.
+    Use historical data and advanced algorithms to predict natural gas demand, ensuring efficient supply chain management and avoiding imbalances.
 
-    [:octicons-arrow-right-24: Get Certified]()
+    [:octicons-arrow-right-24: Know more]()
+
+-   :material-directions-fork:{ .lg .middle } __Ensure Regulatory Compliance__
+
+    ---
+
+    Automate compliance reporting and stay up-to-date with industry regulations, minimizing risks and avoiding penalties.
+
+    [:octicons-arrow-right-24: Know more]()
 
 </div>
 ---
 
 # Who uses nGenue?
 
-## :fontawesome-solid-arrows-turn-to-dots: Market Makers
+## :fontawesome-solid-arrows-turn-to-dots: Marketers
 
 <div class="accent" markdown>
 
-### For many crypto market making firms, nGenue is the trusted starting point for creating secure, scalable algo trading solutions.
+### nGenue enables Natural Gas Operational Excellence!
 
 </div>
 
@@ -60,53 +60,42 @@ hide:
 
 <span class="quote">
 :material-format-quote-open:
-As the company that open-sourced nGenue, we're incredibly proud of how the community has embraced it. Today, we run bespoke strategies for our institutional clients using many custom nGenue instances.
+We are delighted to have discovered nGenue. We are excited to have found a fully integrated operational system designed specifically for natural gas that will enable us to better manage our risk and take care of our customers in an ever-evolving market. Based on our evaluation, with nGenue as our foundation we feel confident we will become more efficient and perform at a higher level.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="" class="headshot centered" />
+<br/><br/><br/><br/><br/>
+<br/><br/>
+<a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author centered">Derek Bailey, VP at Texican Natural Gas, LLC</a>
 <br/>
-<a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author centered">Carlo Las Marias</a>
-<br/>
-<a href="https://coinalpha.com/" target="_blank"><img src="" class="logo centered"></a>
 { .testimonial }
 
 <span class="quote">
 :material-format-quote-open:
-We started with nGenue as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. We still use it from time to time and enjoy their great documentation.
+We are excited to leverage nGenue’s platform to streamline technology and business processes within our natural gas business. The configurability of nGenue’s pre-integrated technology designed specifically for the natural gas industry, when combined with the hands-on natural gas knowledge and expertise of the nGenue team, will position us well in continuing to meet the needs and expectations of our customers.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="" class="headshot centered" />
+<br/><br/><br/><br/><br/>
 <br/>
-<a href="https://www.linkedin.com/in/etartakovsky/" target="_blank" class="author centered">Eugene Tartakovsky</a>
+<a href="https://www.linkedin.com/in/etartakovsky/" target="_blank" class="author centered">Adam Bell, Executive Director of Gas Platforms at Constellation</a>
 <br/>
-<a href="https://3jane.com/" target="_blank"><img src="" class="logo centered"></a>
 { .testimonial }
 
 <span class="quote">
 :material-format-quote-open:
-nGenue has served as a reliable base for us to build custom tools and strategies. It has many quality connectors and all components are well thought out, allowing us to flexibly modify the open source code.
+When we evaluated nGenue, we were impressed with it being a system designed specifically for Natural Gas. Now that we are operating our business with nGenue, we’ve found nGenue does everything they said it would do and more. It has been the smoothest transition and the most successful project I have ever experienced. We implemented the new nGenue ETRM system for our Natural Gas business in under 6 months – extraordinary compared with what we’ve heard is the industry norm!
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
-<img src="" class="headshot centered" />
 <br/>
-<a href="https://www.linkedin.com/in/jelle-buth/" target="_blank" class="author centered">Jelle Buth</a>
+<a href="https://www.linkedin.com/in/etartakovsky/" target="_blank" class="author centered">Kelly Beaver, VP at UGI Energy Services</a>
 <br/>
-<a href="https://www.enflux.io/" target="_blank"><img src="" class="logo centered"></a>
 { .testimonial }
 
 </div>
+</br>
 
-</br />
----
+# Stay ahead with the nGenue events
 
+Published when each release drops, our official events page has all the nGenue news, upcoming events, and contributions from the global nGenue community!
 
-# Stay Ahead with the nGenue newsletter
-
-### Published when each monthly release drops, our official newsletter has all the nGenue news, upcoming events, and contributions from the global nGenue community!
-
-<br />
-
-[:octicons-download-16: Get the Newsletter](https://nGenue.substack.com/){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: nGenue events](https://nGenue.substack.com/){ .md-button .md-button--primary }
