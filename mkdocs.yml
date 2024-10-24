@@ -155,6 +155,11 @@ nav:
       - Sign up: docs/authentication/sign_in.md
       - Sign in: docs/authentication/sign_up.md
       - Forgot password: docs/authentication/forgot_password.md
+
+    - Getting started: 
+      - docs/getting_started/getting_started.md
+      - End users: docs/getting_started/create_end_user.md
+      - Counterparty: docs/getting_started/counterparty.md
     
     - Glossary: docs/glossary/index.md
 
