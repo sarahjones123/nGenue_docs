@@ -148,8 +148,6 @@ nav:
     - Home: docs/index.md
     - Overview:
       - Introduction: docs/overview/introduction.md
-      - Getting started: docs/overview/getting_started.md
-      - Billing: docs/overview/billing.md
 
     - Authentication:
       - Sign up: docs/authentication/sign_in.md
