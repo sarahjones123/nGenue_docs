@@ -5,9 +5,9 @@ site_author: Dipender Sharma
 site_url: https://ngenue.com
 
 # Repository
-# repo_name: ''
-# repo_url: ''
-# edit_uri: ''
+# repo_name: 'nGenue'
+# repo_url: 'squidfunk/mkdocs-material'
+# edit_uri: 'squidfunk/mkdocs-material'
 
 # Copyright
 copyright: Copyright &copy; 2024 nGenue
@@ -46,20 +46,19 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.expand
-    # - navigation.prune
-    - navigation.footer
+    - navigation.prune
     - content.code.copy
     - toc.follow
     - announce.dismiss
     # - content.tabs.link
-    # - content.tooltips
+    - content.tooltips
     # - search.highlight
-    # - search.share
-    # - search.suggest
+    - navigation.sections
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
 
 
 extra:
@@ -145,21 +144,40 @@ nav:
   - Home: index.md
 
   - Docs: 
-    - Home: docs/index.md
-    - Overview:
-      - Introduction: docs/overview/introduction.md
-
-    - Authentication:
-      - Sign up: docs/authentication/sign_in.md
-      - Sign in: docs/authentication/sign_up.md
-      - Forgot password: docs/authentication/forgot_password.md
+    - nGenue Overview: home.md
+    - Key features: features.md
+    - Benefits: advantages.md
 
     - Getting started: 
-      - docs/getting_started/getting_started.md
-      - End users: docs/getting_started/create_end_user.md
-      - Counterparty: docs/getting_started/counterparty.md
-    
-    - Glossary: docs/glossary/index.md
+      - getting_started/index.md
+      - End users: 
+          - Overview: getting_started/end_users/overview.md
+          - Configure: getting_started/end_users/create_end_user.md
+      - Counterparty:
+          - Overview: getting_started/counterparty/counterparty.md
+          - Configure: getting_started/counterparty/create_counterparty.md
+
+    - Authentication:
+      - authentication/index.md
+      - Sign up: authentication/sign_up.md
+      - Sign in: authentication/sign_in.md
+      - Forgot password: authentication/forgot_password.md
+
+    - How-to: 
+      - how_to/index.md   
+
+    - FAQs: 
+      - faqs/index.md
+
+    - Troubleshootings: 
+      - troubleshootings/index.md
+
+    - Glossary: 
+      - glossary/index.md
+
+    - Template: 
+      - template/index.md
+      # - Markdown syntax: template/markdown_syntax_code.md
 
   - Releases:
     - Releases: releases/index.md

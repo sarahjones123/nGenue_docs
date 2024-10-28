@@ -1,10 +1,5 @@
-# Counterparty
-
-this page is still in progress.
-
-
-## Creating a counterparty
-This document outlines the process for creating a Counterparty, including adding Contacts and Counterparty Contracts through the application.
+# Creating a counterparty
+This article outlines the process for creating a Counterparty, including adding Contacts and Counterparty Contracts through the application.
 
 1.	Log in to the **nGenue** application.
 2.	Click on the **search** icon and enter *Counterparty* into the search text bar.  
@@ -30,18 +25,18 @@ This document outlines the process for creating a Counterparty, including adding
 8.	 Click on **Save** to save the record.
 
  
-## Creating a Contact 
+## Creating a contact 
 
 1.	In the **Counterparty (Supply Management)** screen, go to the Contacts tab.
-2.	Click on Add New Contact for the newly created counterparty record.  
+2.	Click on **Add New Contact** for the newly created counterparty record.  
 
-3.	Click on Add New Contact to open the Add Contact screen.
-4.	Fill in the required fields and click OK to save the changes.  
+3.	Click on **Add New Contact** to open the **Add Contact** screen.
+4.	Fill in the required fields and click **OK* to save the changes.  
 
-5.	The record will be saved and displayed under the Contacts tab.
-6.	The application will then immediately display a warning message for configuring other contact roles. If the user clicks Yes, the Contact Roles screen will pop up to configure the contact role.  
+5.	The record will be saved and displayed under the **Contacts** tab.
+6.	The application will then immediately display a warning message for configuring other contact roles. If the user clicks **Yes,** the **Contact Roles** screen will pop up to configure the contact role.  
 
-7.	Using the left/right arrow key, move the required role from available to selected section. Once done, click Close.
+7.	Using the *left/right arrow key*, move the required role from available to selected section. Once done, click **Close.**
     
 
 8.	The roles will be configured for the newly created contact. 

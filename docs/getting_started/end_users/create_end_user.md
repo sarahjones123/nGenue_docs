@@ -1,22 +1,7 @@
 
-# End users
+# Creating an end user
 
-End users typically refer to the individuals or entities that directly interact with the system for tasks such as managing contracts, placing orders, viewing billing information, and accessing various services provided by the application. 
-
-These end users may include:
-
-- **Customers** – Businesses or individuals using the application to manage their energy contracts, consumption data, or billing details.
-
-- **Administrators** – Internal company staff who manage user access, system configurations, and overall settings within the nGenue application.
-
-- **Operations staff** – Personnel responsible for tracking and overseeing daily operations, including scheduling and managing customer accounts.
-
-- **Billing and finance teams** – Users who handle invoicing, payments, and financial reports related to customer transactions.
-
-
-## Creating an end user
-
-In this section, we will walk through the step-by-step process of creating an end user within the nGenue application. After you are done creating an end user, you will need to add their address, set up a sales contract and price agreement, and add facilities to activate the account. Each of these steps is detailed in separate topics on this page.
+In this section, we will walk through the step-by-step process of creating an end user within the nGenue application. After you are done creating an end user, you will need to add their [address](create_end_user.md#creating-an-end-user-address), set up a [sales contract](create_end_user.md#creating-a-sales-contract) and [price agreement](create_end_user.md#adding-price-agreement), and add facilities to activate the account. Each of these steps is detailed in separate topics on this page.
 
 1.	Login to the **nGenue** application.
 2.	Click on the **search** icon and enter *End User* into the search bar. 
