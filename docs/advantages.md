@@ -1,3 +1,8 @@
+---
+hide:
+ - toc
+---
+
 # Benefits of using nGenue
 
 - **Industry-Specific Functionality**: nGenue is tailored for the natural gas industry, offering features and workflows designed to meet the unique needs of gas marketers and utilities.

@@ -111,6 +111,8 @@
     })
 ```
 
+<!-- This is commented out. 
+
 ## Representing code level change to multiple files
 
 === ":octicons-file-code-16: `base.html`"
@@ -233,3 +235,4 @@
     +</div>
     ```
 
+-->

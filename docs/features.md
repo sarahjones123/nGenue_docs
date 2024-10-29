@@ -1,3 +1,8 @@
+---
+hide:
+ - toc
+---
+
 # Key features of nGenue
 
 1. **Customer Management**  

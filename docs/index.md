@@ -98,4 +98,4 @@ When we evaluated nGenue, we were impressed with it being a system designed spec
 
 Published when each release drops, our official events page has all the nGenue news, upcoming events, and contributions from the global nGenue community!
 
-[:octicons-arrow-right-24: nGenue events](https://nGenue.substack.com/){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: nGenue events](https://ngenue.com/blogevents/){ .md-button .md-button--primary }

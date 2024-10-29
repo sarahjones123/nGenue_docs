@@ -1,4 +1,4 @@
-# End users
+# End users overview
 
 The end users of nGenue application can be anyone who is involved in the natural gas industry, including:
 

@@ -6,8 +6,8 @@ site_url: https://ngenue.com
 
 # Repository
 # repo_name: 'nGenue'
-# repo_url: 'squidfunk/mkdocs-material'
-# edit_uri: 'squidfunk/mkdocs-material'
+# repo_url: ''
+# edit_uri: ''
 
 # Copyright
 copyright: Copyright &copy; 2024 nGenue
@@ -47,18 +47,18 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.prune
-    - content.code.copy
+    # - content.code.copy
     - toc.follow
     - announce.dismiss
     # - content.tabs.link
-    - content.tooltips
+    # - content.tooltips
     # - search.highlight
     - navigation.sections
     - navigation.footer
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
+    # - content.action.edit
+    # - content.action.view
+    # - content.code.annotate
+    # - content.code.copy
 
 
 extra:
@@ -168,6 +168,9 @@ nav:
 
     - FAQs: 
       - faqs/index.md
+
+    - Use Cases:
+      - use_cases/index.md
 
     - Troubleshootings: 
       - troubleshootings/index.md

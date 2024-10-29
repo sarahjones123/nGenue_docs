@@ -1,3 +1,8 @@
+---
+hide:
+ - toc
+---
+
 
 # Creating an end user
 
@@ -5,7 +10,6 @@ In this section, we will walk through the step-by-step process of creating an en
 
 1.	Login to the **nGenue** application.
 2.	Click on the **search** icon and enter *End User* into the search bar. 
-![alt text](images/end_user_1.png) 
 
 3.	Double click on **End User**. 
 ![alt text](images/end_user_2.png)
