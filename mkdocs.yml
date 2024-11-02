@@ -47,7 +47,7 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.prune
-    # - content.code.copy
+    - content.code.copy
     - toc.follow
     - announce.dismiss
     # - content.tabs.link
@@ -57,8 +57,7 @@ theme:
     - navigation.footer
     # - content.action.edit
     # - content.action.view
-    # - content.code.annotate
-    # - content.code.copy
+    - content.code.annotate
 
 
 extra:
@@ -128,7 +127,12 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -138,6 +142,28 @@ markdown_extensions:
   - toc:
       permalink: true
   - tables
+
+plugins:
+  - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: false
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: false
+       caption_position: bottom
+       background: white
+       shadow: true
+       manual: false
+  - search
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      
 
 # Navigation
 nav:

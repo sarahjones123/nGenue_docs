@@ -108,6 +108,8 @@ Activate a facility by clicking on the **Change Facility Status** button.
 To activate an end user, click on the **Activate End User** button in the **End User** screen.
 
 ---
+
+
  
 
 

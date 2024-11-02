@@ -1,3 +1,8 @@
+---
+hide:
+ - toc
+---
+
 # Few sample code to use
 
 ## Table
@@ -110,6 +115,71 @@
       console.log("Initialize third-party libraries here")
     })
 ```
+## Keyboard shortcuts
+
+++ctrl+alt+del++
+
+## Flowcharts
+
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
+
+## Sequence diagrams
+
+``` mermaid
+sequenceDiagram
+  autonumber
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
+## PlantUML diagrams
+
+```puml
+
+@startuml
+
+actor Producer
+actor "End User" as EndUser
+actor Marketer
+
+entity "Processing Plant" as Processing
+entity "Interstate Pipeline" as InterstatePipeline
+entity "Intrastate Pipeline" as IntrastatePipeline
+entity "Citygate" as Citygate
+entity LDCs
+
+Producer -> Processing: Send extracted natural gas
+Processing -> InterstatePipeline: Deliver processed gas
+Processing -> IntrastatePipeline: Deliver processed gas within state
+
+InterstatePipeline -> Citygate: Transfer gas to citygate
+IntrastatePipeline -> Citygate: Transfer gas to citygate
+
+Citygate -> LDCs: Distribute gas from citygate
+
+LDCs -> EndUser: Deliver gas to end users (residential, commercial, industrial)
+LDCs -> Marketer: Sell gas under contract
+
+LDCs -> LDCs: Store gas in storage facilities (optional)
+LDCs -> Marketer: Offer storage services (if available)
+
+@enduml
+```
+
+
 
 <!-- This is commented out. 
 
@@ -236,3 +306,5 @@
     ```
 
 -->
+
+

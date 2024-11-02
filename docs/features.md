@@ -25,3 +25,58 @@ hide:
 
 7. **Integration with Utility Systems**  
    Seamlessly integrate with utility data systems, enabling the secure exchange of information related to meter reads, customer data, and payment records.
+
+## Class diagram
+
+``` mermaid
+classDiagram
+class CustomerManagement {
+    +trackCustomerData()
+    +manageAccounts()
+    +handleContracts()
+    +customerCommunication()
+}
+
+class BillingInvoicing {
+    +automateBilling()
+    +generateInvoices()
+    +applyTariffs()
+    +handleComplexBilling()
+}
+
+class ContractPricingManagement {
+    +manageContracts()
+    +renewContracts()
+    +dynamicPricing()
+}
+
+class SupplyDemandForecasting {
+    +predictDemand()
+    +analyzeHistoricalData()
+    +manageSupplyChain()
+}
+
+class RegulatoryCompliance {
+    +automateReporting()
+    +manageComplianceRequirements()
+}
+
+class RealTimeDataAnalytics {
+    +gatherRealTimeData()
+    +displayDashboards()
+    +provideInsights()
+}
+
+class UtilityIntegration {
+    +integrateWithMeterReads()
+    +exchangeCustomerData()
+    +updatePaymentRecords()
+}
+
+CustomerManagement --> BillingInvoicing : Uses for billing
+CustomerManagement --> ContractPricingManagement : Manages contract pricing
+BillingInvoicing --> ContractPricingManagement : References contract terms
+SupplyDemandForecasting --> RealTimeDataAnalytics : Uses data for forecasting
+UtilityIntegration --> BillingInvoicing : Shares meter and payment data
+RegulatoryCompliance --> RealTimeDataAnalytics : Uses data for compliance reporting
+```
