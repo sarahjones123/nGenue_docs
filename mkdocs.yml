@@ -163,6 +163,16 @@ plugins:
   - search
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+
+  
+  # - git-authors
+
+  # - git-committers:
+      repository: sarahjones123/nGenue_docs
+      branch: main
+      
+  - git-revision-date-localized:
+      enable_creation_date: true
       
 
 # Navigation
@@ -170,7 +180,7 @@ nav:
   - Home: index.md
 
   - Docs: 
-    - nGenue Overview: home.md
+    - nGenue overview: home.md
     - Key features: features.md
     - Benefits: advantages.md
 
@@ -195,7 +205,7 @@ nav:
     - FAQs: 
       - faqs/index.md
 
-    - Use Cases:
+    - Use cases:
       - use_cases/index.md
 
     - Troubleshootings: 

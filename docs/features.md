@@ -5,7 +5,7 @@ hide:
 
 # Key features of nGenue
 
-1. **Customer Management**  
+- **Customer Management**  
    nGenue offers a centralized customer relationship management (CRM) module, enabling businesses to track customer data, manage accounts, and ensure personalized service. It also helps with contract management and customer communication.
 
 2. **Billing and Invoicing**  
@@ -26,7 +26,8 @@ hide:
 7. **Integration with Utility Systems**  
    Seamlessly integrate with utility data systems, enabling the secure exchange of information related to meter reads, customer data, and payment records.
 
-## Class diagram
+## Visualizing nGenue features via class diagram
+To visualize nGenue's features like Customer Management, Billing and Invoicing, Contract and Pricing Management, and others, the following class diagram illustrates the main modules and their relationships. Here’s a structured view: 
 
 ``` mermaid
 classDiagram
@@ -80,3 +81,17 @@ SupplyDemandForecasting --> RealTimeDataAnalytics : Uses data for forecasting
 UtilityIntegration --> BillingInvoicing : Shares meter and payment data
 RegulatoryCompliance --> RealTimeDataAnalytics : Uses data for compliance reporting
 ```
+
+### Class diagram explanation
+Each feature represents a distinct module within the nGenue system. Here’s a breakdown:
+
+1. **Customer Management**: Manages customer information, contracts, and communications.
+
+2. **Billing and Invoicing**: Automates billing calculations based on customer contracts and usage.
+3. **Contract and Pricing Management**: Manages contract terms, renewals, and rate structures.
+4. **Supply and Demand Forecasting**: Uses historical data to forecast demand and manage supply.
+5. **Regulatory Compliance**: Ensures reporting and compliance with industry regulations.
+6. **Real-Time Data and Analytics**: Provides real-time data for analysis and decision-making.
+7. **Integration with Utility Systems**: Interfaces with utility systems for secure data exchange.
+
+
