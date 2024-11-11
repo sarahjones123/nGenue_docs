@@ -35,10 +35,10 @@ Follow the below steps to configure a new menu category:
     ![alt_text](../images/menu_category_2.png)
 
 5. **Save** the changes.
-6. To assign screens to your menu category, click on the **Adjust category screen assignment** button. This will open a new popup screen where you will need to assign screens (using *left/right/top/bottom arrow* keys) to the newly created category.
+6. To assign screens to your menu category, click on the **Adjust category screen assignment** button. This will open a new popup screen where you will need to assign screens (using *left/right/top/bottom arrow* keys) to the newly created category. Click **Accept changes** to save the configuration.
 ![alt_text](../images/menu_category_3.png)
 
-    The assigned screens will reflect in the **Category Details** section.
+    The assigned screens will reflect in the **Category details** section.
     ![alt_text](../images/menu_category_4.png)
  
 ## Configure menu layout
@@ -47,26 +47,36 @@ Follow the below steps to configure a new menu layout:
 
 1. In the **Menu configuration** screen, click on **---> Layout** button. 
 2. By default, the system default data will be auto filled. To edit the details, you will need to click on the **Edit** icon.
+![alt_text](../images/menu_layout_1.png)
+
 3. Here are the list of fields along with each field description in the below table:
 
     | Icons      | Description                          |
     | ----------- | ------------------------------------ |
-    | ![alt text](../images/icons/category_listing_icon.png)       | Displays a list of configured menu categories in the application  |
-    | ![alt text](../images/icons/add_record_icon.png)        | Add a new category record |
-    | ![alt text](../images/icons/edit_record_icon.png)    | Edit the category record detail. |
-    | ![alt text](../images/icons/save_icon.png)        |  Save the category record. |
-    | ![alt text](../images/icons/edit_current_icon.png)  | Cancel the updates being made to the category record. |
-    | ![alt text](../images/icons/delete_icon.png)  | Delete a category record. |
+    | ![alt text](../images/icons/layout_listing_icon.png)       | Displays a list of configured menu layouts in the application  |
+    | ![alt text](../images/icons/add_record_icon.png)        | Add a new layout record |
+    | ![alt text](../images/icons/edit_record_icon.png)    | Edit the layout record detail. |
+    | ![alt text](../images/icons/save_icon.png)        |  Save the layout record. |
+    | ![alt text](../images/icons/edit_current_icon.png)  | Cancel the updates being made to the layout record. |
+    | ![alt text](../images/icons/delete_icon.png)  | Delete a layout record. |
  	
-3. You'll be able to configure a layout while creating a new category layout. To do so, click on the **Add a layout record** button.
-4. Fill in the below details:
+3. You'll be able to configure a layout while setting up a new category layout. To do so, click on the **Add a layout record** button.
+4. In the **General** tab, fill in the below details:
 
-    * **Layout Name**: Give a name to the menu layout. For example: “Layout.”
+    * **Layout name**: Give a name to the menu layout. For example: *Deal Management layout.*
     * **Layout ID**: This field is auto generated.
-    * **Icon Size**: Enter the screen size to display proper screen images in menu category.
-    * **Icon Font Size**: Enter the screen name font size to display in the menu category.
-    * **Assign category to Home page Layout**: Assign menu categories to menu Layout. Selecting this button will open a new popup screen where you will need to assign categories to the menu layout. The assigned categories to the menu layout will reflect in the Layout Details section.
-	
+    * **Icon Properties**: 
+        * **Size**: Enter the screen size to display proper screen images in menu category.
+        * **Icon Font Size**: Enter the screen name font size to display in the menu category.
+        ![alt_text](../images/menu_layout_2.png)
+
+5. **Save** the changes.
+
+6. To assign category to your menu layout, click on the **Assign category to Home page Layout** button. This will open a new popup screen where you will need to assign categories (using *left/right/top/bottom arrow* keys) to your layout. Click **Accept changes** to save the configuration.
+![alt_text](../images/menu_layout_3.png)
+
+    The assigned screens will reflect in the **Layout details** section.
+    ![alt_text](../images/menu_layout_4.png)
 	
 	
 
