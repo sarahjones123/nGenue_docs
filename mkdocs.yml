@@ -193,11 +193,17 @@ nav:
           - Overview: getting_started/counterparty/counterparty.md
           - Configure: getting_started/counterparty/create_counterparty.md
 
-    - Authentication:
-      - authentication/index.md
-      - Sign up: authentication/sign_up.md
-      - Sign in: authentication/sign_in.md
-      - Forgot password: authentication/forgot_password.md
+    - User Management:
+      - user_management/index.md
+      - Creating end users: authentication/sign_up.md
+      - User access control: authentication/sign_in.md
+      - User roles and permissions: authentication/forgot_password.md
+
+    - System Configuration:
+      - system_configuration/index.md
+      - Menu configurations: 
+          - Overview: system_configuration/menu_configuration/overview.md
+          - Configure: system_configuration/menu_configuration/configure.md
 
     - How-to: 
       - how_to/index.md   
