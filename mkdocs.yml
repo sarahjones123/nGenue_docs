@@ -180,26 +180,30 @@ nav:
   - Home: index.md
 
   - Docs: 
-    - nGenue overview: home.md
-    - Key features: features.md
-    - Benefits: advantages.md
+    - Getting started:
+        - nGenue overview: home.md
+        - Key features and benefits: features.md
+        - System requirements: advantages.md
+        - Installation and initial setup: installation/index.md
 
-    - Getting started: 
-      - getting_started/index.md
-      - End users: 
-          - Overview: getting_started/end_users/overview.md
-          - Configure: getting_started/end_users/create_end_user.md
-      - Counterparty:
-          - Overview: getting_started/counterparty/counterparty.md
-          - Configure: getting_started/counterparty/create_counterparty.md
-
-    - User Management:
+    - User management: 
       - user_management/index.md
-      - Creating end users: authentication/sign_up.md
-      - User access control: authentication/sign_in.md
-      - User roles and permissions: authentication/forgot_password.md
+      - End users: 
+          - Overview: user_management/end_users/overview.md
+          - Configure: user_management/end_users/create_end_user.md
+      - Counterparty:
+          - Overview: user_management/counterparty/counterparty.md
+          - Configure: user_management/counterparty/create_counterparty.md
 
-    - System Configuration:
+    - Deal management:
+      - deal_management/index.md
+      - Deal management: Deal management
+      - Swap deal blotter: Swap deal blotter
+      - Futures deal blotter: Futures deal blotter
+      - Evergreen deals process: Evergreen deals process
+      - Deal activity log: Deal activity log
+
+    - System configuration:
       - system_configuration/index.md
       - Menu configuration: 
           - Overview: system_configuration/menu_configuration/overview.md
