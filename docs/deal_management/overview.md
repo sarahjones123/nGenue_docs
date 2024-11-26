@@ -1,12 +1,12 @@
 # Deal management overview
 
-Deal management in the natural gas industry refers to the end-to-end process of creating, negotiating, executing, and monitoring contracts and agreements for natural gas transactions. It involves managing the relationships and terms between marketers, and counter parties to ensure the seamless supply and distribution of natural gas. This process is critical for optimizing operational efficiency, mitigating risks, ensuring regulatory compliance, and maintaining profitability.
+**Deal management** in the natural gas industry refers to the end-to-end process of creating, negotiating, executing, and monitoring contracts and agreements for natural gas transactions. It involves managing the relationships and terms between marketers, and counter parties to ensure the seamless supply and distribution of natural gas. This process is critical for optimizing operational efficiency, mitigating risks, ensuring regulatory compliance, and maintaining profitability.
 
 ## Types of deals in nGenue
 
 The different types of deals that you can configure in nGenue are:
 
-### Physical deal
+### [Physical deal](physical_deal.md)
 
 A physical deal involves the actual delivery of natural gas from one party to another, often including specific terms for volume, location, and timing. These transactions typically occur between producers, marketers, and end-users, and they require coordination of storage and transportation logistics to ensure fulfillment. Physical deals are foundational to the natural gas market as they ensure the movement of energy resources from supply points to areas of demand.
 
@@ -94,14 +94,35 @@ On the left-hand side of the page, you see a list of icons with the context in i
 The main body is divided into two sections- *Index query* and *Deals details.* 
 
 | Fields       | Description |
-| ------------ | ------: |
+| :------------ | :------ |
 | **Deal query**   |         |
 | Instrument   | Displays the list of different types of deals present in nGenue. |
 | Date range   | Fill in the start and the end date of the deal. |
+| nGenue deal id       | Allows to enter the unique deal id of the deal. |
+| nGenue ref id       |  |
 | Trader       | The trader of the deal. |
-| Counterparty/ supplier | The  |
-| nGenue deal id       |  |
-| nGenue deal id       |  |
+| Counterparty/Supplier | The counterparty or supplier with which the deal is being made.  |
+| Description       | The description of the deal as required.  |
+| Retail demand pool       |  |
+| Hide if confirmations sent       |  |
+| Buy or Sell       | Specifies the type of deal, i.e., a buy deal or a sell deal |
+| Trade date range       |  |
+| Last Updated       | Date on which the deal was last updated. |
+| List deal templates only       | On selection, the deal management screen will only display deal templates. |
+| Load deal records | Based on the parameters or the filters selected, the available deals will get populated in the **Deal details** section. |
+| Deal status | This section displays the status of the deal. |
+| **Additional Physical filters section** | |
+| Pipeline | The pipeline associated with the deal. |
+| Supply Region | The supply region associated with the deal. |
+| Meter# | The meter associated with the deal. |
+| Supply Region | The supply region associated with the deal.|
+| Index type/group |  |
+| Baseload deals only | |
 
+### Deals details
 
+The **Deal details** section populates available deals based on the parameters or filters applied in the Deal query. You can sort the details in ascending or descending order using the various parameters available in this section. Additionally, custom filters can be applied at each parameters level to refine the records.
+![alt text](./images/deal_management_4.png)
 
+## Related Topics
+1. [Create a physical deal]()

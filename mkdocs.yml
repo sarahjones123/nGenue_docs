@@ -171,7 +171,7 @@ plugins:
       repository: sarahjones123/nGenue_docs
       branch: main
       
-  - git-revision-date-localized:
+  # - git-revision-date-localized:
       enable_creation_date: true
       
 
@@ -186,6 +186,26 @@ nav:
         - System requirements: advantages.md
         - Installation and initial setup: installation/index.md
 
+    - ETRM:
+      - etrm/index.md
+      - Deal management: 
+        - Overview: deal_management/overview.md
+        - Create a deal:
+          - Physical deal: deal_management/physical_deal.md
+          - Physical retail deal: deal_management/physical_retail_deal.md
+          - Swap deal: deal_management/swap_deal.md
+          - Future deal: deal_management/future_deal.md
+          - Physical NG deal: deal_management/ng_deal.md
+          - Production deal: deal_management/production_deal.md
+          - Cash deal: deal_management/cash_deal.md
+          - Physical wellhead deal: deal_management/wellhead_deal.md
+        - Swap deal blotter: Swap deal blotter
+        - Futures deal blotter: Futures deal blotter
+        - Evergreen deals process: Evergreen deals process
+        - Deal activity log: Deal activity log
+      - Nominations: nominations
+      - Settlements: settlements
+
     - User management: 
       - user_management/index.md
       - End users: 
@@ -194,14 +214,6 @@ nav:
       - Counterparty:
           - Overview: user_management/counterparty/counterparty.md
           - Configure: user_management/counterparty/create_counterparty.md
-
-    - Deal management:
-      - deal_management/index.md
-      - Deal management: Deal management
-      - Swap deal blotter: Swap deal blotter
-      - Futures deal blotter: Futures deal blotter
-      - Evergreen deals process: Evergreen deals process
-      - Deal activity log: Deal activity log
 
     - System configuration:
       - system_configuration/index.md

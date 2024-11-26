@@ -1,0 +1,3 @@
+# Swap deal
+
+A swap deal is a financial agreement where two parties exchange specific elements of their natural gas transactions, such as delivery locations or pricing mechanisms, to mitigate risk or improve logistical efficiency. For example, one party might trade a commitment to deliver gas at a specific location in exchange for receiving it elsewhere. Swap deals are often used to optimize transportation costs and align with market dynamics.

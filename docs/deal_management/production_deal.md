@@ -1,0 +1,3 @@
+# Production deal
+
+A production deal focuses on transactions directly tied to the output from natural gas wells or fields. These deals are typically made between producers and marketers or midstream companies, covering terms for the purchase, sale, and transportation of natural gas immediately after production. Production deals are critical for monetizing upstream activities and ensuring steady supply to downstream markets.

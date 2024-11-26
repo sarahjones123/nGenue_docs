@@ -1,0 +1,3 @@
+# Physical wellhead deal
+
+A physical wellhead deal refers to the purchase or sale of natural gas directly at the production site or wellhead. These deals often involve producers selling their gas to midstream operators or marketers, with the transaction price influenced by local market conditions and transportation costs to downstream markets. Wellhead deals are fundamental to connecting upstream production with the broader supply chain.

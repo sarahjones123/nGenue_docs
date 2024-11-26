@@ -1,0 +1,3 @@
+# Physical retail deal
+
+A physical retail deal refers to the sale of natural gas directly to end-users, such as residential, commercial, or industrial customers. These deals are typically managed by Local Distribution Companies (LDCs) or retailers and include terms for delivery schedules, pricing structures, and usage metrics. Physical retail deals prioritize reliability and adherence to customer-specific requirements, including regulated pricing in many markets.
