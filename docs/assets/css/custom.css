@@ -33,7 +33,7 @@
 /* Better contrast link colors */
 [data-md-color-scheme="default"] > * {
   --md-typeset-a-color: #034686;
-  --h3-color: rgb(5, 90, 92);
+  /* --h3-color: rgb(5, 90, 92); */
 }
 [data-md-color-scheme="slate"] > * {
   --md-typeset-a-color: #5FFFD7;
@@ -114,8 +114,18 @@ h2 {
 
 h3 {
   font-family: 'Satoshi';
-  font-weight: 700;
-  color: var(--h3-color);
+  color: var(--md-typeset-a-color);
+  /*font-style: italic; */
+}
+
+.md-typeset h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 0.01em;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
 }
 
 /* Correct page icon size */
@@ -307,6 +317,12 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   .logo:hover {
     opacity: 0.8;
   }
+}
+
+.md-typeset a {
+  color: #de3537;
+  word-break: break-word;
+  font-style:oblique;
 }
 
 /* Accent color */

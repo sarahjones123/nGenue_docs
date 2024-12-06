@@ -92,6 +92,7 @@ extra:
 
 extra_css:
   - assets/css/custom.css
+  - assets/css/puml.css
 extra_javascript:
   - assets/js/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
@@ -144,6 +145,7 @@ markdown_extensions:
   - tables
 
 plugins:
+  - include-markdown
   - glightbox:
        touchNavigation: true
        loop: false
@@ -179,12 +181,13 @@ plugins:
 nav:
   - Home: index.md
 
-  - Docs: 
-    - Getting started:
-        - nGenue overview: home.md
-        - Key features and benefits: features.md
-        - System requirements: advantages.md
-        - Installation and initial setup: installation/index.md
+  - Documentation: 
+    - Getting started with nGenue: 
+      - getting_started/index.md
+      # - nGenue overview: home.md
+      - Key features and benefits: features.md
+      - System requirements: system_requirements.md
+      - Installation and initial setup: installation.md
 
     - ETRM:
       - etrm/index.md
@@ -203,6 +206,7 @@ nav:
         - Futures deal blotter: Futures deal blotter
         - Evergreen deals process: Evergreen deals process
         - Deal activity log: Deal activity log
+      - Pricing configurations: pricing/index.md 
       - Nominations: nominations
       - Settlements: settlements
 
@@ -244,11 +248,11 @@ nav:
       - template/index.md
       # - Markdown syntax: template/markdown_syntax_code.md
 
-  - Releases:
+#  - Releases:
     - Releases: releases/index.md
 
-  - Academy:
+#  - Academy:
     - Academy: academy/index.md
   
-  - Blog: 
+#  - Blog: 
     - blog/index.md

@@ -3,7 +3,9 @@ hide:
  - toc
 ---
 
-# Key features of nGenue
+# Key features and benefits of nGenue
+
+Below are the key features of nGenue:
 
 - **Customer Management**  
    nGenue offers a centralized customer relationship management (CRM) module, enabling businesses to track customer data, manage accounts, and ensure personalized service. It also helps with contract management and customer communication.
@@ -26,63 +28,23 @@ hide:
 7. **Integration with Utility Systems**  
    Seamlessly integrate with utility data systems, enabling the secure exchange of information related to meter reads, customer data, and payment records.
 
-## Visualizing nGenue features via class diagram
+## Visualizing nGenue features
+
 To visualize nGenue's features like Customer Management, Billing and Invoicing, Contract and Pricing Management, and others, the following class diagram illustrates the main modules and their relationships. Here’s a structured view: 
 
-``` mermaid
-classDiagram
-class CustomerManagement {
-    +trackCustomerData()
-    +manageAccounts()
-    +handleContracts()
-    +customerCommunication()
-}
+```puml
 
-class BillingInvoicing {
-    +automateBilling()
-    +generateInvoices()
-    +applyTariffs()
-    +handleComplexBilling()
-}
-
-class ContractPricingManagement {
-    +manageContracts()
-    +renewContracts()
-    +dynamicPricing()
-}
-
-class SupplyDemandForecasting {
-    +predictDemand()
-    +analyzeHistoricalData()
-    +manageSupplyChain()
-}
-
-class RegulatoryCompliance {
-    +automateReporting()
-    +manageComplianceRequirements()
-}
-
-class RealTimeDataAnalytics {
-    +gatherRealTimeData()
-    +displayDashboards()
-    +provideInsights()
-}
-
-class UtilityIntegration {
-    +integrateWithMeterReads()
-    +exchangeCustomerData()
-    +updatePaymentRecords()
-}
-
-CustomerManagement --> BillingInvoicing : Uses for billing
-CustomerManagement --> ContractPricingManagement : Manages contract pricing
-BillingInvoicing --> ContractPricingManagement : References contract terms
-SupplyDemandForecasting --> RealTimeDataAnalytics : Uses data for forecasting
-UtilityIntegration --> BillingInvoicing : Shares meter and payment data
-RegulatoryCompliance --> RealTimeDataAnalytics : Uses data for compliance reporting
+CustomerManagement->>BillingInvoicing: Use `trackCustomerData()` to initiate billing
+BillingInvoicing->>ContractPricingManagement: Reference `manageContracts()` for pricing details
+ContractPricingManagement-->>BillingInvoicing: Return pricing terms
+BillingInvoicing->>UtilityIntegration: Request meter reads and payment records
+UtilityIntegration-->>BillingInvoicing: Provide data
+BillingInvoicing->>BillingInvoicing: Apply tariffs and generate invoice
+BillingInvoicing-->>CustomerManagement: Send invoice for customer communication
 ```
 
-### Class diagram explanation
+### Workflow explanation
+
 Each feature represents a distinct module within the nGenue system. Here’s a breakdown:
 
 1. **Customer Management**: Manages customer information, contracts, and communications.
@@ -94,4 +56,20 @@ Each feature represents a distinct module within the nGenue system. Here’s a b
 6. **Real-Time Data and Analytics**: Provides real-time data for analysis and decision-making.
 7. **Integration with Utility Systems**: Interfaces with utility systems for secure data exchange.
 
+## Benefits of using nGenue
 
+- **Industry-Specific Functionality**: nGenue is tailored for the natural gas industry, offering features and workflows designed to meet the unique needs of gas marketers and utilities.
+  
+- **Increased Efficiency**: By automating time-consuming processes such as billing, invoicing, and customer management, nGenue reduces manual work and improves operational efficiency.
+  
+- **Improved Accuracy**: nGenue ensures accurate billing and pricing, eliminating human errors and ensuring customer satisfaction.
+  
+- **Scalability**: Whether you are a small marketer or a large utility, nGenue is designed to grow with your business, offering flexibility to meet evolving needs.
+
+- **Data-Driven Decision Making**: With powerful analytics and reporting tools, nGenue provides actionable insights that help businesses make informed decisions and drive growth.
+
+- **Regulatory Compliance**: Stay on top of industry regulations with nGenue’s compliance tools, minimizing the risk of penalties and improving audit readiness.
+
+By leveraging nGenue, natural gas companies can streamline their operations, enhance customer service, and achieve long-term success in a competitive market.
+
+---

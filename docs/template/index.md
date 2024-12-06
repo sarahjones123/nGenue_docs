@@ -181,130 +181,14 @@ LDCs -> Marketer: Offer storage services (if available)
 @enduml
 ```
 
+``` yaml
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
 
 
-<!-- This is commented out. 
-
-## Representing code level change to multiple files
-
-=== ":octicons-file-code-16: `base.html`"
-
-    ``` diff
-    @@ -13,11 +13,6 @@
-           {% elif config.site_description %}
-             <meta name="description" content="{{ config.site_description }}">
-           {% endif %}
-    -      {% if page and page.meta and page.meta.keywords %}
-    -        <meta name="keywords" content="{{ page.meta.keywords }}">
-    -      {% elif config.site_keywords %}
-    -        <meta name="keywords" content="{{ config.site_keywords }}">
-    +      {% endif %}
-           {% if page and page.meta and page.meta.author %}
-             <meta name="author" content="{{ page.meta.author }}">
-           {% elif config.site_author %}
-    @@ -61,15 +56,13 @@
-                 font.text | replace(' ', '+') + ':300,400,400i,700%7C' +
-                 font.code | replace(' ', '+')
-               }}&display=fallback">
-    -        <style>:root{--md-text-font-family:"{{ font.text }}";--md-code-font-family:"{{ font.code }}"}</style>
-    +        <style>:root{--md-text-font:"{{ font.text }}";--md-code-font:"{{ font.code }}"}</style>
-           {% endif %}
-         {% endblock %}
-    -    {% if config.extra.manifest %}
-    -      <link rel="manifest" href="{{ config.extra.manifest | url }}" crossorigin="use-credentials">
-    -    {% endif %}
-         {% for path in config["extra_css"] %}
-           <link rel="stylesheet" href="{{ path | url }}">
-         {% endfor %}
-    +    {% include "partials/javascripts/base.html" %}
-         {% block analytics %}
-           {% include "partials/integrations/analytics.html" %}
-         {% endblock %}
-    ```
-
-=== ":octicons-file-code-16: `partials/copyright.html`"
-
-    ``` diff
-    @@ -0,0 +1,16 @@
-    +{#-
-    +  This file was automatically generated - do not edit
-    +-#}
-    +<div class="md-copyright">
-    +  {% if config.copyright %}
-    +    <div class="md-copyright__highlight">
-    +      {{ config.copyright }}
-    +    </div>
-    +  {% endif %}
-    +  {% if not config.extra.generator == false %}
-    +    Made with
-    +    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-    +      Material for MkDocs
-    +    </a>
-    +  {% endif %}
-    +</div>
-    ```
-
-=== ":octicons-file-code-16: `partials/footer.html`"
-
-    ``` diff
-    @@ -41,21 +40,10 @@
-       {% endif %}
-       <div class="md-footer-meta md-typeset">
-         <div class="md-footer-meta__inner md-grid">
-    -      <div class="md-footer-copyright">
-    -        {% if config.copyright %}
-    -          <div class="md-footer-copyright__highlight">
-    -            {{ config.copyright }}
-    -          </div>
-    -        {% endif %}
-    -        {% if not config.extra.generator == false %}
-    -          Made with
-    -          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-    -            Material for MkDocs
-    -          </a>
-    -        {% endif %}
-    -        {{ extracopyright }}
-    -      </div>
-    -      {% include "partials/social.html" %}
-    +      {% include "partials/copyright.html" %}
-    +      {% if config.extra.social %}
-    +        {% include "partials/social.html" %}
-    +      {% endif %}
-         </div>
-       </div>
-     </footer>
-    ```
-
-=== ":octicons-file-code-16: `partials/social.html`"
-
-    ``` diff
-    @@ -4,17 +4,15 @@
-    -{% if config.extra.social %}
-    -  <div class="md-footer-social">
-    -    {% for social in config.extra.social %}
-    -      {% set title = social.name %}
-    -      {% if not title and "//" in social.link %}
-    -        {% set _,url = social.link.split("//") %}
-    -        {% set title = url.split("/")[0] %}
-    -      {% endif %}
-    -      <a href="{{ social.link }}" target="_blank" rel="noopener" title="{{ title | e }}" class="md-footer-social__link">
-    -        {% include ".icons/" ~ social.icon ~ ".svg" %}
-    -      </a>
-    -    {% endfor %}
-    -  </div>
-    -{% endif %}
-    +<div class="md-social">
-    +  {% for social in config.extra.social %}
-    +    {% set title = social.name %}
-    +    {% if not title and "//" in social.link %}
-    +      {% set _, url = social.link.split("//") %}
-    +      {% set title  = url.split("/")[0] %}
-    +    {% endif %}
-    +    <a href="{{ social.link }}" target="_blank" rel="noopener" title="{{ title | e }}" class="md-social__link">
-    +      {% include ".icons/" ~ social.icon ~ ".svg" %}
-    +    </a>
-    +  {% endfor %}
-    +</div>
-    ```
-
--->
+{% include-markdown "./varriable.md" %}

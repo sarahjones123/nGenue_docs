@@ -7,6 +7,8 @@ hide:
 
 nGenue is a comprehensive software platform designed to streamline and optimize the operations of natural gas marketers, utilities, and suppliers. Built specifically for the natural gas industry, nGenue integrates multiple functionalities into a single, robust solution, empowering businesses to efficiently manage their sales, marketing, billing, and customer service processes. With nGenue, companies can reduce operational complexity, ensure regulatory compliance, and improve profitability through automated workflows and real-time data insights.
 
+![altext](../assets/images/ngenue_overview.png)
+
 ## Key functionalities
 
 The nGenue platform supports several core functionalities for Distributors, LDCs, Utilities, and Pipelines in the natural gas sector, including:
