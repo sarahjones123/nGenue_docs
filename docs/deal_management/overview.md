@@ -40,14 +40,7 @@ A [physical wellhead deal](wellhead_deal.md) refers to the purchase or sale of n
 
 ## Prerequisites before configuring a deal
 
-* **Configure Legal Entity, Business Unit, Strategy, and Portfolio**: Set up organizational and strategic frameworks.
-
-1. **Configure Supply Region**: Define geographic regions for supply management.
-1. **Configure Pipeline**: Specify pipelines for transporting natural gas.
-1. **Configure Pipeline Location**: Define physical locations along the pipeline.
-1. **Configure Pipeline Zone**: Establish zones within the pipeline.
-1. **Configure Counterparty**: Create and link trading partner details.
-1. **Create Rate Schedule**: Set up pricing terms and conditions.
+{% include-markdown "../variable/etrm_prerequisities.md" %}
 
 ## How to access deal management page
 
@@ -138,5 +131,5 @@ The **Deal details** section populates available deals based on the parameters o
 ![alt text](./images/deal_management_4.png)
 
 ## Related Topics
-1. [Create a physical deal]()
-
+1. [Creating a deal](./physical_deal.md)
+2. [Adding pricing tier to a deal](../pricing/index.md)

@@ -1,4 +1,5 @@
 # Create a counterparty
+
 This article outlines the process for creating a counterparty, including adding contacts and counterparty contracts through the application.
 
 1.	Log in to the **nGenue** application.

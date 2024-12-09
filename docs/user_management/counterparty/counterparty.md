@@ -1,3 +1,8 @@
+---
+hide:
+ - toc
+---
+
 # Counterparty overview
 
 **Counterparty** are entities that engage in commercial transactions or contracts with a business. These can be suppliers, vendors, clients, or any other party the company interacts with for buying, selling, or trading goods and services. In nGenue’s system, counterparties are crucial as they enable streamlined transaction management, allowing for clear tracking, communication, and coordination.

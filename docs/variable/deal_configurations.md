@@ -1,25 +1,3 @@
-# Create a physical deal
-
-A physical deal involves the actual delivery of natural gas from one party to another, often including specific terms for volume, location, and timing. These transactions typically occur between producers, marketers, and end-users, and they require coordination of storage and transportation logistics to ensure fulfillment. Physical deals are foundational to the natural gas market as they ensure the movement of energy resources from supply points to areas of demand.
-
-## Prerequisites
-
-{% include-markdown "../variable/etrm_prerequisities.md" %}
-
-## Procedure
-
-This guide provides a step-by-step procedure to add a physical deal in nGenue. Follow the instructions below to create and manage physical deals effectively.
-
-### Step 1: Navigate to Deal management module
-
-1. Log in to the nGenue application using your credentials.
-2. Search for **"Deal management"** in the quick search bar in the nGenue application homepage.
-3. Select **Deal management.**
-![alt text](./images/deal_management_search_bar.png)
-
-### Step 2: Create a new physical deal
-
-1. Click on **Add physical deal** or use the **(Alt+A)** keyboard shortcut.
 2. Define **Transaction information**:  
     1. **Deal type:** Choose the deal type, i.e., buy or sell deal.
     1. **Deal date:** Input the start and the end date of the deal.
@@ -71,7 +49,3 @@ This guide provides a step-by-step procedure to add a physical deal in nGenue. F
     1. Click **Save.**
 
 7. You will navigate to the **Deal summary** tab where a concise overview of a deal is displayed.
-
-## Post deal activities
-
-{% include-markdown "../variable/post_deal_activities.md" %}

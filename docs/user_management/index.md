@@ -1,4 +1,4 @@
-# User management
+# Getting started
 
 ## End users
 

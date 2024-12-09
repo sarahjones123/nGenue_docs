@@ -171,18 +171,12 @@ Here is the detailed workflow sequence for the ETRM process, reflecting the flow
 
 1. **Create a deal**
 
-    1. The process begins when the trader initiates [creating a deal](../deal_management/overview.md).
+    1. The process begins when the trader initiates [**creating a deal**](../deal_management/physical_deal.md).
     2. The system verifies whether all prerequisite configurations are completed.
 
 2. **Check configurations**<br>
 If configurations are incomplete, the trader must complete them:
-    1. **Configure Legal Entity, Business Unit, Strategy, and Portfolio**: Set up organizational and strategic frameworks.
-    - **Configure Supply Region**: Define geographic regions for supply management.
-    - **Configure Pipeline**: Specify pipelines for transporting natural gas.
-    - **Configure Pipeline Location**: Define physical locations along the pipeline.
-    - **Configure Pipeline Zone**: Establish zones within the pipeline.
-    - **Configure Counterparty**: Create and link trading partner details.
-    - **Create Rate Schedule**: Set up pricing terms and conditions.
+    {% include-markdown "../variable/etrm_prerequisities.md" %}
     <br>
 
     Once configurations are complete, the system allows proceeding to deal type selection.
@@ -199,7 +193,7 @@ If configurations are incomplete, the trader must complete them:
     2. The contract outlines the terms and conditions for transporting natural gas.
 
 5. **Proceed to nominations**<br>
-The system moves to the **Nominations** phase to schedule the movement of natural gas.
+The system moves to the [**Nominations**](../etrm/nominations.md) phase to schedule the movement of natural gas.
 
 6. **Select nomination type**
 
@@ -213,10 +207,10 @@ The system moves to the **Nominations** phase to schedule the movement of natura
     1. The system processes the selected nominations, allowing for adjustments if necessary.
     2. Once all required nominations are complete, the system finalizes them.
 
-8. **Perform settlement process**<br>
+8. **Perform [settlement process](../etrm/settlements.md)**<br>
 The system reconciles financial and operational data as part of the settlement process.
 
-9. **Print settlement report**<br>
+9. **Print [settlement report](../etrm/settlements.md)**<br>
 The workflow concludes with the trader printing a settlement report for record-keeping and compliance.
 
 ## How nGenue addresses ETRM aspects

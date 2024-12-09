@@ -1,3 +1,8 @@
+---
+hide:
+ - toc
+---
+
 # End users overview
 
 The end users of nGenue application can be anyone who is involved in the natural gas industry, including:
@@ -38,4 +43,3 @@ Each of nGenue’s software modules is designed for the enforcement of standard 
 - At the most granular level, the nGenue database allows the use of row level security (RLS) whereby certain users are restricted at the row level based on whether they are part of a given group. 
 
 For example, if Jane Smith works in New Jersey and is not allowed to see information related to Pennsylvania, she can be restricted at the row level (as part of the database architecture) to see only information that is related to New Jersey. Though she has access to an *end user volume* screen, the database would only return data related to New Jersey.
-
