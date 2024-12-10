@@ -20,23 +20,23 @@ A [swap deal](swap_deal.md) is a financial agreement where two parties exchange 
 
 ### Future deal
 
-A [future deal](future_deal.md) in the natural gas market involves an agreement to buy or sell a specified volume of natural gas at a predetermined price on a future date. These deals are typically traded on exchanges and are used as a hedging tool to manage price volatility. Future deals do not necessarily result in physical delivery, as they can be settled financially based on the market price at expiration.
+A [**future deal**](future_deal.md) in the natural gas market involves an agreement to buy or sell a specified volume of natural gas at a predetermined price on a future date. These deals are typically traded on exchanges and are used as a hedging tool to manage price volatility. Future deals do not necessarily result in physical delivery, as they can be settled financially based on the market price at expiration.
 
 ### Physical natural gas (NG) deal
 
-A [physical natural gas (NG) deal](ng_deal.md) entails the tangible transfer of natural gas between parties, with specified terms for volume, quality, delivery point, and timing. These deals can occur in wholesale or retail markets and often require coordination with pipelines, storage facilities, and regulatory compliance to fulfill contractual obligations efficiently.
+A [**physical natural gas (NG) deal**](ng_deal.md) entails the tangible transfer of natural gas between parties, with specified terms for volume, quality, delivery point, and timing. These deals can occur in wholesale or retail markets and often require coordination with pipelines, storage facilities, and regulatory compliance to fulfill contractual obligations efficiently.
 
 ### Production deal
 
-A [production deal](./production_deal.md) focuses on transactions directly tied to the output from natural gas wells or fields. These deals are typically made between producers and marketers or midstream companies, covering terms for the purchase, sale, and transportation of natural gas immediately after production. Production deals are critical for monetizing upstream activities and ensuring steady supply to downstream markets.
+A [**production deal**](./production_deal.md) focuses on transactions directly tied to the output from natural gas wells or fields. These deals are typically made between producers and marketers or midstream companies, covering terms for the purchase, sale, and transportation of natural gas immediately after production. Production deals are critical for monetizing upstream activities and ensuring steady supply to downstream markets.
 
 ### Cash deal
 
-A [cash deal](cash_deal.md) involves the immediate or near-term purchase and sale of natural gas with the settlement based on current spot market prices. These deals are often executed to address short-term supply or demand imbalances and are typically completed quickly without the need for long-term contractual commitments.
+A [**cash deal**](cash_deal.md) involves the immediate or near-term purchase and sale of natural gas with the settlement based on current spot market prices. These deals are often executed to address short-term supply or demand imbalances and are typically completed quickly without the need for long-term contractual commitments.
 
 ### Physical wellhead deal
 
-A [physical wellhead deal](wellhead_deal.md) refers to the purchase or sale of natural gas directly at the production site or wellhead. These deals often involve producers selling their gas to midstream operators or marketers, with the transaction price influenced by local market conditions and transportation costs to downstream markets. Wellhead deals are fundamental to connecting upstream production with the broader supply chain.
+A [**physical wellhead deal**](wellhead_deal.md) refers to the purchase or sale of natural gas directly at the production site or wellhead. These deals often involve producers selling their gas to midstream operators or marketers, with the transaction price influenced by local market conditions and transportation costs to downstream markets. Wellhead deals are fundamental to connecting upstream production with the broader supply chain.
 
 ## Prerequisites before configuring a deal
 

@@ -322,7 +322,7 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 .md-typeset a {
   color: #de3537;
   word-break: break-word;
-  font-style:oblique;
+  /*font-style:oblique; */
 }
 
 /* Accent color */

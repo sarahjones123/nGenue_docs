@@ -189,7 +189,7 @@ If configurations are incomplete, the trader must complete them:
 
 4. **Create transport contract**
 
-    1. After selecting the deal type, the trader creates a **Transport Contract**.
+    1. After selecting the deal type, the trader creates a [**Transport contract**.](../user_management/transport_contract.md)
     2. The contract outlines the terms and conditions for transporting natural gas.
 
 5. **Proceed to nominations**<br>
@@ -201,7 +201,7 @@ The system moves to the [**Nominations**](../etrm/nominations.md) phase to sched
         1. **Buy Nominations**: Requests for purchased natural gas being transported or stored.
         2. **Sell Nominations**: Requests for sold natural gas being transported to buyers.
         3. **Interconnects**: Specify gas flow between different pipeline systems or facilities.
-        4. **Pool and Storage Nominations**: Include injection into or withdrawal from storage facilities or pooling points.
+        4. **Pool and storage nominations**: Include injection into or withdrawal from storage facilities or pooling points.
 
 7. **Create and finalize nomination**
     1. The system processes the selected nominations, allowing for adjustments if necessary.

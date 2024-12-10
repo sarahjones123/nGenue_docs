@@ -189,6 +189,22 @@ nav:
       - System requirements: system_requirements.md
       - Installation and initial setup: installation.md
 
+    - Getting started: 
+      - user_management/index.md
+      - Legal Entity, Business Unit, Strategy, and Portfolio: user_management/inbook_structure.md
+      - Supply region: user_management/supply_region.md
+      - Pipeline: user_management/pipeline.md
+      - Pipeline location: user_management/pipeline_location.md
+      - Pipeline zone: user_management/pipeline_zone.md
+      - Counterparty:
+          - Overview: user_management/counterparty/counterparty.md
+          - Configure: user_management/counterparty/create_counterparty.md
+      - Rate schedule: user_management/rate_schedule.md
+      - Transport contract: user_management/transport_contract.md
+      - End users: 
+          - Overview: user_management/end_users/overview.md
+          - Configure: user_management/end_users/create_end_user.md
+
     - ETRM:
       - etrm/index.md
       - Deal management: 
@@ -209,22 +225,6 @@ nav:
       - Pricing configurations: pricing/index.md 
       - Nominations: etrm/nominations.md
       - Settlements: etrm/settlements.md
-
-    - Getting started: 
-      - user_management/index.md
-      - Legal Entity, Business Unit, Strategy, and Portfolio: user_management/inbook_structure.md
-      - Supply region: user_management/supply_region.md
-      - Pipeline: user_management/pipeline.md
-      - Pipeline location: user_management/pipeline_location.md
-      - Pipeline zone: user_management/pipeline_zone.md
-      - Counterparty:
-          - Overview: user_management/counterparty/counterparty.md
-          - Configure: user_management/counterparty/create_counterparty.md
-      - Rate schedule: user_management/rate_schedule.md
-      - End users: 
-          - Overview: user_management/end_users/overview.md
-          - Configure: user_management/end_users/create_end_user.md
-
 
     - System configuration:
       - system_configuration/index.md
