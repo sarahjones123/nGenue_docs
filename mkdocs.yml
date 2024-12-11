@@ -99,6 +99,13 @@ extra_javascript:
   - assets/js/typewriter.js
   - https://unpkg.com/typewriter-effect@latest/dist/core.js
 
+extra:
+  status:
+    new: Recently added
+    update: Recently updated
+    add: Need rework
+
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -187,7 +194,7 @@ nav:
       # - nGenue overview: home.md
       - Key features and benefits: features.md
       - System requirements: system_requirements.md
-      - Installation and initial setup: installation.md
+      - Initial setup: installation.md
 
     - Getting started: 
       - user_management/index.md
@@ -236,8 +243,8 @@ nav:
           - Configure: system_configuration/global_settings/configure.md
 
 
-    - How-to: 
-      - how_to/index.md   
+#    - How-to: 
+#      - how_to/index.md   
 
     - FAQs: 
       - faqs/index.md
@@ -251,15 +258,15 @@ nav:
     - Glossary: 
       - glossary/index.md
 
-    - Template: 
-      - template/index.md
+#    - Template: 
+#      - template/index.md
       # - Markdown syntax: template/markdown_syntax_code.md
 
 #  - Releases:
-    - Releases: releases/index.md
+#    - Releases: releases/index.md
 
 #  - Academy:
-    - Academy: academy/index.md
+#    - Academy: academy/index.md
   
 #  - Blog: 
-    - blog/index.md
+#    - blog/index.md

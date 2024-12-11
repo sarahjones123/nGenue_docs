@@ -1,4 +1,5 @@
 ---
+status: new
 hide:
  - toc
 ---
@@ -184,8 +185,8 @@ If configurations are incomplete, the trader must complete them:
 3. **Select deal type**
 
     1. Based on the trader's choice, the system creates either:
-        1. **Buy Deal**: Represents the purchase of natural gas.
-        1. **Sell Deal**: Represents the sale of natural gas.
+        1. [**Buy Deal:**](../deal_management/overview.md) Represents the purchase of natural gas.
+        1. [**Sell Deal:**](../deal_management/overview.md) Represents the sale of natural gas.
 
 4. **Create transport contract**
 

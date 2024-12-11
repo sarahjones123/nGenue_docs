@@ -6,7 +6,7 @@ hide:
 
 # Create an end user
 
-In this section, we will walk through the step-by-step process of creating an end user within the nGenue application. After you are done creating an end user, you will need to add their [address](create_end_user.md#creating-an-end-user-address), set up a [sales contract](create_end_user.md#creating-a-sales-contract) and [price agreement](create_end_user.md#adding-price-agreement), and add facilities to activate the account. Each of these steps is detailed in separate topics on this page.
+In this section, we will walk through the step-by-step process of creating an end user within the nGenue application. After you are done creating an end user, you will need to add their [address](create_end_user.md#create-an-end-user-address), set up a [sales contract](create_end_user.md#create-a-sales-contract) and [price agreement](./create_end_user.md#add-price-agreement), and add facilities to activate the account. Each of these steps is detailed in separate topics on this page.
 
 1.	Login to the **nGenue** application.
 2.	Click on the **Search** icon and enter *End user* into the search bar. 
