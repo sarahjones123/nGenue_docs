@@ -190,7 +190,7 @@ If configurations are incomplete, the trader must complete them:
 
 4. **Create transport contract**
 
-    1. After selecting the deal type, the trader creates a [**Transport contract**.](../user_management/transport_contract.md)
+    1. After selecting the deal type, the trader creates a [**Transport contract**.](../getting_started/transport_contract.md)
     2. The contract outlines the terms and conditions for transporting natural gas.
 
 5. **Proceed to nominations**<br>

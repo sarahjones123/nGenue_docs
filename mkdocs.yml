@@ -190,27 +190,27 @@ nav:
 
   - Documentation: 
     - Introduction to nGenue: 
-      - getting_started/index.md
+      - introduction/index.md
       # - nGenue overview: home.md
       - Key features and benefits: features.md
       - System requirements: system_requirements.md
       - Initial setup: installation.md
 
     - Getting started: 
-      - user_management/index.md
-      - Legal Entity, Business Unit, Strategy, and Portfolio: user_management/inbook_structure.md
-      - Supply region: user_management/supply_region.md
-      - Pipeline: user_management/pipeline.md
-      - Pipeline location: user_management/pipeline_location.md
-      - Pipeline zone: user_management/pipeline_zone.md
+      - getting_started/index.md
+      - Legal Entity, Business Unit, Strategy, and Portfolio: getting_started/inbook_structure.md
+      - Supply region: getting_started/supply_region.md
+      - Pipeline: getting_started/pipeline.md
+      - Pipeline location: getting_started/pipeline_location.md
+      - Pipeline zone: getting_started/pipeline_zone.md
       - Counterparty:
-          - Overview: user_management/counterparty/counterparty.md
-          - Configure: user_management/counterparty/create_counterparty.md
-      - Rate schedule: user_management/rate_schedule.md
-      - Transport contract: user_management/transport_contract.md
+          - Overview: getting_started/counterparty/counterparty.md
+          - Configure: getting_started/counterparty/create_counterparty.md
+      - Rate schedule: getting_started/rate_schedule.md
+      - Transport contract: getting_started/transport_contract.md
       - End users: 
-          - Overview: user_management/end_users/overview.md
-          - Configure: user_management/end_users/create_end_user.md
+          - Overview: getting_started/end_users/overview.md
+          - Configure: getting_started/end_users/create_end_user.md
 
     - ETRM:
       - etrm/index.md

@@ -1,79 +1,120 @@
----
-hide:
- - toc
----
+# Getting started
 
-# nGenue overview
+## End users
 
-nGenue is a comprehensive software platform designed to streamline and optimize the operations of natural gas marketers, utilities, and suppliers. Built specifically for the natural gas industry, nGenue integrates multiple functionalities into a single, robust solution, empowering businesses to efficiently manage their sales, marketing, billing, and customer service processes. With nGenue, companies can reduce operational complexity, ensure regulatory compliance, and improve profitability through automated workflows and real-time data insights.
+<div class="grid cards wide" markdown>
 
-![altext](../assets/images/ngenue_overview.png)
+-   :material-format-paint:{ .lg .middle } __About nGenue end users__
 
-## Key functionalities
+    ---
 
-The nGenue platform supports several core functionalities for Distributors, LDCs, Utilities, and Pipelines in the natural gas sector, including:
+    Learn more about nGenue end users and what are the key tasks performed by them.
 
--  **Automated Pricing** </br>
-   Automatically calculates and applies pricing based on contracts, consumption, and market conditions. </br>
-   The below flowchart shows data inputs (market conditions, contracts) leading to price calculations, resulting in customer pricing outputs.
-   ```puml
+    [:octicons-arrow-right-24: Know more](./end_users/overview.md)
 
-   @startuml
-   start
-   :Input Market Conditions;
-   :Input Contracts;
-   :Calculate Price;
-   :Output Customer Pricing;
-   stop
-   @enduml
-   ```
+-   :material-format-paint:{ .lg .middle } __Create an end user__
 
-2. **Billing** </br>
-   Automates billing processes, generating accurate invoices that reflect actual consumption and contractual agreements.</br>
+    ---
 
-3. **Scheduling** </br>
-   Manages the scheduling of deliveries and services, optimizing resource allocation and ensuring timely distribution of gas.
+    Learn how to create an end user within nGenue.
 
-4. **Customer Management**</br>
-   Centralizes customer data, facilitating effective communication, account management, and personalized service.
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md)    
 
-5. **Compliance**</br>
-   Automates compliance tracking and reporting, helping organizations adhere to industry regulations and avoid penalties.
-   ```puml
+-   :material-upload-network:{ .lg .middle } __Create an end user address__
 
-    @startuml
-    start
-    :Collect Data;
-    :Generate Reports;
-    :Submit for Review;
-    :Audit Process;
-    stop
-    @enduml
-   ```
+    ---
 
-6. **Integration with EDI Systems** </br>
-   Seamlessly integrates with Electronic Data Interchange (EDI) systems for secure exchange of information related to transactions, customer data, and payments.
-   ```puml
+    Learn how to add user' address within nGenue.
 
-    @startuml
-    package "nGenue" {
-        [nGenue System]
-    }
-    package "EDI System" {
-        [EDI Interface]
-    }
-    package "Utility Data Systems" {
-        [Customer Database]
-        [Payment Records]
-    }
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#create-an-end-user-address)
 
-    [nGenue System] --> [EDI Interface]
-    [EDI Interface] --> [Customer Database]
-    [EDI Interface] --> [Payment Records]
-    @enduml
-   ```
+-   :material-directions-fork:{ .lg .middle } __Activate an end user__
 
-<!--
-For more information about *nGenue*, visit their [official website](https://ngenue.com/ldcs-natural-gas-software-solution/).
+    ---
 
--->
+    Learn how to activate a end user.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#activate-an-end-user)
+
+</div>
+
+## Price Agreement
+
+<div class="grid cards wide" markdown>
+
+-   :material-format-paint:{ .lg .middle } __Adding price agreement__
+
+    ---
+
+    Learn how to add price agreement within the nGenue application.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#add-price-agreement)
+
+-   :material-upload-network:{ .lg .middle } __New pricing tier configuration__
+
+    ---
+
+    Learn how to configure pricing tier in nGenue.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#new-pricing-tier-configuration)
+
+</div>
+
+## Facility
+
+<div class="grid cards wide" markdown>
+
+-   :material-upload-network:{ .lg .middle } __Create a facility__
+
+    ---
+
+    Learn how to create a new facility.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#create-a-facility)
+
+-   :material-satellite-uplink:{ .lg .middle } __Create a facility address__
+
+    ---
+
+    Learn how to add facility' address within the application.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#create-a-facility-address)
+
+-   :material-satellite-uplink:{ .lg .middle } __Activate a facility__
+
+    ---
+
+    Learn how to activate a facility within the application.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#activate-a-facility)    
+
+
+</div>
+
+## Sales contract
+
+<div class="grid cards wide" markdown>
+
+-   :material-satellite-uplink:{ .lg .middle } __Create a sales contract__
+
+    ---
+
+    Learn how to create a sales contract within the application.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#create-a-sales-contract)
+
+</div>
+
+## Meter
+
+<div class="grid cards wide" markdown>
+
+-   :material-satellite-uplink:{ .lg .middle } __Create a meter__
+
+    ---
+
+    Learn how to create a meter within the application.
+
+    [:octicons-arrow-right-24: Know more](./end_users/create_end_user.md#create-a-meter)
+
+</div>
