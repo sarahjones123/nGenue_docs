@@ -1,27 +1,95 @@
----
-hide:
- - toc
----
+# Legal entity, business unit, strategy, and portfolio
 
-# Legal Entity, Business Unit, Strategy, and Portfolio
+The **Legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals.
 
-The **Legal Entity, Business Unit, Strategy,** and **Portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals.
-
-* **Legal Entity:** The primary company entity engaging in contracts and transactions.
-* **Business Unit:** Sub-entities within the legal entity, managing specific operations (e.g., retail gas, industrial supply).
+* **Legal entity:** The primary company entity engaging in contracts and transactions.
+* **Business unit:** Sub-entities within the legal entity, managing specific operations (e.g., retail gas, industrial supply).
 * **Strategy:** Defines goals like securing supply, managing costs, or maximizing revenue.
 * **Portfolio:** Groups contracts, deals, and assets under a strategy to facilitate reporting and analytics.
 
-!!! note "Example"
+    !!! note "Example"
 
-    For a natural gas company, the Legal Entity might be "EnergyCorp LLC," with Business Units like "Wholesale Operations" and "Retail Services." A Strategy could involve maximizing sales to industrial clients, while the Portfolio includes contracts and pipelines supporting that goal.
+        For a natural gas company, the Legal entity might be "EnergyCorp LLC," with business units like "Wholesale operations" and "Retail services." A strategy could involve maximizing sales to industrial clients, while the portfolio includes contracts and pipelines supporting that goal.
 
 ## Procedure to configure
 
-1. Navigate to **Administration > Legal Entity Management.**
+This guide outlines the steps to configure a legal entity, business unit, strategy, and portfolio within the application.
 
-2. Click **Create New Legal Entity** and enter details like name, tax ID, and contact information.
-3. Go to **Business Unit Configuration** and click **Add New Business Unit.**
-4. Provide details such as unit name, linked legal entity, and primary focus.
-5. Under **Strategy Setup,** click **Add New Strategy,** specifying the type (e.g., Storage, Marketing).
-6. Navigate to **Portfolio Management** to create a portfolio and associate contracts, deals, and strategies.
+### Prerequisites
+
+* You must have the necessary permissions to add or modify a book structure.
+* A counterparty must be configured before setting up a book structure. For details, please refer to [how to create a counterparty.](./counterparty/create_counterparty.md)
+
+### Procedure
+
+#### Step 1: Navigate to Internal book structure screen
+
+1.	Log in to the **nGenue** application.
+2.	Click the **Search** icon and enter *book structure* in the search bar.  
+3.	Double-click **Internal book structure** to open the respective screen.
+![navigate to book structure](./images/legal_entity_3.png)
+4. The next screen is divided into two sections: **Internal book structure** and **Configure selected item.**
+    ![book structure sections](./images/legal_entity_12.png)
+    1. The **Internal book structure** section lists existing configurations, including legal entities, business units, portfolios, or strategies.
+    2. The **Configure selected item** section allows you to create, edit, or delete book structure records. The table below describes the available icons and their functions:
+    
+        | Icons      | Description                          |
+        | ----------- | ------------------------------------ |
+        | ![alt text](./images/icons/add_record_icon.png)        | Add a new record |
+        | ![alt text](./images/icons/edit_record_icon.png)    | Edit the record detail. |
+        | ![alt text](./images/icons/save_icon.png)        |  Save the record. |
+        | ![alt text](./images/icons/edit_current_icon.png)  | Cancel the updates being made to the record. |
+        | ![alt text](./images/icons/delete_icon.png)  | Delete a record. |
+
+#### Step 2: Create a new legal entity
+
+1. In the **Internal book structure** screen, click the **Add a record** button.
+![Add a record](./images/legal_entity_4.png)
+2. Enter a name for the legal entity and a unique identifier in the **Legal entity name** and **Code** fields, respectively.
+    
+    !!! note "Example"
+
+        If the legal entity name is **"ABC legal entity,"** the code could be **"ABCL."**
+
+3. To designate this entity as the default legal entity, select the **"This entity is the default entity"** checkbox.
+4. To link a counterparty to this entity, select the counterparty from the **Linked internal counterparty record** dropdown.
+
+5. Once all mandatory fields are filled, click the **Save** button to configure the legal entity.
+![save the changes](./images/legal_entity_1.png)
+
+#### Step 3: Add a business unit to the legal entity
+
+1. Right-click the recently created legal entity and select **Add business unit.** 
+    ![Add business unit](./images/legal_entity_2.png)
+
+2. In the **Business unit configure** screen, enter details like name, code and a short description. The **Business ID** is auto-generated once you save the configuration.
+3. Click **Save.**<br>
+    ![Save business unit](./images/legal_entity_5.png)
+
+4. The configured business unit will appear under the legal entity field on the left side of the screen. Expand the entity using the **(+)** button.
+    ![Expand legal enity](./images/legal_entity_6.png)
+
+#### Step 4: Add a Portfolio
+
+1. Right-click the configured business unit and select **Add portfolio.**
+    ![Add portfolio](./images/legal_entity_7.png)
+
+2. In the **Portfolio configure** screen, enter details such as name, code and a short description. The **Portfolio ID** will be auto-generated upon saving.
+3. If not auto-selected, choose your business unit from the **Parent business group** dropdown.
+4. Click **Save.**<br>
+    ![Save portfolio](./images/legal_entity_8.png)
+
+5. The configured portfolio will appear under the business unit. Expand the unit using the **(+)** button to view it.
+
+#### Step 5: Add a strategy
+
+1. Right-click the newly created portfolio and select **Add strategy.** 
+    ![Add strategy](./images/legal_entity_9.png)
+
+2. In the **Strategy configure** screen, provide details such as name, code, and a short description. The **Strategy ID** will be auto-generated upon saving.
+3. If not auto-selected, choose your portfolio from the **Parent portfolio** dropdown.
+4. Click **Save.**<br>
+    ![Save portfolio](./images/legal_entity_10.png)
+
+5. Expand the legal entity, business unit, and portfolio using the **(+)** button to view the newly configured strategy.
+     ![Expand strategy](./images/legal_entity_11.png)

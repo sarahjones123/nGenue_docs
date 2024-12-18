@@ -9,9 +9,9 @@ nGenue is a comprehensive software platform designed to streamline and optimize 
 
 ## Key functionalities
 
-The nGenue platform supports several core functionalities for Distributors, LDCs, Utilities, and Pipelines in the natural gas sector, including:
+The nGenue platform supports several core functionalities for distributors, LDCs, utilities, and pipelines in the natural gas sector, including:
 
--  **Automated Pricing** </br>
+-  **Automated pricing** </br>
    Automatically calculates and applies pricing based on contracts, consumption, and market conditions. </br>
    The below flowchart shows data inputs (market conditions, contracts) leading to price calculations, resulting in customer pricing outputs.
    ```puml
@@ -32,7 +32,7 @@ The nGenue platform supports several core functionalities for Distributors, LDCs
 3. **Scheduling** </br>
    Manages the scheduling of deliveries and services, optimizing resource allocation and ensuring timely distribution of gas.
 
-4. **Customer Management**</br>
+4. **Customer management**</br>
    Centralizes customer data, facilitating effective communication, account management, and personalized service.
 
 5. **Compliance**</br>
@@ -49,25 +49,24 @@ The nGenue platform supports several core functionalities for Distributors, LDCs
     @enduml
    ```
 
-6. **Integration with EDI Systems** </br>
+6. **Integration with EDI systems** </br>
    Seamlessly integrates with Electronic Data Interchange (EDI) systems for secure exchange of information related to transactions, customer data, and payments.
    ```puml
-
     @startuml
-    package "nGenue" {
-        [nGenue System]
-    }
-    package "EDI System" {
-        [EDI Interface]
-    }
-    package "Utility Data Systems" {
-        [Customer Database]
-        [Payment Records]
-    }
+package "nGenue" {
+    [nGenue System] #LightBlue
+}
+package "EDI System" {
+    [EDI Interface] #Yellow
+}
+package "Utility Data Systems" {
+    [Customer Database] #LightGreen
+    [Payment Records] #LightGreen
+}
 
-    [nGenue System] --> [EDI Interface]
-    [EDI Interface] --> [Customer Database]
-    [EDI Interface] --> [Payment Records]
+[nGenue System] --> [EDI Interface] : "Data Flow" #Blue
+[EDI Interface] --> [Customer Database] : "Customer Info" 
+[EDI Interface] --> [Payment Records] : "Payment Info" 
     @enduml
    ```
 

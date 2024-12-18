@@ -13,15 +13,15 @@ ETRM in nGenue focuses on managing the full lifecycle of wholesale natural gas t
 **Key wholesale processes supported by nGenue's ETRM include**:
 
 * **Trading**: Facilitates the buying and selling of natural gas in wholesale markets.
-* **Contract Management**: Manages long-term and short-term contracts with suppliers, buyers, and transporters.
-* **Transportation Logistics**: Optimizes pipeline scheduling, nominations, and storage.
-* **Risk Assessment**: Monitors price volatility, credit exposure, and operational risks.
-* **Regulatory Compliance**: Ensures adherence to industry standards and legal requirements.
+* **Contract management**: Manages long-term and short-term contracts with suppliers, buyers, and transporters.
+* **Transportation logistics**: Optimizes pipeline scheduling, nominations, and storage.
+* **Risk assessment**: Monitors price volatility, credit exposure, and operational risks.
+* **Regulatory compliance**: Ensures adherence to industry standards and legal requirements.
 ![nGenue_ETRM](./images/nGenue_etrm.png)
 
 ## ETRM Workflow
 
-Let's understand the workflow of ETRM in nGenue through below plantuml diagram:
+Let's understand the workflow of ETRM in nGenue through below flow diagram:
 
 <!-- This is commented out. 
 ### Workflow 1
@@ -37,14 +37,14 @@ skinparam noteBackgroundColor #FAD7A0
 skinparam noteBorderColor #D35400
 
 actor Trader #yellow
-participant "ETRM System" as System #lightgreen
+participant "ETRM system" as System #lightgreen
 
 note over Trader, System
 The process starts with creating a deal and verifying configurations.
 Prerequisite configurations are mandatory before proceeding.
 end note
 
-Trader -> System: Create a Deal
+Trader -> System: Create a deal
 alt Are configurations complete?
     System -> System: Proceed to Configure Prerequisites
     loop Configure Prerequisites
@@ -106,61 +106,61 @@ skinparam noteBorderColor #D35400
 
 start
 
-:Create a Deal;
+:Create a deal;
 note right
 The process starts with creating a deal and verifying configurations.
 end note
 
 if (Are configurations complete?) then (No)
-  :Configure Prerequisites;
+  :Configure prerequisites;
   note right
   Prerequisite configurations are mandatory before proceeding.
   
   Prerequisites include:
-  - Configure Legal Entity, Business Unit, Strategy, and Portfolio
-  - Configure Supply Region
-  - Configure Pipeline, Pipeline Location, and Pipeline Zone
-  - Configure Counterparty
-  - Create Rate Schedule
+  - Configure legal entity, business unit, strategy, and portfolio
+  - Configure supply region
+  - Configure pipeline, pipeline location, and pipeline zone
+  - Configure counterparty
+  - Create rate schedule
   end note
-  :Configurations Completed;
+  :Configurations completed;
 else (Yes)
-  :Proceed to Deal Type Selection;
+  :Proceed to deal type selection;
 endif
 
-if (Deal Type?) then (Buy Deal)
-  :Create Buy Deal;
-else (Sell Deal)
-  :Create Sell Deal;
+if (Deal type?) then (buy deal)
+  :Create buy deal;
+else (sell deal)
+  :Create sell deal;
 endif
 
-:Create Transport Contract;
+:Create transport contract;
 note right
 Defines terms for natural gas movement.
 end note
 
-:Proceed to Nominations;
+:Proceed to nominations;
   repeat
-  :Select Nomination Type;
+  :Select nomination type;
   note right
   Nomination types available:
   
-    - **Buy Nominations**: Requests related to purchased natural gas being transported or stored.
-    - **Sell Nominations**: Requests related to sold natural gas being transported to the buyer.
+    - **Buy nominations**: Requests related to purchased natural gas being transported or stored.
+    - **Sell nominations**: Requests related to sold natural gas being transported to the buyer.
     - **Interconnects**: Nominations specifying natural gas flow between different pipeline systems or facilities.
-    - **Pool and Storage**: Nominations involving injection into or withdrawal from storage facilities or pooling points.
+    - **Pool and storage**: Nominations involving injection into or withdrawal from storage facilities or pooling points.
   end note
-  :Process Nomination;
-  repeat while (More Nominations?)
+  :Process nomination;
+  repeat while (More nominations?)
 
-:Finalize Nomination;
+:Finalize nomination;
 
-:Perform Settlement Process;
+:Perform settlement rrocess;
 note right
 Reconcile financial and operational data.
 end note
 
-:Print Settlement Report;
+:Print settlement report;
 
 stop
 @enduml
@@ -168,7 +168,7 @@ stop
 
 ### Workflow explanation
 
-Here is the detailed workflow sequence for the ETRM process, reflecting the flow described in the the above PlantUML diagram.
+Here is the detailed workflow sequence for the ETRM process, reflecting the flow described in the the above diagram.
 
 1. **Create a deal**
 
@@ -185,22 +185,22 @@ If configurations are incomplete, the trader must complete them:
 3. **Select deal type**
 
     1. Based on the trader's choice, the system creates either:
-        1. [**Buy Deal:**](../deal_management/overview.md) Represents the purchase of natural gas.
-        1. [**Sell Deal:**](../deal_management/overview.md) Represents the sale of natural gas.
+        1. [**Buy deal:**](../deal_management/overview.md) Represents the purchase of natural gas.
+        1. [**Sell deal:**](../deal_management/overview.md) Represents the sale of natural gas.
 
 4. **Create transport contract**
 
-    1. After selecting the deal type, the trader creates a [**Transport contract**.](../getting_started/transport_contract.md)
+    1. After selecting the deal type, the trader creates a [**transport contract**.](../getting_started/transport_contract.md)
     2. The contract outlines the terms and conditions for transporting natural gas.
 
 5. **Proceed to nominations**<br>
-The system moves to the [**Nominations**](../etrm/nominations.md) phase to schedule the movement of natural gas.
+The system moves to the [**nominations**](../etrm/nominations.md) phase to schedule the movement of natural gas.
 
 6. **Select nomination type**
 
     1. Traders select from various nomination types:
-        1. **Buy Nominations**: Requests for purchased natural gas being transported or stored.
-        2. **Sell Nominations**: Requests for sold natural gas being transported to buyers.
+        1. **Buy nominations**: Requests for purchased natural gas being transported or stored.
+        2. **Sell nominations**: Requests for sold natural gas being transported to buyers.
         3. **Interconnects**: Specify gas flow between different pipeline systems or facilities.
         4. **Pool and storage nominations**: Include injection into or withdrawal from storage facilities or pooling points.
 

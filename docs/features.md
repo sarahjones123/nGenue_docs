@@ -34,8 +34,8 @@ To visualize nGenue's features like Customer Management, Billing and Invoicing, 
 
 ```puml
 
-CustomerManagement->>BillingInvoicing: Use `trackCustomerData()` to initiate billing
-BillingInvoicing->>ContractPricingManagement: Reference `manageContracts()` for pricing details
+CustomerManagement->>BillingInvoicing: Initiates billing
+BillingInvoicing->>ContractPricingManagement: Fetch pricing details
 ContractPricingManagement-->>BillingInvoicing: Return pricing terms
 BillingInvoicing->>UtilityIntegration: Request meter reads and payment records
 UtilityIntegration-->>BillingInvoicing: Provide data

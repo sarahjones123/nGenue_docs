@@ -235,12 +235,8 @@ nav:
 
     - System configuration:
       - system_configuration/index.md
-      - Menu configuration: 
-          - Overview: system_configuration/menu_configuration/overview.md
-          - Configure: system_configuration/menu_configuration/configure.md
-      - Global setting: 
-          - Overview: system_configuration/global_settings/overview.md
-          - Configure: system_configuration/global_settings/configure.md
+      - Menu configuration: system_configuration/menu_configurations.md
+      - Global setting: system_configuration/global_settings.md
 
 
 #    - How-to: 
