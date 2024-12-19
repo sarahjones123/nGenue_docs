@@ -27,9 +27,9 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 1.	Log in to the **nGenue** application.
 2.	Click the **Search** icon and enter *book structure* in the search bar.  
 3.	Double-click **Internal book structure** to open the respective screen.
-![navigate to book structure](./images/legal_entity_3.png)
+![navigate_book_structure](./images/legal_entity_3.png)
 4. The next screen is divided into two sections: **Internal book structure** and **Configure selected item.**
-    ![book structure sections](./images/legal_entity_12.png)
+    ![book_structure_sections](./images/legal_entity_12.png)
     1. The **Internal book structure** section lists existing configurations, including legal entities, business units, portfolios, or strategies.
     2. The **Configure selected item** section allows you to create, edit, or delete book structure records. The table below describes the available icons and their functions:
     
@@ -44,7 +44,7 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 #### Step 2: Create a new legal entity
 
 1. In the **Internal book structure** screen, click the **Add a record** button.
-![Add a record](./images/legal_entity_4.png)
+![add_ a_record](./images/legal_entity_4.png)
 2. Enter a name for the legal entity and a unique identifier in the **Legal entity name** and **Code** fields, respectively.
     
     !!! example "Example"
@@ -59,12 +59,12 @@ This guide outlines the steps to configure a legal entity, business unit, strate
         The fields in the **Integration points** section are automatically populated when third-party tools are integrated with nGenue. These fields can be skipped when entering data manually.
 
 5. Once all mandatory fields are filled, click the **Save** button to configure the legal entity.
-![save the changes](./images/legal_entity_1.png)
+![save_the_changes](./images/legal_entity_1.png)
 
 #### Step 3: Add a business unit to the legal entity
 
 1. Right-click the recently created legal entity and select **Add business unit.** 
-    ![Add business unit](./images/legal_entity_2.png)
+    ![add_business_unit](./images/legal_entity_2.png)
 
 2. In the **Business unit configure** screen, enter details like name, code and a short description. The **Business ID** is auto-generated once you save the configuration.
 
@@ -76,10 +76,10 @@ This guide outlines the steps to configure a legal entity, business unit, strate
         The fields in the **Integration points** section are automatically populated when third-party tools are integrated with nGenue. These fields can be skipped when entering data manually.
 
 3. Click **Save.**<br>
-    ![Save business unit](./images/legal_entity_5.png)
+    ![save_business_unit](./images/legal_entity_5.png)
 
 4. The configured business unit will appear under the legal entity field on the left side of the screen. Expand the entity using the **(+)** button.
-    ![Expand legal enity](./images/legal_entity_6.png)
+    ![expand _legal_enity](./images/legal_entity_6.png)
 
 #### Step 4: Add a Portfolio
 

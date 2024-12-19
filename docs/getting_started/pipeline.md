@@ -27,8 +27,8 @@ A **pipeline location** refers to a specific physical or operational point along
 - Ensures accurate measurement and allocation of transported gas.
 
 !!!example "Example"
-    * Receipt location: A production field where gas is introduced into the pipeline.
-    * Delivery location: A city gate where gas is delivered to a local distribution company (LDC).
+    * **Receipt location:** A production field where gas is introduced into the pipeline.
+    * **Delivery location:** A city gate where gas is delivered to a local distribution company (LDC).
 
 ## Understanding pipeline zone
 
@@ -58,7 +58,43 @@ A **pipeline zone** is a segment or region of a pipeline defined for operational
 
 ## Configure pipeline, pipeline location, and pipeline zone
 
-to be added
+### Prerequisites
+
+* You must have the necessary permissions to add or modify pipeline configuration screen.
+
+### Procedure
+
+#### Step 1: Navigate to PZL configuration screen
+
+1.	Log in to the **nGenue** application.
+2.	Click the **Search** icon and enter *PZL* in the search bar.  
+3.	Double-click **PZL configuration** to open the respective screen.
+![pzl_navigation](./images/pipeline_1.png)
+4. The next screen is divided into two sections: **Pipeline selection** and **Supporting pipeline configuration and rates.**
+    ![pzl_structure](./images/pipeline_2.png)
+    1. The **Pipeline selection** section lists existing pipelines configured where you can either edit, delete the existing pipeline records or create a new one. The table below describes the available icons and their functions:
+
+        | Icons      | Description                          |
+        | ----------- | ------------------------------------ |
+        | ![alt text](./images/icons/add_record_icon.png)        | Add a new pipeline record |
+        | ![alt text](./images/icons/edit_record_icon.png)    | Edit the pipeline record detail. |
+        | ![alt text](./images/icons/save_icon.png)        |  Save the pipeline record. |
+        | ![alt text](./images/icons/edit_current_icon.png)  | Cancel the updates being made to the pipeline record. |
+        | ![alt text](./images/icons/delete_icon.png)  | Delete a pipeline record. |
+
+    2. The **Supporting pipeline configuration and rates** section allows you to perform additional pipeline configurations such as create, edit, or delete pipeline zones, interconnects, rates and pipeline locations.
+
+#### Step 2: Create a new pipeline record
+
+1. In the **PZL configuration** screen, click the **Add pipeline record** button.
+![add_ a_record](./images/pipeline_3.png)
+2. Enter a name for the legal entity and a unique identifier in the **Legal entity name** and **Code** fields, respectively.
+    
+    !!! example "Example"
+
+        If the legal entity name is **"ABC legal entity,"** the code could be **"ABCL."**
+
+3. To designate this entity as the default legal entity, select the **"This entity is the default entity"** checkbox. Once selected, this legal entity will automatically be pre-selected whenever a new deal is initiated in the **"Deal Management"** screen. This eliminates the need to manually select a legal entity for each deal, streamlining the deal creation process. Setting a default legal entity is particularly useful for traders that primarily operate under a single entity or have a high volume of transactions associated with a specific legal entity.
 
 ## Summary
 

@@ -6,7 +6,15 @@ The **Global settings** serves as a centralized hub for managing default configu
 
     Changes made in the **Global settings** screen are applied system-wide and affect all users unless overridden by specific user or role-based configurations. When a value is configured as a default, it is automatically populated on any screen containing that field
 
-## Key default configurations 
+## Key default configurations
+
+1. **File Path default:** If a default file path is set, any file-related actions will save the files to the specified location automatically, ensuring consistent storage and easy retrieval.
+
+2. **Field-Specific defaults:** When default values are configured for specific fields— such as Standard Pricing or Unit of Measurement— these values will pre-fill on applicable screens, saving time and improving data accuracy. 
+
+3. **Format defaults:** Setting default formats for items such as invoices or dates ensures that users see information presented in a uniform manner across the application.
+
+4. **Color Scheme default:** Setting a color scheme as a default allows users to customize the application’s appearance to fit branding needs or personal preferences. Once a color scheme is selected in the Global Settings module, it is applied consistently across all screens, menus, and toolbars— providing a cohesive visual experience. This can be especially useful for distinguishing different environments (e.g. Test, Development, Production) or for enhancing accessibility with high-contrast options.
 
 ## Procedure to configure
 
@@ -43,8 +51,10 @@ This section outlines the steps to configure the **Global settings** in nGenue.
     ![task_types](./images/global_settings_task_types.png)
 
     * **File management**<br> 
-    This tab lets you select default paths for storing logs, reports, or documents. Proper configuration ensures efficient organization and easy access to essential files.
+    This tab lets you allows users to define default paths for document storage and related assets within nGenue. By setting up these paths, exported files are automatically saved in specified locations, streamlining file access and management.
     ![file_management](./images/global_settings_file_management.png)
+
+    **Available default paths**
 
     * **Default values**<br>
     Configure default values that populate throughout the nGenue application. For example, if the default volume unit is set to **MMBTU**, this unit will auto-populate in relevant fields, such as when creating a new deal.
