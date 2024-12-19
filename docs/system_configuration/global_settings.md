@@ -1,10 +1,12 @@
 # Global settings overview
 
-The **Global settings** serves as a centralized hub for managing default configurations across various screens and tabs within the application. These settings allow administrators to define system-wide preferences, ensuring consistency and streamlining the user experience. By configuring options such as default values, display preferences, and behavior settings, organizations can align the application’s functionality with their operational requirements and workflows.
+The **Global settings** serves as a centralized hub for managing default configurations across various screens and tabs within the application. These settings allow administrators to define system-wide preferences, ensuring consistency and streamlining the user experience. By configuring options such as default values, display preferences, and behavior settings, organizations can establish values that will automatically apply across relevant fields— reducing the need for repetitive data entry and promoting standardized configuration.
 
 !!!note "Note"
 
-    Changes made in the **Global settings** screen are applied system-wide and affect all users unless overridden by specific user or role-based configurations.
+    Changes made in the **Global settings** screen are applied system-wide and affect all users unless overridden by specific user or role-based configurations. When a value is configured as a default, it is automatically populated on any screen containing that field
+
+## Key default configurations 
 
 ## Procedure to configure
 

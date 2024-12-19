@@ -201,8 +201,6 @@ nav:
       - Legal Entity, Business Unit, Strategy, and Portfolio: getting_started/inbook_structure.md
       - Supply region: getting_started/supply_region.md
       - Pipeline: getting_started/pipeline.md
-      - Pipeline location: getting_started/pipeline_location.md
-      - Pipeline zone: getting_started/pipeline_zone.md
       - Counterparty:
           - Overview: getting_started/counterparty/counterparty.md
           - Configure: getting_started/counterparty/create_counterparty.md

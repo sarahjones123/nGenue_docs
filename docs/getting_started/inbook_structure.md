@@ -1,15 +1,15 @@
-# Legal entity, business unit, strategy, and portfolio
+# Understanding legal entity, business unit, strategy, and portfolio
 
-The **Legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals.
+The **legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals.
 
 * **Legal entity:** The primary company entity engaging in contracts and transactions.
 * **Business unit:** Sub-entities within the legal entity, managing specific operations (e.g., retail gas, industrial supply).
 * **Strategy:** Defines goals like securing supply, managing costs, or maximizing revenue.
 * **Portfolio:** Groups contracts, deals, and assets under a strategy to facilitate reporting and analytics.
 
-    !!! note "Example"
+    !!! example "Example"
 
-        For a natural gas company, the Legal entity might be "EnergyCorp LLC," with business units like "Wholesale operations" and "Retail services." A strategy could involve maximizing sales to industrial clients, while the portfolio includes contracts and pipelines supporting that goal.
+        For a natural gas company, the Legal entity might be **"EnergyCorp LLC,"** with business units like **"Wholesale operations"** and **"Retail services."** A strategy could involve maximizing sales to industrial clients, while the portfolio includes contracts and pipelines supporting that goal.
 
 ## Procedure to configure
 
@@ -47,12 +47,16 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 ![Add a record](./images/legal_entity_4.png)
 2. Enter a name for the legal entity and a unique identifier in the **Legal entity name** and **Code** fields, respectively.
     
-    !!! note "Example"
+    !!! example "Example"
 
         If the legal entity name is **"ABC legal entity,"** the code could be **"ABCL."**
 
-3. To designate this entity as the default legal entity, select the **"This entity is the default entity"** checkbox.
+3. To designate this entity as the default legal entity, select the **"This entity is the default entity"** checkbox. Once selected, this legal entity will automatically be pre-selected whenever a new deal is initiated in the **"Deal Management"** screen. This eliminates the need to manually select a legal entity for each deal, streamlining the deal creation process. Setting a default legal entity is particularly useful for traders that primarily operate under a single entity or have a high volume of transactions associated with a specific legal entity.
+
 4. To link a counterparty to this entity, select the counterparty from the **Linked internal counterparty record** dropdown.
+
+    !!!note "Integration points"
+        The fields in the **Integration points** section are automatically populated when third-party tools are integrated with nGenue. These fields can be skipped when entering data manually.
 
 5. Once all mandatory fields are filled, click the **Save** button to configure the legal entity.
 ![save the changes](./images/legal_entity_1.png)
@@ -63,6 +67,14 @@ This guide outlines the steps to configure a legal entity, business unit, strate
     ![Add business unit](./images/legal_entity_2.png)
 
 2. In the **Business unit configure** screen, enter details like name, code and a short description. The **Business ID** is auto-generated once you save the configuration.
+
+3. The **Legal entity** field will be auto-selected.
+
+4. Select the **"Use this business unit as default"** checkbox designates the newly created business unit as the default choice for various operations. For instance, when users perform tasks such as creating deals, portfolios, or strategies, the default business unit will automatically populate in the relevant fields. This feature is particularly beneficial in scenarios where a specific business unit handles the majority of transactions or operational activities, reducing manual effort and minimizing the chances of incorrect selections.
+
+    !!!note "Integration points"
+        The fields in the **Integration points** section are automatically populated when third-party tools are integrated with nGenue. These fields can be skipped when entering data manually.
+
 3. Click **Save.**<br>
     ![Save business unit](./images/legal_entity_5.png)
 
@@ -76,6 +88,10 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 
 2. In the **Portfolio configure** screen, enter details such as name, code and a short description. The **Portfolio ID** will be auto-generated upon saving.
 3. If not auto-selected, choose your business unit from the **Parent business group** dropdown.
+
+    !!!note "Integration points"
+        The fields in the **Integration points** section are automatically populated when third-party tools are integrated with nGenue. These fields can be skipped when entering data manually.
+
 4. Click **Save.**<br>
     ![Save portfolio](./images/legal_entity_8.png)
 
@@ -88,6 +104,10 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 
 2. In the **Strategy configure** screen, provide details such as name, code, and a short description. The **Strategy ID** will be auto-generated upon saving.
 3. If not auto-selected, choose your portfolio from the **Parent portfolio** dropdown.
+
+    !!!note "Integration points"
+        The fields in the **Integration points** section are automatically populated when third-party tools are integrated with nGenue. These fields can be skipped when entering data manually.
+
 4. Click **Save.**<br>
     ![Save portfolio](./images/legal_entity_10.png)
 
