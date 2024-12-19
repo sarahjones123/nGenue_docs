@@ -1,0 +1,1932 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ngenue documentation portal">
+      
+      
+        <meta name="author" content="Dipender Sharma">
+      
+      
+        <link rel="canonical" href="https://ngenue.com/system_configuration/global_settings/">
+      
+      
+        <link rel="prev" href="../menu_configurations/">
+      
+      
+        <link rel="next" href="../../faqs/">
+      
+      
+      <link rel="icon" href="../../assets/images/ngenue_logo.jpeg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Global setting - nGenue</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+      <link rel="stylesheet" href="../../assets/css/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#global-settings-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="nGenue" class="md-header__button md-logo" aria-label="nGenue" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nGenue
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Global setting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+    
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="nGenue" class="md-nav__button md-logo" aria-label="nGenue" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_logo.jpeg" alt="logo">
+
+    </a>
+    nGenue
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../introduction/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Introduction to nGenue
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction to nGenue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key features and benefits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System requirements
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--add" title="Need rework">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../getting_started/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/inbook_structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legal Entity, Business Unit, Strategy, and Portfolio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/supply_region/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply region
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../getting_started/counterparty/counterparty/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Counterparty
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/rate_schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rate schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/transport_contract/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transport contract
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../getting_started/end_users/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    End users
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../etrm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ETRM
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="Recently added">
+    </span>
+  
+
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            ETRM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../deal_management/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Deal management
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pricing configurations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../etrm/nominations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nominations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../etrm/settlements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settlements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    System configuration
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menu_configurations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menu configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Global setting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Global setting
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-default-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key default configurations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-to-configure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure to configure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure to configure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-access-the-global-settings-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Access the Global settings screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-modify-or-configure-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Modify or configure settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-save-and-apply-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Save and apply changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-validate-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Validate the configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../faqs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../use_cases/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Use cases
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Use cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../troubleshootings/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Troubleshootings
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshootings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../glossary/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-default-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key default configurations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure-to-configure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure to configure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure to configure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-access-the-global-settings-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Access the Global settings screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-modify-or-configure-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Modify or configure settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-save-and-apply-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Save and apply changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-validate-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Validate the configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="global-settings-overview">Global settings overview<a class="headerlink" href="#global-settings-overview" title="Permanent link">&para;</a></h1>
+<p>The <strong>Global settings</strong> serves as a centralized hub for managing default configurations across various screens and tabs within the application. These settings allow administrators to define system-wide preferences, ensuring consistency and streamlining the user experience. By configuring options such as default values, display preferences, and behavior settings, organizations can establish values that will automatically apply across relevant fields— reducing the need for repetitive data entry and promoting standardized configuration.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Changes made in the <strong>Global settings</strong> screen are applied system-wide and affect all users unless overridden by specific user or role-based configurations. When a value is configured as a default, it is automatically populated on any screen containing that field</p>
+</div>
+<h2 id="key-default-configurations">Key default configurations<a class="headerlink" href="#key-default-configurations" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>File Path default:</strong> If a default file path is set, any file-related actions will save the files to the specified location automatically, ensuring consistent storage and easy retrieval.</p>
+</li>
+<li>
+<p><strong>Field-Specific defaults:</strong> When default values are configured for specific fields— such as Standard Pricing or Unit of Measurement— these values will pre-fill on applicable screens, saving time and improving data accuracy. </p>
+</li>
+<li>
+<p><strong>Format defaults:</strong> Setting default formats for items such as invoices or dates ensures that users see information presented in a uniform manner across the application.</p>
+</li>
+<li>
+<p><strong>Color Scheme default:</strong> Setting a color scheme as a default allows users to customize the application’s appearance to fit branding needs or personal preferences. Once a color scheme is selected in the Global Settings module, it is applied consistently across all screens, menus, and toolbars— providing a cohesive visual experience. This can be especially useful for distinguishing different environments (e.g. Test, Development, Production) or for enhancing accessibility with high-contrast options.</p>
+</li>
+</ol>
+<h2 id="procedure-to-configure">Procedure to configure<a class="headerlink" href="#procedure-to-configure" title="Permanent link">&para;</a></h2>
+<p>This section outlines the steps to configure the <strong>Global settings</strong> in nGenue.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>You have the necessary administrative permissions to access and modify the <strong>Global settings</strong> screen.</li>
+<li>A thorough understanding of the organization's requirements for screen and tab configurations is essential.</li>
+<li>Any dependent configurations, such as roles or permissions, are already set up.</li>
+</ul>
+<h3 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">&para;</a></h3>
+<h4 id="step-1-access-the-global-settings-screen">Step 1: Access the Global settings screen<a class="headerlink" href="#step-1-access-the-global-settings-screen" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Log in to the <strong>nGenue</strong> application with your credentials.  </li>
+<li>Click the <strong>Search</strong> icon and enter <em>global settings</em> in the search bar.  </li>
+<li>Double-click <strong>Global settings</strong> to open the respective screen.
+    <a class="glightbox" href="../images/global_settings_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="global_settings_search" src="../images/global_settings_1.png" /></a></li>
+</ol>
+<h4 id="step-2-modify-or-configure-settings">Step 2: Modify or configure settings<a class="headerlink" href="#step-2-modify-or-configure-settings" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>On the <strong>Global settings</strong> screen, locate the specific category or section you want to configure (e.g., default values, display preferences, color schemes, deal settings, or behavior settings).
+<a class="glightbox" href="../images/global_settings_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="configure_global_settings" src="../images/global_settings_2.png" /></a></p>
+</li>
+<li>
+<p>Click on the appropriate tab to access its settings. The tabs are as follows:</p>
+<ul>
+<li>
+<p><strong>Event types</strong><br>
+This tab allows you to define and manage the various event types used across the application. Event types help categorize and track system activities for better monitoring and reporting.
+<a class="glightbox" href="../images/global_settings_event_types.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="event_types" src="../images/global_settings_event_types.png" /></a></p>
+</li>
+<li>
+<p><strong>Task types</strong><br>
+Use this tab to configure task categories, ensuring that all tasks are properly classified and aligned with your operational workflows.
+<a class="glightbox" href="../images/global_settings_task_types.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="task_types" src="../images/global_settings_task_types.png" /></a></p>
+</li>
+<li>
+<p><strong>File management</strong><br> 
+This tab lets you allows users to define default paths for document storage and related assets within nGenue. By setting up these paths, exported files are automatically saved in specified locations, streamlining file access and management.
+<a class="glightbox" href="../images/global_settings_file_management.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="file_management" src="../images/global_settings_file_management.png" /></a></p>
+</li>
+</ul>
+<p><strong>Available default paths</strong></p>
+<ul>
+<li>
+<p><strong>Default values</strong><br>
+Configure default values that populate throughout the nGenue application. For example, if the default volume unit is set to <strong>MMBTU</strong>, this unit will auto-populate in relevant fields, such as when creating a new deal.
+<a class="glightbox" href="../images/global_settings_default_values.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="default_values" src="../images/global_settings_default_values.png" /></a></p>
+</li>
+<li>
+<p><strong>Custom lookups</strong><br>
+This tab allows you to set up custom lookup fields for dropdowns or selection lists, enabling the application to cater to specific organizational needs.</p>
+</li>
+<li>
+<p><strong>AR statistics</strong><br>
+Manage and view accounts receivable statistics. This tab helps track and report key metrics for financial operations.
+<a class="glightbox" href="../images/global_settings_ar_statistics.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="ar_statistics" src="../images/global_settings_ar_statistics.png" /></a></p>
+</li>
+<li>
+<p><strong>Custom data fields</strong><br>
+Use this tab to create and manage custom data fields that extend the application’s functionality, ensuring that unique data requirements are met.</p>
+</li>
+<li>
+<p><strong>Required data points</strong><br>
+This tab defines mandatory fields across the application. Enforcing required data points ensures data completeness and compliance.
+<a class="glightbox" href="../images/global_settings_required_data_points.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="required_data_points" src="../images/global_settings_required_data_points.png" /></a></p>
+</li>
+<li>
+<p><strong>Color scheme</strong><br>
+Manage nGenue’s interface color theme or grid settings. For example, selecting a <strong>Green</strong> theme updates the user interface with a consistent green color scheme.
+<a class="glightbox" href="../images/global_settings_color_schemes.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="color_schemes" src="../images/global_settings_color_schemes.png" /></a></p>
+</li>
+<li>
+<p><strong>UOM (Unit of measurement)</strong><br>
+Configure default units of measurement for quantities, such as <strong>MMBTU</strong>, <strong>THERM</strong>, or <strong>MCF</strong>. These units will be applied across the application for consistency.
+<a class="glightbox" href="../images/global_settings_uom.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="uom" src="../images/global_settings_uom.png" /></a></p>
+</li>
+<li>
+<p><strong>Common fees descriptions</strong><br>
+Define standard fee descriptions for consistent terminology when adding or applying fees in various processes.
+<a class="glightbox" href="../images/global_settings_common_fee_description.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="common_fee_description" src="../images/global_settings_common_fee_description.png" /></a></p>
+</li>
+<li>
+<p><strong>Cashouts</strong><br>
+This tab helps configure cashout rules and parameters, ensuring proper handling and reporting of cashouts.
+<a class="glightbox" href="../images/global_settings_cashouts.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="cashouts" src="../images/global_settings_cashouts.png" /></a></p>
+</li>
+<li>
+<p><strong>Contact functionality</strong><br>
+Manage the contact settings for the application, such as default contact templates or rules for contact association.
+<a class="glightbox" href="../images/global_settings_contact_functionality.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="contact_functionality" src="../images/global_settings_contact_functionality.png" /></a></p>
+</li>
+<li>
+<p><strong>Deal settings</strong><br>
+Configure deal-specific settings. For example, if <strong>Default child deals allocation for buys or sells</strong> is enabled, this option will be preselected when creating a new deal.
+<a class="glightbox" href="../images/global_settings_deal_settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="deal_settings" src="../images/global_settings_deal_settings.png" /></a></p>
+</li>
+<li>
+<p><strong>Company data</strong><br>
+Provide and manage company information, including company name, address, main phone number, billing inquiries contact details, website URL, and other related data.
+<a class="glightbox" href="../images/global_settings_company_data.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="company_data" src="../images/global_settings_company_data.png" /></a></p>
+</li>
+<li>
+<p><strong>Billing settings</strong><br>
+This tab is used to manage default billing configurations, such as billing cycles, payment terms, or billing options.
+<a class="glightbox" href="../images/global_settings_billing_settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="billing_settings" src="../images/global_settings_billing_settings.png" /></a></p>
+</li>
+<li>
+<p><strong>Billing formats</strong><br>
+Set the default invoice format for end users. All generated invoices will follow the format specified in this tab unless overridden.
+<a class="glightbox" href="../images/global_settings_billing_formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="billing_formats" src="../images/global_settings_billing_formats.png" /></a></p>
+</li>
+<li>
+<p><strong>Monthly Init</strong><br>
+Configure settings related to monthly initialization processes, ensuring the system is prepared for new operational cycles.
+<a class="glightbox" href="../images/global_settings_monthly_init.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="monthly_init" src="../images/global_settings_monthly_init.png" /></a></p>
+</li>
+<li>
+<p><strong>Accounting</strong><br>
+Manage accounting-related settings such as account codes, financial periods, or other key parameters critical for financial management.</p>
+</li>
+<li>
+<p><strong>Invoice items</strong><br>
+Define and manage items or services that appear on invoices. This includes descriptions, default prices, and categorization.
+<a class="glightbox" href="../images/global_settings_invoice_items.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="invoice_items" src="../images/global_settings_invoice_items.png" /></a></p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="step-3-save-and-apply-changes">Step 3: Save and apply changes<a class="headerlink" href="#step-3-save-and-apply-changes" title="Permanent link">&para;</a></h4>
+<ol>
+<li>After updating the required settings, click the <strong>Save</strong> button to apply the changes.  </li>
+<li>A confirmation message will appear to indicate that the settings were successfully updated.  </li>
+</ol>
+<h4 id="step-4-validate-the-configuration">Step 4: Validate the configuration<a class="headerlink" href="#step-4-validate-the-configuration" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Navigate to the screens or tabs impacted by the updated global settings to confirm that the changes are reflected as expected.  </li>
+<li>If adjustments are needed, return to the <strong>Global settings</strong> screen and modify the configuration accordingly.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../menu_configurations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Menu configuration">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Menu configuration
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../faqs/" class="md-footer__link md-footer__link--next" aria-label="Next: Frequently Asked Questions (FAQs)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Frequently Asked Questions (FAQs)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 nGenue
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "announce.dismiss", "navigation.sections", "navigation.footer", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../../assets/js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/js/typewriter.js"></script>
+      
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

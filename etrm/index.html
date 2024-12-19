@@ -1,0 +1,1838 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ngenue documentation portal">
+      
+      
+        <meta name="author" content="Dipender Sharma">
+      
+      
+        <link rel="canonical" href="https://ngenue.com/etrm/">
+      
+      
+        <link rel="prev" href="../getting_started/end_users/create_end_user/">
+      
+      
+        <link rel="next" href="../deal_management/overview/">
+      
+      
+      <link rel="icon" href="../assets/images/ngenue_logo.jpeg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>ETRM overview - nGenue</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/css/custom.css">
+    
+      <link rel="stylesheet" href="../assets/css/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#etrm-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="nGenue" class="md-header__button md-logo" aria-label="nGenue" data-md-component="logo">
+      
+  <img src="../assets/images/ngenue_logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nGenue
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ETRM overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+    
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="nGenue" class="md-nav__button md-logo" aria-label="nGenue" data-md-component="logo">
+      
+  <img src="../assets/images/ngenue_logo.jpeg" alt="logo">
+
+    </a>
+    nGenue
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../introduction/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Introduction to nGenue
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction to nGenue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key features and benefits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System requirements
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--add" title="Need rework">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting_started/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/inbook_structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legal Entity, Business Unit, Strategy, and Portfolio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/supply_region/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supply region
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../getting_started/counterparty/counterparty/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Counterparty
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/rate_schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rate schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/transport_contract/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transport contract
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../getting_started/end_users/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    End users
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    ETRM
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new" title="Recently added">
+    </span>
+  
+
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            ETRM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../deal_management/overview/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Deal management
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pricing configurations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nominations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nominations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="settlements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settlements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../system_configuration/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    System configuration
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            System configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system_configuration/menu_configurations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menu configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system_configuration/global_settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Global setting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../faqs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../use_cases/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Use cases
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Use cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../troubleshootings/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Troubleshootings
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshootings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../glossary/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Glossary
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#etrm-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ETRM Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ETRM Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow explanation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-ngenue-addresses-etrm-aspects" class="md-nav__link">
+    <span class="md-ellipsis">
+      How nGenue addresses ETRM aspects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How nGenue addresses ETRM aspects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-deal-and-contract-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Deal and contract management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pipeline-path-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pipeline path operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ldc-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LDC configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-storage-and-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Storage and distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Risk management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="etrm-overview">ETRM overview<a class="headerlink" href="#etrm-overview" title="Permanent link">&para;</a></h1>
+<p><strong>ETRM</strong> stands for <em>Energy, Trade, and Risk Management.</em></p>
+<p>ETRM in nGenue focuses on managing the full lifecycle of wholesale natural gas transactions. It integrates trading, transportation, risk management, and reporting capabilities into a unified platform, tailored to the unique requirements of wholesale operations.</p>
+<p><strong>Key wholesale processes supported by nGenue's ETRM include</strong>:</p>
+<ul>
+<li><strong>Trading</strong>: Facilitates the buying and selling of natural gas in wholesale markets.</li>
+<li><strong>Contract management</strong>: Manages long-term and short-term contracts with suppliers, buyers, and transporters.</li>
+<li><strong>Transportation logistics</strong>: Optimizes pipeline scheduling, nominations, and storage.</li>
+<li><strong>Risk assessment</strong>: Monitors price volatility, credit exposure, and operational risks.</li>
+<li><strong>Regulatory compliance</strong>: Ensures adherence to industry standards and legal requirements.
+<a class="glightbox" href="images/nGenue_etrm.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="nGenue_ETRM" src="images/nGenue_etrm.png" /></a></li>
+</ul>
+<h2 id="etrm-workflow">ETRM Workflow<a class="headerlink" href="#etrm-workflow" title="Permanent link">&para;</a></h2>
+<p>Let's understand the workflow of ETRM in nGenue through below flow diagram:</p>
+<!-- This is commented out. 
+### Workflow 1
+
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="1274px" preserveAspectRatio="xMidYMid meet" style="width:1113px;height:1274px;background:#F9F9F9;" version="1.1" viewBox="0 0 1113 1274" width="1113px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#F9F9F9" height="1274" style="stroke:none;stroke-width:1;" width="1113" x="0" y="0"/><rect fill="none" height="458.3984" style="stroke:#000000;stroke-width:1.5;" width="683.7705" x="89" y="177.6953"/><rect fill="none" height="312.0625" style="stroke:#000000;stroke-width:1.5;" width="478.6626" x="284.1079" y="243.9609"/><rect fill="none" height="90.2031" style="stroke:#000000;stroke-width:1.5;" width="323.3755" x="89" y="650.0938"/><rect fill="none" height="154.9297" style="stroke:#000000;stroke-width:1.5;" width="1018.9424" x="89" y="873.6953"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="125" x2="125" y1="81.2969" y2="1194.1563"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="348.1079" x2="348.1079" y1="81.2969" y2="1194.1563"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46.1426" x="99" y="77.9951">Trader</text><ellipse cx="125.0713" cy="13.5" fill="#FFFF00" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M125.0713,21.5 L125.0713,48.5 M112.0713,29.5 L138.0713,29.5 M125.0713,48.5 L112.0713,63.5 M125.0713,48.5 L138.0713,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46.1426" x="99" y="1206.1514">Trader</text><ellipse cx="125.0713" cy="1217.9531" fill="#FFFF00" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M125.0713,1225.9531 L125.0713,1252.9531 M112.0713,1233.9531 L138.0713,1233.9531 M125.0713,1252.9531 L112.0713,1267.9531 M125.0713,1252.9531 L138.0713,1267.9531 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#90EE90" height="30.2969" rx="2.5" ry="2.5" style="stroke:#2874A6;stroke-width:0.5;" width="108.2676" x="294.1079" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94.2676" x="301.1079" y="69.9951">ETRM system</text><rect fill="#90EE90" height="30.2969" rx="2.5" ry="2.5" style="stroke:#2874A6;stroke-width:0.5;" width="108.2676" x="294.1079" y="1193.1563"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94.2676" x="301.1079" y="1213.1514">ETRM system</text><path d="M5,96.2969 L5,136.2969 L470,136.2969 L470,106.2969 L460,96.2969 L5,96.2969 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M460,96.2969 L460,106.2969 L470,106.2969 L460,96.2969 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="444.3105" x="11" y="113.3638">The process starts with creating a deal and verifying configurations.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="403.5649" x="11" y="128.4966">Prerequisite configurations are mandatory before proceeding.</text><polygon fill="#2874A6" points="336.2417,158.6953,346.2417,162.6953,336.2417,166.6953,340.2417,162.6953" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="162.6953" y2="162.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="87.5405" x="132.0713" y="157.6294">Create a deal</text><path d="M89,177.6953 L153.4429,177.6953 L153.4429,184.8281 L143.4429,194.8281 L89,194.8281 L89,177.6953 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="458.3984" style="stroke:#000000;stroke-width:1.5;" width="683.7705" x="89" y="177.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19.4429" x="104" y="190.7622">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="192.8384" x="168.4429" y="189.9058">[Are configurations complete?]</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="215.9609" y2="215.9609"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="215.9609" y2="228.9609"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="228.9609" y2="228.9609"/><polygon fill="#2874A6" points="359.2417,224.9609,349.2417,228.9609,359.2417,232.9609,355.2417,228.9609" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="226.1543" x="355.2417" y="210.895">Proceed to Configure Prerequisites</text><path d="M284.1079,243.9609 L360.7319,243.9609 L360.7319,251.0938 L350.7319,261.0938 L284.1079,261.0938 L284.1079,243.9609 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="312.0625" style="stroke:#000000;stroke-width:1.5;" width="478.6626" x="284.1079" y="243.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="31.624" x="299.1079" y="257.0278">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="157.3838" x="375.7319" y="256.1714">[Configure Prerequisites]</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="282.2266" y2="282.2266"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="282.2266" y2="295.2266"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="295.2266" y2="295.2266"/><polygon fill="#2874A6" points="359.2417,291.2266,349.2417,295.2266,359.2417,299.2266,355.2417,295.2266" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395.5288" x="355.2417" y="277.1606">Configure Legal Entity, Business Unit, Strategy, and Portfolio</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="324.3594" y2="324.3594"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="324.3594" y2="337.3594"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="337.3594" y2="337.3594"/><polygon fill="#2874A6" points="359.2417,333.3594,349.2417,337.3594,359.2417,341.3594,355.2417,337.3594" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160.9448" x="355.2417" y="319.2935">Configure Supply Region</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="366.4922" y2="366.4922"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="366.4922" y2="379.4922"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="379.4922" y2="379.4922"/><polygon fill="#2874A6" points="359.2417,375.4922,349.2417,379.4922,359.2417,383.4922,355.2417,379.4922" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118.5869" x="355.2417" y="361.4263">Configure Pipeline</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="408.625" y2="408.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="408.625" y2="421.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="421.625" y2="421.625"/><polygon fill="#2874A6" points="359.2417,417.625,349.2417,421.625,359.2417,425.625,355.2417,421.625" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177.9312" x="355.2417" y="403.5591">Configure Pipeline Location</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="450.7578" y2="450.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="450.7578" y2="463.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="463.7578" y2="463.7578"/><polygon fill="#2874A6" points="359.2417,459.7578,349.2417,463.7578,359.2417,467.7578,355.2417,463.7578" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155.8159" x="355.2417" y="445.6919">Configure Pipeline Zone</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="492.8906" y2="492.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="492.8906" y2="505.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="505.8906" y2="505.8906"/><polygon fill="#2874A6" points="359.2417,501.8906,349.2417,505.8906,359.2417,509.8906,355.2417,505.8906" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153.7275" x="355.2417" y="487.8247">Configure Counterparty</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="535.0234" y2="535.0234"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="535.0234" y2="548.0234"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="548.0234" y2="548.0234"/><polygon fill="#2874A6" points="359.2417,544.0234,349.2417,548.0234,359.2417,552.0234,355.2417,548.0234" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141.5781" x="355.2417" y="529.9575">Create Rate Schedule</text><polygon fill="#2874A6" points="136.0713,580.1563,126.0713,584.1563,136.0713,588.1563,132.0713,584.1563" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="130.0713" x2="347.2417" y1="584.1563" y2="584.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169.9712" x="142.0713" y="579.0903">Configurations Completed</text><line style="stroke:#000000;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="89" x2="772.7705" y1="593.1563" y2="593.1563"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="186.9194" x="94" y="603.3667">[Configurations are complete]</text><polygon fill="#2874A6" points="136.0713,624.0938,126.0713,628.0938,136.0713,632.0938,132.0713,628.0938" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="130.0713" x2="347.2417" y1="628.0938" y2="628.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199.1704" x="142.0713" y="623.0278">Proceed to Deal type selection</text><path d="M89,650.0938 L153.4429,650.0938 L153.4429,657.2266 L143.4429,667.2266 L89,667.2266 L89,650.0938 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="90.2031" style="stroke:#000000;stroke-width:1.5;" width="323.3755" x="89" y="650.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19.4429" x="104" y="663.1606">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="65.0547" x="168.4429" y="662.3042">[Buy Deal]</text><polygon fill="#2874A6" points="336.2417,684.3594,346.2417,688.3594,336.2417,692.3594,340.2417,688.3594" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="688.3594" y2="688.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106.1836" x="132.0713" y="683.2935">Create Buy Deal</text><line style="stroke:#000000;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="89" x2="412.3755" y1="697.3594" y2="697.3594"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="64.5928" x="94" y="707.5698">[Sell Deal]</text><polygon fill="#2874A6" points="336.2417,728.2969,346.2417,732.2969,336.2417,736.2969,340.2417,732.2969" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="732.2969" y2="732.2969"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104.8062" x="132.0713" y="727.231">Create Sell Deal</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="768.4297" y2="768.4297"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="768.4297" y2="781.4297"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="781.4297" y2="781.4297"/><polygon fill="#2874A6" points="359.2417,777.4297,349.2417,781.4297,359.2417,785.4297,355.2417,781.4297" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170.5806" x="355.2417" y="763.3638">Create Transport Contract</text><path d="M353,794.4297 L353,819.4297 L745,819.4297 L745,804.4297 L735,794.4297 L353,794.4297 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M735,794.4297 L735,804.4297 L745,804.4297 L735,794.4297 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="371.8711" x="359" y="811.4966">The transport contract outlines terms for gas movement.</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="845.6953" y2="845.6953"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="845.6953" y2="858.6953"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="858.6953" y2="858.6953"/><polygon fill="#2874A6" points="359.2417,854.6953,349.2417,858.6953,359.2417,862.6953,355.2417,858.6953" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155.6826" x="355.2417" y="840.6294">Proceed to Nominations</text><path d="M89,873.6953 L165.624,873.6953 L165.624,880.8281 L155.624,890.8281 L89,890.8281 L89,873.6953 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="154.9297" style="stroke:#000000;stroke-width:1.5;" width="1018.9424" x="89" y="873.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="31.624" x="104" y="886.7622">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="133.1978" x="180.624" y="885.9058">[Create Nominations]</text><polygon fill="#2874A6" points="336.2417,941.2266,346.2417,945.2266,336.2417,949.2266,340.2417,945.2266" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="945.2266" y2="945.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155.3145" x="132.0713" y="940.1606">Select Nomination Type</text><path d="M353,895.8281 L353,980.8281 L1092,980.8281 L1092,905.8281 L1082,895.8281 L353,895.8281 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M1082,895.8281 L1082,905.8281 L1092,905.8281 L1082,895.8281 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119.3867" x="359" y="912.895">Nomination types:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="565.9507" x="359" y="928.0278">- Buy Nominations: Requests related to purchased energy being transported or stored.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="544.2798" x="359" y="943.1606">- Sell Nominations: Requests related to sold energy being transported to the buyer.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="652.6152" x="359" y="958.2935">- Interconnects: Nominations specifying energy flow between different pipeline systems or facilities.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="718.7007" x="359" y="973.4263">- Pool and Storage: Nominations involving injection into or withdrawal from storage facilities or pooling points.</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="1007.625" y2="1007.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="1007.625" y2="1020.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="1020.625" y2="1020.625"/><polygon fill="#2874A6" points="359.2417,1016.625,349.2417,1020.625,359.2417,1024.625,355.2417,1020.625" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129.0225" x="355.2417" y="1002.5591">Process Nomination</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="1056.7578" y2="1056.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="1056.7578" y2="1069.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="1069.7578" y2="1069.7578"/><polygon fill="#2874A6" points="359.2417,1065.7578,349.2417,1069.7578,359.2417,1073.7578,355.2417,1069.7578" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128.5337" x="355.2417" y="1051.6919">Finalize Nomination</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="1098.8906" y2="1098.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="1098.8906" y2="1111.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="1111.8906" y2="1111.8906"/><polygon fill="#2874A6" points="359.2417,1107.8906,349.2417,1111.8906,359.2417,1115.8906,355.2417,1111.8906" style="stroke:#2874A6;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181.8667" x="355.2417" y="1093.8247">Perform Settlement Process</text><path d="M353,1124.8906 L353,1149.8906 L646,1149.8906 L646,1134.8906 L636,1124.8906 L353,1124.8906 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M636,1124.8906 L636,1134.8906 L646,1134.8906 L636,1124.8906 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="272.8794" x="359" y="1141.9575">Reconcile financials and operational data.</text><polygon fill="#2874A6" points="136.0713,1172.1563,126.0713,1176.1563,136.0713,1180.1563,132.0713,1176.1563" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="130.0713" x2="347.2417" y1="1176.1563" y2="1176.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154.1274" x="142.0713" y="1171.0903">Print Settlement Report</text></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="1274px" preserveAspectRatio="xMidYMid meet" style="width:1113px;height:1274px;background:#F9F9F9;" version="1.1" viewBox="0 0 1113 1274" width="1113px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#F9F9F9" height="1274" style="stroke:none;stroke-width:1;" width="1113" x="0" y="0"/><rect fill="none" height="458.3984" style="stroke:#FFFFFF;stroke-width:1.5;" width="683.7705" x="89" y="177.6953"/><rect fill="none" height="312.0625" style="stroke:#FFFFFF;stroke-width:1.5;" width="478.6626" x="284.1079" y="243.9609"/><rect fill="none" height="90.2031" style="stroke:#FFFFFF;stroke-width:1.5;" width="323.3755" x="89" y="650.0938"/><rect fill="none" height="154.9297" style="stroke:#FFFFFF;stroke-width:1.5;" width="1018.9424" x="89" y="873.6953"/><line style="stroke:#E7E7E7;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="125" x2="125" y1="81.2969" y2="1194.1563"/><line style="stroke:#E7E7E7;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="348.1079" x2="348.1079" y1="81.2969" y2="1194.1563"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46.1426" x="99" y="77.9951">Trader</text><ellipse cx="125.0713" cy="13.5" fill="#FFFF00" rx="8" ry="8" style="stroke:#E7E7E7;stroke-width:0.5;"/><path d="M125.0713,21.5 L125.0713,48.5 M112.0713,29.5 L138.0713,29.5 M125.0713,48.5 L112.0713,63.5 M125.0713,48.5 L138.0713,63.5 " fill="none" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46.1426" x="99" y="1206.1514">Trader</text><ellipse cx="125.0713" cy="1217.9531" fill="#FFFF00" rx="8" ry="8" style="stroke:#E7E7E7;stroke-width:0.5;"/><path d="M125.0713,1225.9531 L125.0713,1252.9531 M112.0713,1233.9531 L138.0713,1233.9531 M125.0713,1252.9531 L112.0713,1267.9531 M125.0713,1252.9531 L138.0713,1267.9531 " fill="none" style="stroke:#E7E7E7;stroke-width:0.5;"/><rect fill="#90EE90" height="30.2969" rx="2.5" ry="2.5" style="stroke:#2874A6;stroke-width:0.5;" width="108.2676" x="294.1079" y="50"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94.2676" x="301.1079" y="69.9951">ETRM system</text><rect fill="#90EE90" height="30.2969" rx="2.5" ry="2.5" style="stroke:#2874A6;stroke-width:0.5;" width="108.2676" x="294.1079" y="1193.1563"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94.2676" x="301.1079" y="1213.1514">ETRM system</text><path d="M5,96.2969 L5,136.2969 L470,136.2969 L470,106.2969 L460,96.2969 L5,96.2969 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M460,96.2969 L460,106.2969 L470,106.2969 L460,96.2969 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="444.3105" x="11" y="113.3638">The process starts with creating a deal and verifying configurations.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="403.5649" x="11" y="128.4966">Prerequisite configurations are mandatory before proceeding.</text><polygon fill="#2874A6" points="336.2417,158.6953,346.2417,162.6953,336.2417,166.6953,340.2417,162.6953" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="162.6953" y2="162.6953"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="87.5405" x="132.0713" y="157.6294">Create a deal</text><path d="M89,177.6953 L153.4429,177.6953 L153.4429,184.8281 L143.4429,194.8281 L89,194.8281 L89,177.6953 " fill="#555555" style="stroke:#FFFFFF;stroke-width:1.5;"/><rect fill="none" height="458.3984" style="stroke:#FFFFFF;stroke-width:1.5;" width="683.7705" x="89" y="177.6953"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19.4429" x="104" y="190.7622">alt</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="192.8384" x="168.4429" y="189.9058">[Are configurations complete?]</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="215.9609" y2="215.9609"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="215.9609" y2="228.9609"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="228.9609" y2="228.9609"/><polygon fill="#2874A6" points="359.2417,224.9609,349.2417,228.9609,359.2417,232.9609,355.2417,228.9609" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="226.1543" x="355.2417" y="210.895">Proceed to Configure Prerequisites</text><path d="M284.1079,243.9609 L360.7319,243.9609 L360.7319,251.0938 L350.7319,261.0938 L284.1079,261.0938 L284.1079,243.9609 " fill="#555555" style="stroke:#FFFFFF;stroke-width:1.5;"/><rect fill="none" height="312.0625" style="stroke:#FFFFFF;stroke-width:1.5;" width="478.6626" x="284.1079" y="243.9609"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="31.624" x="299.1079" y="257.0278">loop</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="157.3838" x="375.7319" y="256.1714">[Configure Prerequisites]</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="282.2266" y2="282.2266"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="282.2266" y2="295.2266"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="295.2266" y2="295.2266"/><polygon fill="#2874A6" points="359.2417,291.2266,349.2417,295.2266,359.2417,299.2266,355.2417,295.2266" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395.5288" x="355.2417" y="277.1606">Configure Legal Entity, Business Unit, Strategy, and Portfolio</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="324.3594" y2="324.3594"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="324.3594" y2="337.3594"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="337.3594" y2="337.3594"/><polygon fill="#2874A6" points="359.2417,333.3594,349.2417,337.3594,359.2417,341.3594,355.2417,337.3594" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160.9448" x="355.2417" y="319.2935">Configure Supply Region</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="366.4922" y2="366.4922"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="366.4922" y2="379.4922"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="379.4922" y2="379.4922"/><polygon fill="#2874A6" points="359.2417,375.4922,349.2417,379.4922,359.2417,383.4922,355.2417,379.4922" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118.5869" x="355.2417" y="361.4263">Configure Pipeline</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="408.625" y2="408.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="408.625" y2="421.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="421.625" y2="421.625"/><polygon fill="#2874A6" points="359.2417,417.625,349.2417,421.625,359.2417,425.625,355.2417,421.625" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177.9312" x="355.2417" y="403.5591">Configure Pipeline Location</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="450.7578" y2="450.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="450.7578" y2="463.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="463.7578" y2="463.7578"/><polygon fill="#2874A6" points="359.2417,459.7578,349.2417,463.7578,359.2417,467.7578,355.2417,463.7578" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155.8159" x="355.2417" y="445.6919">Configure Pipeline Zone</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="492.8906" y2="492.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="492.8906" y2="505.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="505.8906" y2="505.8906"/><polygon fill="#2874A6" points="359.2417,501.8906,349.2417,505.8906,359.2417,509.8906,355.2417,505.8906" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153.7275" x="355.2417" y="487.8247">Configure Counterparty</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="535.0234" y2="535.0234"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="535.0234" y2="548.0234"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="548.0234" y2="548.0234"/><polygon fill="#2874A6" points="359.2417,544.0234,349.2417,548.0234,359.2417,552.0234,355.2417,548.0234" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141.5781" x="355.2417" y="529.9575">Create Rate Schedule</text><polygon fill="#2874A6" points="136.0713,580.1563,126.0713,584.1563,136.0713,588.1563,132.0713,584.1563" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="130.0713" x2="347.2417" y1="584.1563" y2="584.1563"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169.9712" x="142.0713" y="579.0903">Configurations Completed</text><line style="stroke:#FFFFFF;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="89" x2="772.7705" y1="593.1563" y2="593.1563"/><text fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="186.9194" x="94" y="603.3667">[Configurations are complete]</text><polygon fill="#2874A6" points="136.0713,624.0938,126.0713,628.0938,136.0713,632.0938,132.0713,628.0938" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="130.0713" x2="347.2417" y1="628.0938" y2="628.0938"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199.1704" x="142.0713" y="623.0278">Proceed to Deal type selection</text><path d="M89,650.0938 L153.4429,650.0938 L153.4429,657.2266 L143.4429,667.2266 L89,667.2266 L89,650.0938 " fill="#555555" style="stroke:#FFFFFF;stroke-width:1.5;"/><rect fill="none" height="90.2031" style="stroke:#FFFFFF;stroke-width:1.5;" width="323.3755" x="89" y="650.0938"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19.4429" x="104" y="663.1606">alt</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="65.0547" x="168.4429" y="662.3042">[Buy Deal]</text><polygon fill="#2874A6" points="336.2417,684.3594,346.2417,688.3594,336.2417,692.3594,340.2417,688.3594" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="688.3594" y2="688.3594"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106.1836" x="132.0713" y="683.2935">Create Buy Deal</text><line style="stroke:#FFFFFF;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="89" x2="412.3755" y1="697.3594" y2="697.3594"/><text fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="64.5928" x="94" y="707.5698">[Sell Deal]</text><polygon fill="#2874A6" points="336.2417,728.2969,346.2417,732.2969,336.2417,736.2969,340.2417,732.2969" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="732.2969" y2="732.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104.8062" x="132.0713" y="727.231">Create Sell Deal</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="768.4297" y2="768.4297"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="768.4297" y2="781.4297"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="781.4297" y2="781.4297"/><polygon fill="#2874A6" points="359.2417,777.4297,349.2417,781.4297,359.2417,785.4297,355.2417,781.4297" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170.5806" x="355.2417" y="763.3638">Create Transport Contract</text><path d="M353,794.4297 L353,819.4297 L745,819.4297 L745,804.4297 L735,794.4297 L353,794.4297 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M735,794.4297 L735,804.4297 L745,804.4297 L735,794.4297 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="371.8711" x="359" y="811.4966">The transport contract outlines terms for gas movement.</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="845.6953" y2="845.6953"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="845.6953" y2="858.6953"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="858.6953" y2="858.6953"/><polygon fill="#2874A6" points="359.2417,854.6953,349.2417,858.6953,359.2417,862.6953,355.2417,858.6953" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155.6826" x="355.2417" y="840.6294">Proceed to Nominations</text><path d="M89,873.6953 L165.624,873.6953 L165.624,880.8281 L155.624,890.8281 L89,890.8281 L89,873.6953 " fill="#555555" style="stroke:#FFFFFF;stroke-width:1.5;"/><rect fill="none" height="154.9297" style="stroke:#FFFFFF;stroke-width:1.5;" width="1018.9424" x="89" y="873.6953"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="31.624" x="104" y="886.7622">loop</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="133.1978" x="180.624" y="885.9058">[Create Nominations]</text><polygon fill="#2874A6" points="336.2417,941.2266,346.2417,945.2266,336.2417,949.2266,340.2417,945.2266" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="125.0713" x2="342.2417" y1="945.2266" y2="945.2266"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155.3145" x="132.0713" y="940.1606">Select Nomination Type</text><path d="M353,895.8281 L353,980.8281 L1092,980.8281 L1092,905.8281 L1082,895.8281 L353,895.8281 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M1082,895.8281 L1082,905.8281 L1092,905.8281 L1082,895.8281 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119.3867" x="359" y="912.895">Nomination types:</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="565.9507" x="359" y="928.0278">- Buy Nominations: Requests related to purchased energy being transported or stored.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="544.2798" x="359" y="943.1606">- Sell Nominations: Requests related to sold energy being transported to the buyer.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="652.6152" x="359" y="958.2935">- Interconnects: Nominations specifying energy flow between different pipeline systems or facilities.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="718.7007" x="359" y="973.4263">- Pool and Storage: Nominations involving injection into or withdrawal from storage facilities or pooling points.</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="1007.625" y2="1007.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="1007.625" y2="1020.625"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="1020.625" y2="1020.625"/><polygon fill="#2874A6" points="359.2417,1016.625,349.2417,1020.625,359.2417,1024.625,355.2417,1020.625" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129.0225" x="355.2417" y="1002.5591">Process Nomination</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="1056.7578" y2="1056.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="1056.7578" y2="1069.7578"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="1069.7578" y2="1069.7578"/><polygon fill="#2874A6" points="359.2417,1065.7578,349.2417,1069.7578,359.2417,1073.7578,355.2417,1069.7578" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128.5337" x="355.2417" y="1051.6919">Finalize Nomination</text><line style="stroke:#2874A6;stroke-width:1;" x1="348.2417" x2="390.2417" y1="1098.8906" y2="1098.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="390.2417" x2="390.2417" y1="1098.8906" y2="1111.8906"/><line style="stroke:#2874A6;stroke-width:1;" x1="349.2417" x2="390.2417" y1="1111.8906" y2="1111.8906"/><polygon fill="#2874A6" points="359.2417,1107.8906,349.2417,1111.8906,359.2417,1115.8906,355.2417,1111.8906" style="stroke:#2874A6;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181.8667" x="355.2417" y="1093.8247">Perform Settlement Process</text><path d="M353,1124.8906 L353,1149.8906 L646,1149.8906 L646,1134.8906 L636,1124.8906 L353,1124.8906 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M636,1124.8906 L636,1134.8906 L646,1134.8906 L636,1124.8906 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="272.8794" x="359" y="1141.9575">Reconcile financials and operational data.</text><polygon fill="#2874A6" points="136.0713,1172.1563,126.0713,1176.1563,136.0713,1180.1563,132.0713,1176.1563" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="130.0713" x2="347.2417" y1="1176.1563" y2="1176.1563"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154.1274" x="142.0713" y="1171.0903">Print Settlement Report</text></g></svg></div></div>
+-->
+
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="ACTIVITY" height="1046px" preserveAspectRatio="xMidYMid meet" style="width:1320px;height:1046px;background:#F9F9F9;" version="1.1" viewBox="0 0 1320 1046" width="1320px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#F9F9F9" height="1046" style="stroke:none;stroke-width:1;" width="1320" x="0" y="0"/><ellipse cx="421.6394" cy="20" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1;"/><path d="M492.0427,54.418 L492.0427,62.9844 L472.0427,66.9844 L492.0427,70.9844 L492.0427,79.5508 A0,0 0 0 0 492.0427,79.5508 L957.3533,79.5508 A0,0 0 0 0 957.3533,79.5508 L957.3533,64.418 L947.3533,54.418 L492.0427,54.418 A0,0 0 0 0 492.0427,54.418 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M947.3533,54.418 L947.3533,64.418 L957.3533,64.418 L947.3533,54.418 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="444.3105" x="498.0427" y="71.4849">The process starts with creating a deal and verifying configurations.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="100.8066" x="371.2361" y="50"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80.8066" x="381.2361" y="71.1387">Create a deal</text><polygon fill="#D6EAF8" points="340.7776,103.9688,502.5012,103.9688,514.5012,115.9688,502.5012,127.9688,340.7776,127.9688,328.7776,115.9688,340.7776,103.9688" style="stroke:#2874A6;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161.7236" x="340.7776" y="119.7769">Are configurations complete?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="14.9585" x="313.8191" y="113.3745">No</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="19.2178" x="514.5012" y="113.3745">Yes</text><path d="M199.043,137.9688 L199.043,199.5 L179.043,203.5 L199.043,207.5 L199.043,269.0313 A0,0 0 0 0 199.043,269.0313 L623.6079,269.0313 A0,0 0 0 0 623.6079,269.0313 L623.6079,147.9688 L613.6079,137.9688 L199.043,137.9688 A0,0 0 0 0 199.043,137.9688 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M613.6079,137.9688 L613.6079,147.9688 L623.6079,147.9688 L613.6079,137.9688 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="403.5649" x="205.043" y="155.0356">Prerequisite configurations are mandatory before proceeding.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.1323" x="205.043" y="170.1685"> </text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140.4927" x="205.043" y="185.3013">Prerequisites include:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="397.4966" x="205.043" y="200.4341">- Configure legal entity, business unit, strategy, and portfolio</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164.6011" x="205.043" y="215.5669">- Configure supply region</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="366.9517" x="205.043" y="230.6997">- Configure pipeline, pipeline location, and pipeline zone</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160.6211" x="205.043" y="245.8325">- Configure counterparty</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145.2344" x="205.043" y="260.9653">- Create rate schedule</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="160.9707" x="18.0723" y="186.5156"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="140.9707" x="28.0723" y="207.6543">Configure prerequisites</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="175.1152" x="11" y="289.0313"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="155.1152" x="21" y="310.1699">Configurations completed</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="202.2266" x="643.6079" y="137.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="182.2266" x="653.6079" y="159.1074">Proceed to deal type selection</text><polygon fill="#D6EAF8" points="421.6394,329,433.6394,341,421.6394,353,409.6394,341,421.6394,329" style="stroke:#2874A6;stroke-width:0.5;"/><polygon fill="#D6EAF8" points="392.1682,373,451.1106,373,463.1106,385,451.1106,397,392.1682,397,380.1682,385,392.1682,373" style="stroke:#2874A6;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58.9424" x="392.1682" y="388.8081">Deal type?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47.5073" x="332.6609" y="382.4058">buy deal</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45.6543" x="463.1106" y="382.4058">sell deal</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="115.7773" x="296.3674" y="407"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95.7773" x="306.3674" y="428.1387">Create buy deal</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="113.7559" x="432.1448" y="407"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93.7559" x="442.1448" y="428.1387">Create sell deal</text><polygon fill="#D6EAF8" points="421.6394,446.9688,433.6394,458.9688,421.6394,470.9688,409.6394,458.9688,421.6394,446.9688" style="stroke:#2874A6;stroke-width:0.5;"/><path d="M528.1658,495.3867 L528.1658,503.9531 L508.1658,507.9531 L528.1658,511.9531 L528.1658,520.5195 A0,0 0 0 0 528.1658,520.5195 L818.6809,520.5195 A0,0 0 0 0 818.6809,520.5195 L818.6809,505.3867 L808.6809,495.3867 L528.1658,495.3867 A0,0 0 0 0 528.1658,495.3867 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M808.6809,495.3867 L808.6809,505.3867 L818.6809,505.3867 L808.6809,495.3867 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="269.5151" x="534.1658" y="512.4536">Defines terms for natural gas movement.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="173.0527" x="335.113" y="490.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="153.0527" x="345.113" y="512.1074">Create transport contract</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="162.3359" x="340.4714" y="544.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="142.3359" x="350.4714" y="566.0762">Proceed to nominations</text><path d="M521.325,632.9063 L521.325,679.3047 L501.325,683.3047 L521.325,687.3047 L521.325,733.7031 A0,0 0 0 0 521.325,733.7031 L1282.7664,733.7031 A0,0 0 0 0 1282.7664,733.7031 L1282.7664,642.9063 L1272.7664,632.9063 L521.325,632.9063 A0,0 0 0 0 521.325,632.9063 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M1272.7664,632.9063 L1272.7664,642.9063 L1282.7664,642.9063 L1272.7664,632.9063 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="182.1968" x="527.325" y="649.9731">Nomination types available:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.1323" x="527.325" y="665.106"> </text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="680.2388">-</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="122.9731" x="544.4128" y="680.2388">Buy nominations</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="474.373" x="667.386" y="680.2388">: Requests related to purchased natural gas being transported or stored.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="695.3716">-</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="122.4272" x="544.4128" y="695.3716">Sell nominations</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="454.0796" x="666.8401" y="695.3716">: Requests related to sold natural gas being transported to the buyer.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="710.5044">-</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="101.1563" x="544.4128" y="710.5044">Interconnects</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="582.7466" x="645.5691" y="710.5044">: Nominations specifying natural gas flow between different pipeline systems or facilities.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="725.6372">-</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="124.4204" x="544.4128" y="725.6372">Pool and storage</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="598.9331" x="668.8333" y="725.6372">: Nominations involving injection into or withdrawal from storage facilities or pooling points.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="159.3711" x="341.9539" y="666.3203"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="139.3711" x="351.9539" y="687.459">Select nomination type</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="137.7266" x="352.7761" y="753.7031"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="117.7266" x="362.7761" y="774.8418">Process nomination</text><polygon fill="#D6EAF8" points="421.6394,598.9063,433.6394,610.9063,421.6394,622.9063,409.6394,610.9063,421.6394,598.9063" style="stroke:#2874A6;stroke-width:0.5;"/><polygon fill="#D6EAF8" points="369.2229,807.6719,474.0559,807.6719,486.0559,819.6719,474.0559,831.6719,369.2229,831.6719,357.2229,819.6719,369.2229,807.6719" style="stroke:#2874A6;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104.833" x="369.2229" y="823.48">More nominations?</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="137.2754" x="353.0017" y="851.6719"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="117.2754" x="363.0017" y="872.8105">Finalize nomination</text><path d="M533.7439,910.0586 L533.7439,918.625 L513.7439,922.625 L533.7439,926.625 L533.7439,935.1914 A0,0 0 0 0 533.7439,935.1914 L820.8503,935.1914 A0,0 0 0 0 820.8503,935.1914 L820.8503,920.0586 L810.8503,910.0586 L533.7439,910.0586 A0,0 0 0 0 533.7439,910.0586 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M810.8503,910.0586 L810.8503,920.0586 L820.8503,920.0586 L810.8503,910.0586 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="266.1064" x="539.7439" y="927.1255">Reconcile financial and operational data.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="184.209" x="329.5349" y="905.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="164.209" x="339.5349" y="926.7793">Perform settlement rrocess</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="157.502" x="342.8884" y="959.6094"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="137.502" x="352.8884" y="980.748">Print settlement report</text><ellipse cx="421.6394" cy="1024.5781" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/><ellipse cx="421.6394" cy="1024.5781" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="30" y2="50"/><polygon fill="#2874A6" points="417.6394,40,421.6394,50,425.6394,40,421.6394,44" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="98.5576" y1="220.4844" y2="289.0313"/><polygon fill="#2874A6" points="94.5576,279.0313,98.5576,289.0313,102.5576,279.0313,98.5576,283.0313" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="328.7776" x2="98.5576" y1="115.9688" y2="115.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="98.5576" y1="115.9688" y2="186.5156"/><polygon fill="#2874A6" points="94.5576,176.5156,98.5576,186.5156,102.5576,176.5156,98.5576,180.5156" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="514.5012" x2="744.7212" y1="115.9688" y2="115.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="744.7212" x2="744.7212" y1="115.9688" y2="137.9688"/><polygon fill="#2874A6" points="740.7212,127.9688,744.7212,137.9688,748.7212,127.9688,744.7212,131.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="98.5576" y1="323" y2="341"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="409.6394" y1="341" y2="341"/><polygon fill="#2874A6" points="399.6394,337,409.6394,341,399.6394,345,403.6394,341" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="744.7212" x2="744.7212" y1="171.9375" y2="341"/><line style="stroke:#2874A6;stroke-width:1;" x1="744.7212" x2="433.6394" y1="341" y2="341"/><polygon fill="#2874A6" points="443.6394,337,433.6394,341,443.6394,345,439.6394,341" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="83.9688" y2="103.9688"/><polygon fill="#2874A6" points="417.6394,93.9688,421.6394,103.9688,425.6394,93.9688,421.6394,97.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="380.1682" x2="354.2561" y1="385" y2="385"/><line style="stroke:#2874A6;stroke-width:1;" x1="354.2561" x2="354.2561" y1="385" y2="407"/><polygon fill="#2874A6" points="350.2561,397,354.2561,407,358.2561,397,354.2561,401" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="463.1106" x2="489.0227" y1="385" y2="385"/><line style="stroke:#2874A6;stroke-width:1;" x1="489.0227" x2="489.0227" y1="385" y2="407"/><polygon fill="#2874A6" points="485.0227,397,489.0227,407,493.0227,397,489.0227,401" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="354.2561" x2="354.2561" y1="440.9688" y2="458.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="354.2561" x2="409.6394" y1="458.9688" y2="458.9688"/><polygon fill="#2874A6" points="399.6394,454.9688,409.6394,458.9688,399.6394,462.9688,403.6394,458.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="489.0227" x2="489.0227" y1="440.9688" y2="458.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="489.0227" x2="433.6394" y1="458.9688" y2="458.9688"/><polygon fill="#2874A6" points="443.6394,454.9688,433.6394,458.9688,443.6394,462.9688,439.6394,458.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="353" y2="373"/><polygon fill="#2874A6" points="417.6394,363,421.6394,373,425.6394,363,421.6394,367" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="470.9688" y2="490.9688"/><polygon fill="#2874A6" points="417.6394,480.9688,421.6394,490.9688,425.6394,480.9688,421.6394,484.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="524.9375" y2="544.9375"/><polygon fill="#2874A6" points="417.6394,534.9375,421.6394,544.9375,425.6394,534.9375,421.6394,538.9375" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="700.2891" y2="753.7031"/><polygon fill="#2874A6" points="417.6394,743.7031,421.6394,753.7031,425.6394,743.7031,421.6394,747.7031" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="622.9063" y2="666.3203"/><polygon fill="#2874A6" points="417.6394,656.3203,421.6394,666.3203,425.6394,656.3203,421.6394,660.3203" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="486.0559" x2="1294.7664" y1="819.6719" y2="819.6719"/><polygon fill="#2874A6" points="1290.7664,727.7891,1294.7664,717.7891,1298.7664,727.7891,1294.7664,723.7891" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="1294.7664" x2="1294.7664" y1="610.9063" y2="819.6719"/><line style="stroke:#2874A6;stroke-width:1;" x1="1294.7664" x2="433.6394" y1="610.9063" y2="610.9063"/><polygon fill="#2874A6" points="443.6394,606.9063,433.6394,610.9063,443.6394,614.9063,439.6394,610.9063" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="787.6719" y2="807.6719"/><polygon fill="#2874A6" points="417.6394,797.6719,421.6394,807.6719,425.6394,797.6719,421.6394,801.6719" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="578.9063" y2="598.9063"/><polygon fill="#2874A6" points="417.6394,588.9063,421.6394,598.9063,425.6394,588.9063,421.6394,592.9063" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="831.6719" y2="851.6719"/><polygon fill="#2874A6" points="417.6394,841.6719,421.6394,851.6719,425.6394,841.6719,421.6394,845.6719" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="885.6406" y2="905.6406"/><polygon fill="#2874A6" points="417.6394,895.6406,421.6394,905.6406,425.6394,895.6406,421.6394,899.6406" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="939.6094" y2="959.6094"/><polygon fill="#2874A6" points="417.6394,949.6094,421.6394,959.6094,425.6394,949.6094,421.6394,953.6094" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="993.5781" y2="1013.5781"/><polygon fill="#2874A6" points="417.6394,1003.5781,421.6394,1013.5781,425.6394,1003.5781,421.6394,1007.5781" style="stroke:#2874A6;stroke-width:1;"/></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="ACTIVITY" height="1046px" preserveAspectRatio="xMidYMid meet" style="width:1320px;height:1046px;background:#F9F9F9;" version="1.1" viewBox="0 0 1320 1046" width="1320px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#F9F9F9" height="1046" style="stroke:none;stroke-width:1;" width="1320" x="0" y="0"/><ellipse cx="421.6394" cy="20" fill="#DDDDDD" rx="10" ry="10" style="stroke:#DDDDDD;stroke-width:1;"/><path d="M492.0427,54.418 L492.0427,62.9844 L472.0427,66.9844 L492.0427,70.9844 L492.0427,79.5508 A0,0 0 0 0 492.0427,79.5508 L957.3533,79.5508 A0,0 0 0 0 957.3533,79.5508 L957.3533,64.418 L947.3533,54.418 L492.0427,54.418 A0,0 0 0 0 492.0427,54.418 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M947.3533,54.418 L947.3533,64.418 L957.3533,64.418 L947.3533,54.418 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="444.3105" x="498.0427" y="71.4849">The process starts with creating a deal and verifying configurations.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="100.8066" x="371.2361" y="50"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80.8066" x="381.2361" y="71.1387">Create a deal</text><polygon fill="#D6EAF8" points="340.7776,103.9688,502.5012,103.9688,514.5012,115.9688,502.5012,127.9688,340.7776,127.9688,328.7776,115.9688,340.7776,103.9688" style="stroke:#2874A6;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161.7236" x="340.7776" y="119.7769">Are configurations complete?</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="14.9585" x="313.8191" y="113.3745">No</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="19.2178" x="514.5012" y="113.3745">Yes</text><path d="M199.043,137.9688 L199.043,199.5 L179.043,203.5 L199.043,207.5 L199.043,269.0313 A0,0 0 0 0 199.043,269.0313 L623.6079,269.0313 A0,0 0 0 0 623.6079,269.0313 L623.6079,147.9688 L613.6079,137.9688 L199.043,137.9688 A0,0 0 0 0 199.043,137.9688 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M613.6079,137.9688 L613.6079,147.9688 L623.6079,147.9688 L613.6079,137.9688 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="403.5649" x="205.043" y="155.0356">Prerequisite configurations are mandatory before proceeding.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.1323" x="205.043" y="170.1685"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140.4927" x="205.043" y="185.3013">Prerequisites include:</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="397.4966" x="205.043" y="200.4341">- Configure legal entity, business unit, strategy, and portfolio</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164.6011" x="205.043" y="215.5669">- Configure supply region</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="366.9517" x="205.043" y="230.6997">- Configure pipeline, pipeline location, and pipeline zone</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160.6211" x="205.043" y="245.8325">- Configure counterparty</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145.2344" x="205.043" y="260.9653">- Create rate schedule</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="160.9707" x="18.0723" y="186.5156"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="140.9707" x="28.0723" y="207.6543">Configure prerequisites</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="175.1152" x="11" y="289.0313"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="155.1152" x="21" y="310.1699">Configurations completed</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="202.2266" x="643.6079" y="137.9688"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="182.2266" x="653.6079" y="159.1074">Proceed to deal type selection</text><polygon fill="#D6EAF8" points="421.6394,329,433.6394,341,421.6394,353,409.6394,341,421.6394,329" style="stroke:#2874A6;stroke-width:0.5;"/><polygon fill="#D6EAF8" points="392.1682,373,451.1106,373,463.1106,385,451.1106,397,392.1682,397,380.1682,385,392.1682,373" style="stroke:#2874A6;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58.9424" x="392.1682" y="388.8081">Deal type?</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47.5073" x="332.6609" y="382.4058">buy deal</text><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="45.6543" x="463.1106" y="382.4058">sell deal</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="115.7773" x="296.3674" y="407"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95.7773" x="306.3674" y="428.1387">Create buy deal</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="113.7559" x="432.1448" y="407"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93.7559" x="442.1448" y="428.1387">Create sell deal</text><polygon fill="#D6EAF8" points="421.6394,446.9688,433.6394,458.9688,421.6394,470.9688,409.6394,458.9688,421.6394,446.9688" style="stroke:#2874A6;stroke-width:0.5;"/><path d="M528.1658,495.3867 L528.1658,503.9531 L508.1658,507.9531 L528.1658,511.9531 L528.1658,520.5195 A0,0 0 0 0 528.1658,520.5195 L818.6809,520.5195 A0,0 0 0 0 818.6809,520.5195 L818.6809,505.3867 L808.6809,495.3867 L528.1658,495.3867 A0,0 0 0 0 528.1658,495.3867 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M808.6809,495.3867 L808.6809,505.3867 L818.6809,505.3867 L808.6809,495.3867 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="269.5151" x="534.1658" y="512.4536">Defines terms for natural gas movement.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="173.0527" x="335.113" y="490.9688"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="153.0527" x="345.113" y="512.1074">Create transport contract</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="162.3359" x="340.4714" y="544.9375"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="142.3359" x="350.4714" y="566.0762">Proceed to nominations</text><path d="M521.325,632.9063 L521.325,679.3047 L501.325,683.3047 L521.325,687.3047 L521.325,733.7031 A0,0 0 0 0 521.325,733.7031 L1282.7664,733.7031 A0,0 0 0 0 1282.7664,733.7031 L1282.7664,642.9063 L1272.7664,632.9063 L521.325,632.9063 A0,0 0 0 0 521.325,632.9063 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M1272.7664,632.9063 L1272.7664,642.9063 L1282.7664,642.9063 L1272.7664,632.9063 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="182.1968" x="527.325" y="649.9731">Nomination types available:</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.1323" x="527.325" y="665.106"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="680.2388">-</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="122.9731" x="544.4128" y="680.2388">Buy nominations</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="474.373" x="667.386" y="680.2388">: Requests related to purchased natural gas being transported or stored.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="695.3716">-</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="122.4272" x="544.4128" y="695.3716">Sell nominations</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="454.0796" x="666.8401" y="695.3716">: Requests related to sold natural gas being transported to the buyer.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="710.5044">-</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="101.1563" x="544.4128" y="710.5044">Interconnects</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="582.7466" x="645.5691" y="710.5044">: Nominations specifying natural gas flow between different pipeline systems or facilities.</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.6909" x="535.5896" y="725.6372">-</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="124.4204" x="544.4128" y="725.6372">Pool and storage</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="598.9331" x="668.8333" y="725.6372">: Nominations involving injection into or withdrawal from storage facilities or pooling points.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="159.3711" x="341.9539" y="666.3203"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="139.3711" x="351.9539" y="687.459">Select nomination type</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="137.7266" x="352.7761" y="753.7031"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="117.7266" x="362.7761" y="774.8418">Process nomination</text><polygon fill="#D6EAF8" points="421.6394,598.9063,433.6394,610.9063,421.6394,622.9063,409.6394,610.9063,421.6394,598.9063" style="stroke:#2874A6;stroke-width:0.5;"/><polygon fill="#D6EAF8" points="369.2229,807.6719,474.0559,807.6719,486.0559,819.6719,474.0559,831.6719,369.2229,831.6719,357.2229,819.6719,369.2229,807.6719" style="stroke:#2874A6;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104.833" x="369.2229" y="823.48">More nominations?</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="137.2754" x="353.0017" y="851.6719"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="117.2754" x="363.0017" y="872.8105">Finalize nomination</text><path d="M533.7439,910.0586 L533.7439,918.625 L513.7439,922.625 L533.7439,926.625 L533.7439,935.1914 A0,0 0 0 0 533.7439,935.1914 L820.8503,935.1914 A0,0 0 0 0 820.8503,935.1914 L820.8503,920.0586 L810.8503,910.0586 L533.7439,910.0586 A0,0 0 0 0 533.7439,910.0586 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><path d="M810.8503,910.0586 L810.8503,920.0586 L820.8503,920.0586 L810.8503,910.0586 " fill="#FAD7A0" style="stroke:#D35400;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="266.1064" x="539.7439" y="927.1255">Reconcile financial and operational data.</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="184.209" x="329.5349" y="905.6406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="164.209" x="339.5349" y="926.7793">Perform settlement rrocess</text><rect fill="#D6EAF8" height="33.9688" rx="12.5" ry="12.5" style="stroke:#2874A6;stroke-width:0.5;" width="157.502" x="342.8884" y="959.6094"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="137.502" x="352.8884" y="980.748">Print settlement report</text><ellipse cx="421.6394" cy="1024.5781" fill="none" rx="11" ry="11" style="stroke:#DDDDDD;stroke-width:1;"/><ellipse cx="421.6394" cy="1024.5781" fill="#DDDDDD" rx="6" ry="6" style="stroke:#DDDDDD;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="30" y2="50"/><polygon fill="#2874A6" points="417.6394,40,421.6394,50,425.6394,40,421.6394,44" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="98.5576" y1="220.4844" y2="289.0313"/><polygon fill="#2874A6" points="94.5576,279.0313,98.5576,289.0313,102.5576,279.0313,98.5576,283.0313" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="328.7776" x2="98.5576" y1="115.9688" y2="115.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="98.5576" y1="115.9688" y2="186.5156"/><polygon fill="#2874A6" points="94.5576,176.5156,98.5576,186.5156,102.5576,176.5156,98.5576,180.5156" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="514.5012" x2="744.7212" y1="115.9688" y2="115.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="744.7212" x2="744.7212" y1="115.9688" y2="137.9688"/><polygon fill="#2874A6" points="740.7212,127.9688,744.7212,137.9688,748.7212,127.9688,744.7212,131.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="98.5576" y1="323" y2="341"/><line style="stroke:#2874A6;stroke-width:1;" x1="98.5576" x2="409.6394" y1="341" y2="341"/><polygon fill="#2874A6" points="399.6394,337,409.6394,341,399.6394,345,403.6394,341" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="744.7212" x2="744.7212" y1="171.9375" y2="341"/><line style="stroke:#2874A6;stroke-width:1;" x1="744.7212" x2="433.6394" y1="341" y2="341"/><polygon fill="#2874A6" points="443.6394,337,433.6394,341,443.6394,345,439.6394,341" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="83.9688" y2="103.9688"/><polygon fill="#2874A6" points="417.6394,93.9688,421.6394,103.9688,425.6394,93.9688,421.6394,97.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="380.1682" x2="354.2561" y1="385" y2="385"/><line style="stroke:#2874A6;stroke-width:1;" x1="354.2561" x2="354.2561" y1="385" y2="407"/><polygon fill="#2874A6" points="350.2561,397,354.2561,407,358.2561,397,354.2561,401" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="463.1106" x2="489.0227" y1="385" y2="385"/><line style="stroke:#2874A6;stroke-width:1;" x1="489.0227" x2="489.0227" y1="385" y2="407"/><polygon fill="#2874A6" points="485.0227,397,489.0227,407,493.0227,397,489.0227,401" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="354.2561" x2="354.2561" y1="440.9688" y2="458.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="354.2561" x2="409.6394" y1="458.9688" y2="458.9688"/><polygon fill="#2874A6" points="399.6394,454.9688,409.6394,458.9688,399.6394,462.9688,403.6394,458.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="489.0227" x2="489.0227" y1="440.9688" y2="458.9688"/><line style="stroke:#2874A6;stroke-width:1;" x1="489.0227" x2="433.6394" y1="458.9688" y2="458.9688"/><polygon fill="#2874A6" points="443.6394,454.9688,433.6394,458.9688,443.6394,462.9688,439.6394,458.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="353" y2="373"/><polygon fill="#2874A6" points="417.6394,363,421.6394,373,425.6394,363,421.6394,367" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="470.9688" y2="490.9688"/><polygon fill="#2874A6" points="417.6394,480.9688,421.6394,490.9688,425.6394,480.9688,421.6394,484.9688" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="524.9375" y2="544.9375"/><polygon fill="#2874A6" points="417.6394,534.9375,421.6394,544.9375,425.6394,534.9375,421.6394,538.9375" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="700.2891" y2="753.7031"/><polygon fill="#2874A6" points="417.6394,743.7031,421.6394,753.7031,425.6394,743.7031,421.6394,747.7031" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="622.9063" y2="666.3203"/><polygon fill="#2874A6" points="417.6394,656.3203,421.6394,666.3203,425.6394,656.3203,421.6394,660.3203" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="486.0559" x2="1294.7664" y1="819.6719" y2="819.6719"/><polygon fill="#2874A6" points="1290.7664,727.7891,1294.7664,717.7891,1298.7664,727.7891,1294.7664,723.7891" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="1294.7664" x2="1294.7664" y1="610.9063" y2="819.6719"/><line style="stroke:#2874A6;stroke-width:1;" x1="1294.7664" x2="433.6394" y1="610.9063" y2="610.9063"/><polygon fill="#2874A6" points="443.6394,606.9063,433.6394,610.9063,443.6394,614.9063,439.6394,610.9063" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="787.6719" y2="807.6719"/><polygon fill="#2874A6" points="417.6394,797.6719,421.6394,807.6719,425.6394,797.6719,421.6394,801.6719" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="578.9063" y2="598.9063"/><polygon fill="#2874A6" points="417.6394,588.9063,421.6394,598.9063,425.6394,588.9063,421.6394,592.9063" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="831.6719" y2="851.6719"/><polygon fill="#2874A6" points="417.6394,841.6719,421.6394,851.6719,425.6394,841.6719,421.6394,845.6719" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="885.6406" y2="905.6406"/><polygon fill="#2874A6" points="417.6394,895.6406,421.6394,905.6406,425.6394,895.6406,421.6394,899.6406" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="939.6094" y2="959.6094"/><polygon fill="#2874A6" points="417.6394,949.6094,421.6394,959.6094,425.6394,949.6094,421.6394,953.6094" style="stroke:#2874A6;stroke-width:1;"/><line style="stroke:#2874A6;stroke-width:1;" x1="421.6394" x2="421.6394" y1="993.5781" y2="1013.5781"/><polygon fill="#2874A6" points="417.6394,1003.5781,421.6394,1013.5781,425.6394,1003.5781,421.6394,1007.5781" style="stroke:#2874A6;stroke-width:1;"/></g></svg></div></div>
+
+<h3 id="workflow-explanation">Workflow explanation<a class="headerlink" href="#workflow-explanation" title="Permanent link">&para;</a></h3>
+<p>Here is the detailed workflow sequence for the ETRM process, reflecting the flow described in the the above diagram.</p>
+<ol>
+<li>
+<p><strong>Create a deal</strong></p>
+<ol>
+<li>The process begins when the trader initiates <a href="../deal_management/physical_deal/"><strong>creating a deal</strong></a>.</li>
+<li>The system verifies whether all prerequisite configurations are completed.</li>
+</ol>
+</li>
+<li>
+<p><strong>Check configurations</strong><br>
+If configurations are incomplete, the trader must complete them:</p>
+<ol>
+<li>
+<p><a href="../getting_started/inbook_structure/"><strong>Configure legal entity, business unit, strategy, and portfolio:</strong></a> Set up organizational and strategic frameworks.</p>
+</li>
+<li>
+<p><a href="../getting_started/supply_region/"><strong>Configure supply region:</strong></a> Define geographic regions for supply management.</p>
+</li>
+<li><a href="../getting_started/pipeline/"><strong>Configure pipeline, pipeline location, and pipeline zone:</strong></a> Specify pipelines for transporting natural gas, define physical locations and zones within the pipeline.</li>
+<li><a href="../getting_started/counterparty/counterparty/"><strong>Configure counterparty:</strong></a> Create and link trading partner details.</li>
+<li><a href="../getting_started/rate_schedule/"><strong>Create rate schedule:</strong></a> Set up pricing terms and conditions.
+<br></li>
+</ol>
+<p>Once configurations are complete, the system allows proceeding to deal type selection.</p>
+</li>
+<li>
+<p><strong>Select deal type</strong></p>
+<ol>
+<li>Based on the trader's choice, the system creates either:<ol>
+<li><a href="../deal_management/overview/"><strong>Buy deal:</strong></a> Represents the purchase of natural gas.</li>
+<li><a href="../deal_management/overview/"><strong>Sell deal:</strong></a> Represents the sale of natural gas.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Create transport contract</strong></p>
+<ol>
+<li>After selecting the deal type, the trader creates a <a href="../getting_started/transport_contract/"><strong>transport contract</strong>.</a></li>
+<li>The contract outlines the terms and conditions for transporting natural gas.</li>
+</ol>
+</li>
+<li>
+<p><strong>Proceed to nominations</strong><br>
+The system moves to the <a href="nominations/"><strong>nominations</strong></a> phase to schedule the movement of natural gas.</p>
+</li>
+<li>
+<p><strong>Select nomination type</strong></p>
+<ol>
+<li>Traders select from various nomination types:<ol>
+<li><strong>Buy nominations</strong>: Requests for purchased natural gas being transported or stored.</li>
+<li><strong>Sell nominations</strong>: Requests for sold natural gas being transported to buyers.</li>
+<li><strong>Interconnects</strong>: Specify gas flow between different pipeline systems or facilities.</li>
+<li><strong>Pool and storage nominations</strong>: Include injection into or withdrawal from storage facilities or pooling points.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Create and finalize nomination</strong></p>
+<ol>
+<li>The system processes the selected nominations, allowing for adjustments if necessary.</li>
+<li>Once all required nominations are complete, the system finalizes them.</li>
+</ol>
+</li>
+<li>
+<p><strong>Perform <a href="settlements/">settlement process</a></strong><br>
+The system reconciles financial and operational data as part of the settlement process.</p>
+</li>
+<li>
+<p><strong>Print <a href="settlements/">settlement report</a></strong><br>
+The workflow concludes with the trader printing a settlement report for record-keeping and compliance.</p>
+</li>
+</ol>
+<h2 id="how-ngenue-addresses-etrm-aspects">How nGenue addresses ETRM aspects<a class="headerlink" href="#how-ngenue-addresses-etrm-aspects" title="Permanent link">&para;</a></h2>
+<p>Below is a detailed explanation of how nGenue addresses key aspects of ETRM:</p>
+<h3 id="1-deal-and-contract-management">1. Deal and contract management<a class="headerlink" href="#1-deal-and-contract-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>What it manages</strong>: Centralizes the management of trading deals and contracts across the value chain.</p>
+</li>
+<li>
+<p><strong>Capabilities</strong>:</p>
+<ul>
+<li>Facilitates deal creation, execution, and settlement for both physical and financial trades.  </li>
+<li>Tracks contract terms, pricing structures, and expiration dates.  </li>
+<li>Supports hedging strategies to mitigate market risks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Benefits</strong>: Streamlines trading operations and ensures contractual compliance.</p>
+</li>
+</ul>
+<h3 id="2-pipeline-path-operations">2. Pipeline path operations<a class="headerlink" href="#2-pipeline-path-operations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>What it manages</strong>: Tracks and optimizes the movement of natural gas through pipeline networks. </p>
+</li>
+<li>
+<p><strong>Capabilities</strong>:</p>
+<ul>
+<li>Configures pipeline paths to ensure the seamless flow of gas from suppliers to end users.  </li>
+<li>Supports nomination, scheduling, and balancing to maximize throughput efficiency.  </li>
+<li>Provides detailed analytics to monitor and address pipeline constraints in real time. </li>
+</ul>
+</li>
+<li>
+<p><strong>Benefits</strong>: Minimizes transportation costs and ensures reliable gas delivery.</p>
+</li>
+</ul>
+<h3 id="3-ldc-configurations">3. LDC configurations<a class="headerlink" href="#3-ldc-configurations" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>What it manages</strong>: Customizes configurations for Local Distribution Companies (LDCs). </p>
+</li>
+<li>
+<p><strong>Capabilities</strong>:  </p>
+<ul>
+<li>Manages contracts between LDCs and suppliers or marketers.  </li>
+<li>Tracks volumes, delivery schedules, and rate structures specific to LDC agreements.  </li>
+<li>Automates compliance with LDC-specific operational rules and regulations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Benefits</strong>: Enhances efficiency in serving LDCs and reduces manual intervention.</p>
+</li>
+</ul>
+<h3 id="4-storage-and-distribution">4. Storage and distribution<a class="headerlink" href="#4-storage-and-distribution" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>What it manages</strong>: Handles the storage and distribution of natural gas to balance supply and demand. </p>
+</li>
+<li>
+<p><strong>Capabilities</strong>:  </p>
+<ul>
+<li>Supports inventory management for gas stored in underground or off-site facilities.  </li>
+<li>Optimizes withdrawal and injection cycles based on market conditions.  </li>
+<li>Provides tools to allocate storage costs to relevant contracts or deals.  </li>
+</ul>
+</li>
+<li><strong>Benefits</strong>: Ensures energy availability during peak demand and maximizes storage profitability.</li>
+</ul>
+<h3 id="5-risk-management">5. Risk management<a class="headerlink" href="#5-risk-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>What it manages</strong>: Identifies, assesses, and mitigates risks associated with trading and operations.  </li>
+<li><strong>Capabilities</strong>:  <ul>
+<li>Monitors market volatility and provides price forecasting tools.  </li>
+<li>Enables scenario analysis to evaluate the impact of market changes on profitability.  </li>
+<li>Tracks credit and operational risks associated with counterparties and logistics.  </li>
+</ul>
+</li>
+<li><strong>Benefits</strong>: Protects against financial losses and promotes informed decision-making.</li>
+</ul>
+<p>nGenue’s ETRM platform empowers businesses to achieve operational excellence while staying competitive in an ever-changing energy market.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../getting_started/end_users/create_end_user/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configure">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Configure
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../deal_management/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 nGenue
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "announce.dismiss", "navigation.sections", "navigation.footer", "content.code.annotate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../assets/js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../assets/js/typewriter.js"></script>
+      
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      
+        <script src="../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
