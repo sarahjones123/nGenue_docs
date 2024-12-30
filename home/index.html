@@ -1,0 +1,566 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ngenue documentation portal">
+      
+      
+        <meta name="author" content="Dipender Sharma">
+      
+      
+        <link rel="canonical" href="https://ngenue.com/home/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/ngenue_logo.jpeg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>nGenue overview - nGenue</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/css/custom.css">
+    
+      <link rel="stylesheet" href="../assets/css/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ngenue-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="nGenue" class="md-header__button md-logo" aria-label="nGenue" data-md-component="logo">
+      
+  <img src="../assets/images/ngenue_logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nGenue
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              nGenue overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+    
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="nGenue" class="md-nav__button md-logo" aria-label="nGenue" data-md-component="logo">
+      
+  <img src="../assets/images/ngenue_logo.jpeg" alt="logo">
+
+    </a>
+    nGenue
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../introduction/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-functionalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key functionalities
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ngenue-overview">nGenue overview<a class="headerlink" href="#ngenue-overview" title="Permanent link">&para;</a></h1>
+<p>nGenue is a comprehensive software platform designed to streamline and optimize the operations of natural gas marketers, utilities, and suppliers. Built specifically for the natural gas industry, nGenue integrates multiple functionalities into a single, robust solution, empowering businesses to efficiently manage their sales, marketing, billing, and customer service processes. With nGenue, companies can reduce operational complexity, ensure regulatory compliance, and improve profitability through automated workflows and real-time data insights.</p>
+<h2 id="key-functionalities">Key functionalities<a class="headerlink" href="#key-functionalities" title="Permanent link">&para;</a></h2>
+<p>The nGenue platform supports several core functionalities for distributors, LDCs, utilities, and pipelines in the natural gas sector, including:</p>
+<ul>
+<li>
+<p><strong>Automated pricing</strong> </br>
+   Automatically calculates and applies pricing based on contracts, consumption, and market conditions. </br>
+   The below flowchart shows data inputs (market conditions, contracts) leading to price calculations, resulting in customer pricing outputs.
+ <br />
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="ACTIVITY" height="298px" preserveAspectRatio="xMidYMid meet" style="width:190px;height:298px;background:#FFFFFF;" version="1.1" viewBox="0 0 190 298" width="190px" zoomAndPan="magnify" class="diagram"><defs/><g><ellipse cx="95.1299" cy="20" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="163.8945" x="13.1826" y="50"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="143.8945" x="23.1826" y="71.1387">Input Market Conditions</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="112.7598" x="38.75" y="103.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92.7598" x="48.75" y="125.1074">Input Contracts</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="109.3438" x="40.458" y="157.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="89.3438" x="50.458" y="179.0762">Calculate Price</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="168.2598" x="11" y="211.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="148.2598" x="21" y="233.0449">Output Customer Pricing</text><ellipse cx="95.1299" cy="276.875" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/><ellipse cx="95.1299" cy="276.875" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="95.1299" x2="95.1299" y1="30" y2="50"/><polygon fill="#181818" points="91.1299,40,95.1299,50,99.1299,40,95.1299,44" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="95.1299" x2="95.1299" y1="83.9688" y2="103.9688"/><polygon fill="#181818" points="91.1299,93.9688,95.1299,103.9688,99.1299,93.9688,95.1299,97.9688" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="95.1299" x2="95.1299" y1="137.9375" y2="157.9375"/><polygon fill="#181818" points="91.1299,147.9375,95.1299,157.9375,99.1299,147.9375,95.1299,151.9375" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="95.1299" x2="95.1299" y1="191.9063" y2="211.9063"/><polygon fill="#181818" points="91.1299,201.9063,95.1299,211.9063,99.1299,201.9063,95.1299,205.9063" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="95.1299" x2="95.1299" y1="245.875" y2="265.875"/><polygon fill="#181818" points="91.1299,255.875,95.1299,265.875,99.1299,255.875,95.1299,259.875" style="stroke:#181818;stroke-width:1;"/></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="ACTIVITY" height="298px" preserveAspectRatio="xMidYMid meet" style="width:190px;height:298px;background:#1B1B1B;" version="1.1" viewBox="0 0 190 298" width="190px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#1B1B1B" height="298" style="stroke:none;stroke-width:1;" width="190" x="0" y="0"/><ellipse cx="95.1299" cy="20" fill="#DDDDDD" rx="10" ry="10" style="stroke:#DDDDDD;stroke-width:1;"/><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="163.8945" x="13.1826" y="50"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="143.8945" x="23.1826" y="71.1387">Input Market Conditions</text><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="112.7598" x="38.75" y="103.9688"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92.7598" x="48.75" y="125.1074">Input Contracts</text><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="109.3438" x="40.458" y="157.9375"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="89.3438" x="50.458" y="179.0762">Calculate Price</text><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="168.2598" x="11" y="211.9063"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="148.2598" x="21" y="233.0449">Output Customer Pricing</text><ellipse cx="95.1299" cy="276.875" fill="none" rx="11" ry="11" style="stroke:#DDDDDD;stroke-width:1;"/><ellipse cx="95.1299" cy="276.875" fill="#DDDDDD" rx="6" ry="6" style="stroke:#DDDDDD;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="95.1299" x2="95.1299" y1="30" y2="50"/><polygon fill="#E7E7E7" points="91.1299,40,95.1299,50,99.1299,40,95.1299,44" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="95.1299" x2="95.1299" y1="83.9688" y2="103.9688"/><polygon fill="#E7E7E7" points="91.1299,93.9688,95.1299,103.9688,99.1299,93.9688,95.1299,97.9688" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="95.1299" x2="95.1299" y1="137.9375" y2="157.9375"/><polygon fill="#E7E7E7" points="91.1299,147.9375,95.1299,157.9375,99.1299,147.9375,95.1299,151.9375" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="95.1299" x2="95.1299" y1="191.9063" y2="211.9063"/><polygon fill="#E7E7E7" points="91.1299,201.9063,95.1299,211.9063,99.1299,201.9063,95.1299,205.9063" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="95.1299" x2="95.1299" y1="245.875" y2="265.875"/><polygon fill="#E7E7E7" points="91.1299,255.875,95.1299,265.875,99.1299,255.875,95.1299,259.875" style="stroke:#E7E7E7;stroke-width:1;"/></g></svg></div></div>
+</p>
+</li>
+<li>
+<p><strong>Billing</strong> </br>
+   Automates billing processes, generating accurate invoices that reflect actual consumption and contractual agreements.</br></p>
+</li>
+<li>
+<p><strong>Scheduling</strong> </br>
+   Manages the scheduling of deliveries and services, optimizing resource allocation and ensuring timely distribution of gas.</p>
+</li>
+<li>
+<p><strong>Customer management</strong></br>
+   Centralizes customer data, facilitating effective communication, account management, and personalized service.</p>
+</li>
+<li>
+<p><strong>Compliance</strong></br>
+   Automates compliance tracking and reporting, helping organizations adhere to industry regulations and avoid penalties.
+ <br />
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="ACTIVITY" height="298px" preserveAspectRatio="xMidYMid meet" style="width:152px;height:298px;background:#FFFFFF;" version="1.1" viewBox="0 0 152 298" width="152px" zoomAndPan="magnify" class="diagram"><defs/><g><ellipse cx="76.0254" cy="20" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="93.541" x="29.2549" y="50"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73.541" x="39.2549" y="71.1387">Collect Data</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="126.4297" x="12.8105" y="103.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="106.4297" x="22.8105" y="125.1074">Generate Reports</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="130.0508" x="11" y="157.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110.0508" x="21" y="179.0762">Submit for Review</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="101.2813" x="25.3848" y="211.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81.2813" x="35.3848" y="233.0449">Audit Process</text><ellipse cx="76.0254" cy="276.875" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1;"/><ellipse cx="76.0254" cy="276.875" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="76.0254" x2="76.0254" y1="30" y2="50"/><polygon fill="#181818" points="72.0254,40,76.0254,50,80.0254,40,76.0254,44" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="76.0254" x2="76.0254" y1="83.9688" y2="103.9688"/><polygon fill="#181818" points="72.0254,93.9688,76.0254,103.9688,80.0254,93.9688,76.0254,97.9688" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="76.0254" x2="76.0254" y1="137.9375" y2="157.9375"/><polygon fill="#181818" points="72.0254,147.9375,76.0254,157.9375,80.0254,147.9375,76.0254,151.9375" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="76.0254" x2="76.0254" y1="191.9063" y2="211.9063"/><polygon fill="#181818" points="72.0254,201.9063,76.0254,211.9063,80.0254,201.9063,76.0254,205.9063" style="stroke:#181818;stroke-width:1;"/><line style="stroke:#181818;stroke-width:1;" x1="76.0254" x2="76.0254" y1="245.875" y2="265.875"/><polygon fill="#181818" points="72.0254,255.875,76.0254,265.875,80.0254,255.875,76.0254,259.875" style="stroke:#181818;stroke-width:1;"/></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="ACTIVITY" height="298px" preserveAspectRatio="xMidYMid meet" style="width:152px;height:298px;background:#1B1B1B;" version="1.1" viewBox="0 0 152 298" width="152px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#1B1B1B" height="298" style="stroke:none;stroke-width:1;" width="152" x="0" y="0"/><ellipse cx="76.0254" cy="20" fill="#DDDDDD" rx="10" ry="10" style="stroke:#DDDDDD;stroke-width:1;"/><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="93.541" x="29.2549" y="50"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73.541" x="39.2549" y="71.1387">Collect Data</text><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="126.4297" x="12.8105" y="103.9688"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="106.4297" x="22.8105" y="125.1074">Generate Reports</text><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="130.0508" x="11" y="157.9375"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110.0508" x="21" y="179.0762">Submit for Review</text><rect fill="#313139" height="33.9688" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="101.2813" x="25.3848" y="211.9063"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81.2813" x="35.3848" y="233.0449">Audit Process</text><ellipse cx="76.0254" cy="276.875" fill="none" rx="11" ry="11" style="stroke:#DDDDDD;stroke-width:1;"/><ellipse cx="76.0254" cy="276.875" fill="#DDDDDD" rx="6" ry="6" style="stroke:#DDDDDD;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="76.0254" x2="76.0254" y1="30" y2="50"/><polygon fill="#E7E7E7" points="72.0254,40,76.0254,50,80.0254,40,76.0254,44" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="76.0254" x2="76.0254" y1="83.9688" y2="103.9688"/><polygon fill="#E7E7E7" points="72.0254,93.9688,76.0254,103.9688,80.0254,93.9688,76.0254,97.9688" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="76.0254" x2="76.0254" y1="137.9375" y2="157.9375"/><polygon fill="#E7E7E7" points="72.0254,147.9375,76.0254,157.9375,80.0254,147.9375,76.0254,151.9375" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="76.0254" x2="76.0254" y1="191.9063" y2="211.9063"/><polygon fill="#E7E7E7" points="72.0254,201.9063,76.0254,211.9063,80.0254,201.9063,76.0254,205.9063" style="stroke:#E7E7E7;stroke-width:1;"/><line style="stroke:#E7E7E7;stroke-width:1;" x1="76.0254" x2="76.0254" y1="245.875" y2="265.875"/><polygon fill="#E7E7E7" points="72.0254,255.875,76.0254,265.875,80.0254,255.875,76.0254,259.875" style="stroke:#E7E7E7;stroke-width:1;"/></g></svg></div></div>
+</p>
+</li>
+<li>
+<p><strong>Integration with EDI systems</strong> </br>
+   Seamlessly integrates with Electronic Data Interchange (EDI) systems for secure exchange of information related to transactions, customer data, and payments.
+ <br />
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="402px" preserveAspectRatio="xMidYMid meet" style="width:422px;height:402px;background:#FFFFFF;" version="1.1" viewBox="0 0 422 402" width="422px" zoomAndPan="magnify" class="diagram"><defs/><g><g id="cluster_nGenue"><path d="M133.5,6 L194.8818,6 A3.75,3.75 0 0 1 197.3818,8.5 L204.3818,28.2969 L312.5,28.2969 A2.5,2.5 0 0 1 315,30.7969 L315,100.8 A2.5,2.5 0 0 1 312.5,103.3 L133.5,103.3 A2.5,2.5 0 0 1 131,100.8 L131,8.5 A2.5,2.5 0 0 1 133.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="131" x2="204.3818" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="60.3818" x="135" y="20.9951">nGenue</text></g><g id="cluster_EDI System"><path d="M144.5,152.3 L235.085,152.3 A3.75,3.75 0 0 1 237.585,154.8 L244.585,174.5969 L301.5,174.5969 A2.5,2.5 0 0 1 304,177.0969 L304,247.09 A2.5,2.5 0 0 1 301.5,249.59 L144.5,249.59 A2.5,2.5 0 0 1 142,247.09 L142,154.8 A2.5,2.5 0 0 1 144.5,152.3 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="142" x2="244.585" y1="174.5969" y2="174.5969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89.585" x="146" y="167.2951">EDI System</text></g><g id="cluster_Utility Data Systems"><path d="M8.5,298.59 L171.3818,298.59 A3.75,3.75 0 0 1 173.8818,301.09 L180.8818,320.8869 L412.5,320.8869 A2.5,2.5 0 0 1 415,323.3869 L415,393.39 A2.5,2.5 0 0 1 412.5,395.89 L8.5,395.89 A2.5,2.5 0 0 1 6,393.39 L6,301.09 A2.5,2.5 0 0 1 8.5,298.59 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="180.8818" y1="320.8869" y2="320.8869"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="161.8818" x="10" y="313.5851">Utility Data Systems</text></g><g id="elem_nGenue System"><rect fill="#ADD8E6" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="151.3506" x="147.32" y="41"/><rect fill="#ADD8E6" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="278.6706" y="46"/><rect fill="#ADD8E6" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="276.6706" y="48"/><rect fill="#ADD8E6" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="276.6706" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111.3506" x="162.32" y="73.9951">nGenue System</text></g><g id="elem_EDI Interface"><rect fill="#FFFF00" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="130.8838" x="157.56" y="187.3"/><rect fill="#FFFF00" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="268.4438" y="192.3"/><rect fill="#FFFF00" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="266.4438" y="194.3"/><rect fill="#FFFF00" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="266.4438" y="198.3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90.8838" x="172.56" y="220.2951">EDI Interface</text></g><g id="elem_Customer Database"><rect fill="#90EE90" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="179.2549" x="22.37" y="333.59"/><rect fill="#90EE90" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="181.6249" y="338.59"/><rect fill="#90EE90" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="179.6249" y="340.59"/><rect fill="#90EE90" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="179.6249" y="344.59"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.2549" x="37.37" y="366.5851">Customer Database</text></g><g id="elem_Payment Records"><rect fill="#90EE90" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="162.9102" x="236.54" y="333.59"/><rect fill="#90EE90" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="379.4502" y="338.59"/><rect fill="#90EE90" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="377.4502" y="340.59"/><rect fill="#90EE90" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="377.4502" y="344.59"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122.9102" x="251.54" y="366.5851">Payment Records</text></g><g id="link_nGenue System_EDI Interface"><path d="M223,87.69 C223,114.8 223,154.02 223,181.06 " fill="none" id="nGenue System-to-EDI Interface" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="223,187.06,227,178.06,223,182.06,219,178.06,223,187.06" style="stroke:#181818;stroke-width:1;"/><polygon fill="none" points="229,123.3664,233,127.3664,229,131.3664,225,127.3664" style="stroke:#B38D22;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28.7676" x="236" y="132.3669">Blue</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64.8477" x="151.3045" y="107.3395">Data Flow</text></g><g id="link_EDI Interface_Customer Database"><path d="M190.88,233.95 C179.57,242.91 167.35,253.89 158,265.59 C141.44,286.32 130.6941,308.4118 122.7941,327.6018 " fill="none" id="EDI Interface-to-Customer Database" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="120.51,333.15,127.6349,326.3503,122.4134,328.5265,120.2373,323.3049,120.51,333.15" style="stroke:#181818;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91.8823" x="159" y="278.6569">Customer Info</text></g><g id="link_EDI Interface_Payment Records"><path d="M237.84,233.99 C255.69,261.1 282.1601,301.309 299.9601,328.339 " fill="none" id="EDI Interface-to-Payment Records" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="303.26,333.35,301.6508,323.6335,300.5101,329.1741,294.9694,328.0334,303.26,333.35" style="stroke:#181818;stroke-width:1;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86.2329" x="268" y="278.6569">Payment Info</text></g></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="402px" preserveAspectRatio="xMidYMid meet" style="width:422px;height:402px;background:#1B1B1B;" version="1.1" viewBox="0 0 422 402" width="422px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#1B1B1B" height="402" style="stroke:none;stroke-width:1;" width="422" x="0" y="0"/><g id="cluster_nGenue"><path d="M133.5,6 L194.8818,6 A3.75,3.75 0 0 1 197.3818,8.5 L204.3818,28.2969 L312.5,28.2969 A2.5,2.5 0 0 1 315,30.7969 L315,100.8 A2.5,2.5 0 0 1 312.5,103.3 L133.5,103.3 A2.5,2.5 0 0 1 131,100.8 L131,8.5 A2.5,2.5 0 0 1 133.5,6 " fill="none" style="stroke:#FFFFFF;stroke-width:1.5;"/><line style="stroke:#FFFFFF;stroke-width:1.5;" x1="131" x2="204.3818" y1="28.2969" y2="28.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="60.3818" x="135" y="20.9951">nGenue</text></g><g id="cluster_EDI System"><path d="M144.5,152.3 L235.085,152.3 A3.75,3.75 0 0 1 237.585,154.8 L244.585,174.5969 L301.5,174.5969 A2.5,2.5 0 0 1 304,177.0969 L304,247.09 A2.5,2.5 0 0 1 301.5,249.59 L144.5,249.59 A2.5,2.5 0 0 1 142,247.09 L142,154.8 A2.5,2.5 0 0 1 144.5,152.3 " fill="none" style="stroke:#FFFFFF;stroke-width:1.5;"/><line style="stroke:#FFFFFF;stroke-width:1.5;" x1="142" x2="244.585" y1="174.5969" y2="174.5969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89.585" x="146" y="167.2951">EDI System</text></g><g id="cluster_Utility Data Systems"><path d="M8.5,298.59 L171.3818,298.59 A3.75,3.75 0 0 1 173.8818,301.09 L180.8818,320.8869 L412.5,320.8869 A2.5,2.5 0 0 1 415,323.3869 L415,393.39 A2.5,2.5 0 0 1 412.5,395.89 L8.5,395.89 A2.5,2.5 0 0 1 6,393.39 L6,301.09 A2.5,2.5 0 0 1 8.5,298.59 " fill="none" style="stroke:#FFFFFF;stroke-width:1.5;"/><line style="stroke:#FFFFFF;stroke-width:1.5;" x1="6" x2="180.8818" y1="320.8869" y2="320.8869"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="161.8818" x="10" y="313.5851">Utility Data Systems</text></g><g id="elem_nGenue System"><rect fill="#ADD8E6" height="46.2969" rx="2.5" ry="2.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="151.3506" x="147.32" y="41"/><rect fill="#ADD8E6" height="10" style="stroke:#E7E7E7;stroke-width:0.5;" width="15" x="278.6706" y="46"/><rect fill="#ADD8E6" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="276.6706" y="48"/><rect fill="#ADD8E6" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="276.6706" y="52"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111.3506" x="162.32" y="73.9951">nGenue System</text></g><g id="elem_EDI Interface"><rect fill="#FFFF00" height="46.2969" rx="2.5" ry="2.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="130.8838" x="157.56" y="187.3"/><rect fill="#FFFF00" height="10" style="stroke:#E7E7E7;stroke-width:0.5;" width="15" x="268.4438" y="192.3"/><rect fill="#FFFF00" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="266.4438" y="194.3"/><rect fill="#FFFF00" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="266.4438" y="198.3"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90.8838" x="172.56" y="220.2951">EDI Interface</text></g><g id="elem_Customer Database"><rect fill="#90EE90" height="46.2969" rx="2.5" ry="2.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="179.2549" x="22.37" y="333.59"/><rect fill="#90EE90" height="10" style="stroke:#E7E7E7;stroke-width:0.5;" width="15" x="181.6249" y="338.59"/><rect fill="#90EE90" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="179.6249" y="340.59"/><rect fill="#90EE90" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="179.6249" y="344.59"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.2549" x="37.37" y="366.5851">Customer Database</text></g><g id="elem_Payment Records"><rect fill="#90EE90" height="46.2969" rx="2.5" ry="2.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="162.9102" x="236.54" y="333.59"/><rect fill="#90EE90" height="10" style="stroke:#E7E7E7;stroke-width:0.5;" width="15" x="379.4502" y="338.59"/><rect fill="#90EE90" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="377.4502" y="340.59"/><rect fill="#90EE90" height="2" style="stroke:#E7E7E7;stroke-width:0.5;" width="4" x="377.4502" y="344.59"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122.9102" x="251.54" y="366.5851">Payment Records</text></g><g id="link_nGenue System_EDI Interface"><path d="M223,87.69 C223,114.8 223,154.02 223,181.06 " fill="none" id="nGenue System-to-EDI Interface" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="223,187.06,227,178.06,223,182.06,219,178.06,223,187.06" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="none" points="229,123.3664,233,127.3664,229,131.3664,225,127.3664" style="stroke:#B38D22;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28.7676" x="236" y="132.3669">Blue</text><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64.8477" x="151.3045" y="107.3395">Data Flow</text></g><g id="link_EDI Interface_Customer Database"><path d="M190.88,233.95 C179.57,242.91 167.35,253.89 158,265.59 C141.44,286.32 130.6941,308.4118 122.7941,327.6018 " fill="none" id="EDI Interface-to-Customer Database" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="120.51,333.15,127.6349,326.3503,122.4134,328.5265,120.2373,323.3049,120.51,333.15" style="stroke:#E7E7E7;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91.8823" x="159" y="278.6569">Customer Info</text></g><g id="link_EDI Interface_Payment Records"><path d="M237.84,233.99 C255.69,261.1 282.1601,301.309 299.9601,328.339 " fill="none" id="EDI Interface-to-Payment Records" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="303.26,333.35,301.6508,323.6335,300.5101,329.1741,294.9694,328.0334,303.26,333.35" style="stroke:#E7E7E7;stroke-width:1;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86.2329" x="268" y="278.6569">Payment Info</text></g></g></svg></div></div>
+</p>
+</li>
+</ul>
+<!--
+For more information about *nGenue*, visit their [official website](https://ngenue.com/ldcs-natural-gas-software-solution/).
+
+-->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 nGenue
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "announce.dismiss", "navigation.sections", "navigation.footer", "content.code.annotate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../assets/js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../assets/js/typewriter.js"></script>
+      
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      
+        <script src="../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
