@@ -6,7 +6,7 @@ hide:
 
 # ETRM overview
 
-**ETRM** stands for *Energy, Trade, and Risk Management.*
+**ETRM** stands for *Energy Trading, and Risk Management.*
 
 ETRM in nGenue focuses on managing the full lifecycle of wholesale natural gas transactions. It integrates trading, transportation, risk management, and reporting capabilities into a unified platform, tailored to the unique requirements of wholesale operations.
 
@@ -155,7 +155,7 @@ end note
 
 :Finalize nomination;
 
-:Perform settlement rrocess;
+:Perform settlement process;
 note right
 Reconcile financial and operational data.
 end note
@@ -168,7 +168,7 @@ stop
 
 ### Workflow explanation
 
-Here is the detailed workflow sequence for the ETRM process, reflecting the flow described in the the above diagram.
+Here is the detailed workflow sequence for the ETRM process, reflecting the flow described in the above diagram.
 
 1. **Create a deal**
 

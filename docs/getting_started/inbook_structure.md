@@ -1,13 +1,18 @@
+---
+hide:
+ - toc
+---
+
 # Understanding legal entity, business unit, strategy, and portfolio
 
-The **legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals.
+The **legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals. Adding one line
 
 * **Legal entity:** The primary company entity engaging in contracts and transactions.
 * **Business unit:** Sub-entities within the legal entity, managing specific operations (e.g., retail gas, industrial supply).
 * **Strategy:** Defines goals like securing supply, managing costs, or maximizing revenue.
 * **Portfolio:** Groups contracts, deals, and assets under a strategy to facilitate reporting and analytics.
 
-    !!! example "Example"
+    !!! question "Example"
 
         For a natural gas company, the Legal entity might be **"EnergyCorp LLC,"** with business units like **"Wholesale operations"** and **"Retail services."** A strategy could involve maximizing sales to industrial clients, while the portfolio includes contracts and pipelines supporting that goal.
 

@@ -204,8 +204,8 @@ nav:
       - Counterparty:
           - Overview: getting_started/counterparty/counterparty.md
           - Configure: getting_started/counterparty/create_counterparty.md
-      - Rate schedule: getting_started/rate_schedule.md
-      - Transport contract: getting_started/transport_contract.md
+      - Rates and tariff: getting_started/rate_schedule.md
+      # - Transport contract: getting_started/transport_contract.md
       - End users: 
           - Overview: getting_started/end_users/overview.md
           - Configure: getting_started/end_users/create_end_user.md
