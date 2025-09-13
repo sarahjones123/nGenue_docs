@@ -1,0 +1,2634 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ngenue documentation portal">
+      
+      
+        <meta name="author" content="Dipender Sharma">
+      
+      
+        <link rel="canonical" href="https://www.ngenue.com/etrm/configure_indices_and_curves/">
+      
+      
+        <link rel="prev" href="../indices_and_curves/">
+      
+      
+        <link rel="next" href="../valuation_pools/">
+      
+      
+      <link rel="icon" href="../../assets/images/ngenue_favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Configure - nGenue Help Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+      <link rel="stylesheet" href="../../assets/css/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3MKL9HS3NJ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3MKL9HS3NJ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3MKL9HS3NJ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configure-indices-and-curves" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ngenue.com" title="nGenue Help Center" class="md-header__button md-logo" aria-label="nGenue Help Center" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nGenue Help Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configure
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ETRM
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../retail_market/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Retail
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../edi/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  EDI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prospect_quote_engine/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  PQE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ngenue.com" title="nGenue Help Center" class="md-nav__button md-logo" aria-label="nGenue Help Center" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_favicon.svg" alt="logo">
+
+    </a>
+    nGenue Help Center
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../introduction/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    ETRM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ETRM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etrm_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ETRM workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addressing_etrm_aspects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How nGenue addresses ETRM aspects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    ETRM components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            ETRM components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/inbook_structure/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Book structure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/supply_region/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Supply region
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/counterparty/counterparty/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Counterparty structure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/pipeline/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Pipeline, zones, and location
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../deal_management/overview/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Deal management
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../pipeline_scheduling/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Pipeline scheduling and nominations
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_7" id="__nav_3_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Indices and curves
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Indices and curves
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indices_and_curves/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-navigate-to-the-index-curve-definition-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Navigate to the Index curve definition screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-a-new-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add a new record
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Add a new record">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring tabs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring tabs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      General tab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-ldcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associated LDCs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associated pipelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-agreements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price agreements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#index-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composite members
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#used-in-composites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Used in composites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3rd-party-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3rd party integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final thoughts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../valuation_pools/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Supply valuation pool
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/transport_contract/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Transport contract
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../pricing/pricing_overview/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Pricing and invoices
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../market_to_market/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MTM and price exposure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../inventory_valuation/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Inventory valuation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../counterparty_credit/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Counterparty credit
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../retail_market/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Retail
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../edi/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    EDI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prospect_quote_engine/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    PQE
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-navigate-to-the-index-curve-definition-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Navigate to the Index curve definition screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-a-new-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add a new record
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Add a new record">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring tabs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring tabs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      General tab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-ldcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associated LDCs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associated pipelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-agreements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Price agreements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#index-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composite members
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#used-in-composites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Used in composites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3rd-party-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3rd party integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final thoughts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="configure-indices-and-curves">Configure indices and curves<a class="headerlink" href="#configure-indices-and-curves" title="Permanent link">¶</a></h1>
+<p>The following sections serves as a comprehensive guide, providing detailed, step-by-step instructions for configuring indices and curves within the nGenue application. It is designed to assist you in successfully setting up these critical components to ensure accurate pricing and financial reporting.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
+<ul>
+<li>You must have the requisite <em>add</em> or <em>modify</em> permissions in the <strong>Index curve definition</strong> screen. The details about this screen is discussed later.</li>
+<li>A local distribution company (LDC) and a pipeline must be properly configured prior to setting up any index.</li>
+</ul>
+<h2 id="process-steps">Process steps<a class="headerlink" href="#process-steps" title="Permanent link">¶</a></h2>
+<h3 id="step-1-navigate-to-the-index-curve-definition-screen">Step 1: Navigate to the Index curve definition screen<a class="headerlink" href="#step-1-navigate-to-the-index-curve-definition-screen" title="Permanent link">¶</a></h3>
+<ol>
+<li>Log in to the <strong>nGenue</strong> application.</li>
+<li>Click the <strong>Search</strong> icon and enter <em>index</em> in the search bar.  </li>
+<li>Double-click <strong>Index curve definition</strong> to open the respective screen.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_1.png" data-desc-position="bottom"><img alt="index_curve_definition" src="../images/index_curve_definition_1.png"></a></li>
+<li>The next screen is divided into two sections: <strong>Index query</strong> and <strong>Index configuration.</strong><ol>
+<li>The <strong>Index query</strong> section will allow you to narrow down records displayed in the main data grid. This provides the flexibility to view only relevant data, making the search process faster and more efficient.<ul>
+<li><strong>Filter by LDC:</strong> Filter records based on Local Distribution Companies (LDCs).</li>
+<li><strong>Filter By pipeline:</strong> Filter records according to pipelines.</li>
+<li><strong>Index group:</strong> This filter narrows down records based on predefined index groups.</li>
+<li><strong>Index type:</strong> Filter records by specific types of indexes from the dropdown.</li>
+<li><strong>Character search:</strong> This filter is a free-text search option that allows you to locate records based on a partial or full index name.
+ <a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_2.png" data-desc-position="bottom"><img alt="index_curve_filter" src="../images/index_curve_definition_2.png"></a></li>
+</ul>
+</li>
+<li>
+<p>The <strong>Index configuration</strong> section will have various options that facilitate the creation, modification, and management of index records. The table below describes the available icons and their functions:
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_3.png" data-desc-position="bottom"><img alt="index_configuration" src="../images/index_curve_definition_3.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>Icons</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/icons/add_record_icon.png" data-desc-position="bottom"><img alt="add" src="../images/icons/add_record_icon.png"></a></td>
+<td>Add a new record. By selecting this option, you can enter the necessary details for a new index, such as its name, category, and relevant pricing information. This action is typically the starting point for adding any new index data into the system.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/icons/edit_record_icon.png" data-desc-position="bottom"><img alt="edit" src="../images/icons/edit_record_icon.png"></a></td>
+<td>Edit the record detail. This is used to modify an existing record. This feature allows you to update an index entry if any details have changed or need correction. For example, if the index’s value or associated pricing parameters need adjustment, you can select the record, make the necessary changes, and save the updated information.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/icons/save_icon.png" data-desc-position="bottom"><img alt="save" src="../images/icons/save_icon.png"></a></td>
+<td>Save the record.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/icons/edit_current_icon.png" data-desc-position="bottom"><img alt="cancel" src="../images/icons/edit_current_icon.png"></a></td>
+<td>Cancel the updates being made to the record. This allow you to reset any data entered in the current session without saving. This feature is useful if you need to discard changes or start over with new data entry. Using this option, you can ensure that any unwanted inputs are removed before the data is saved, helping maintain data accuracy.</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/icons/delete_icon.png" data-desc-position="bottom"><img alt="delete" src="../images/icons/delete_icon.png"></a></td>
+<td>Delete a record. This cannot be undone.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="step-2-add-a-new-record">Step 2: Add a new record<a class="headerlink" href="#step-2-add-a-new-record" title="Permanent link">¶</a></h3>
+<ol>
+<li>Click on <strong>Add a new record</strong> icon in the <strong>Index configuration</strong> to add a new record.</li>
+<li>
+<p>Enter a name for the index and a unique identifier in the <strong>Index name</strong> and <strong>Code</strong> fields, respectively. This code serves as a quick reference for identifying the index, especially in areas where space is limited or when searching through large datasets. By using a concise code, users can rapidly locate specific indexes without needing the full index name, making this field practical for streamlined navigation and filtering.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>If the index name is <strong>"ABC index,"</strong> the code could be <strong>"ABCINDEX."</strong></p>
+</div>
+</li>
+<li>
+<p>The below table list down different fields along with its detailed description available to create a new record:</p>
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>The ID field is an auto-generated, unique identifier for each index record. It is primarily used in the backend to reference the index in other screens and modules, ensuring consistency across various parts of the system.</td>
+</tr>
+<tr>
+<td>Report name</td>
+<td>This field is a text field used for entering the name of the index as it should appear in reports. This field is particularly useful if the reporting name needs to differ slightly for clarity or if specific formatting is required in external reports.</td>
+</tr>
+<tr>
+<td>Commodity</td>
+<td>The Commodity field is a dropdown menu where users select the commodity type associated with the index. This dropdown is populated with predefined commodity types, which are configured in a separate screen known as <strong>"Commodities.”</strong> <br>Choosing the right commodity type is critical for accurate categorization, ensuring that the index is properly aligned with the relevant market or product type for pricing and analysis.</td>
+</tr>
+<tr>
+<td>Provider Index name</td>
+<td>This is a text field where users can enter the name of the index as defined by the external provider or publisher. This is typically the official name provided by third-party entities, such as ICE or Platts, and may differ from the internal index name used within the system. <br>Recording the provider index name allows users to cross-reference the internal index with its external counterpart, ensuring that any external data imports or comparisons are accurate.</td>
+</tr>
+<tr>
+<td>External provider</td>
+<td>This is a text field where users enter the name of the organization or entity that publishes the index data, such as a financial exchange or market data provider. This field allows you to specify the source of the index, ensuring traceability and accuracy, especially in cases where indexes from multiple providers are used. <br>Examples of common external providers might include ICE (Intercontinental Exchange) or Platts. Identifying the provider helps in validating data and attributing it to the correct source.</td>
+</tr>
+<tr>
+<td>Provider product ID</td>
+<td>This field is where you input the unique product ID or code assigned by the external provider to the index. This acts as a direct link to the external index, making it easier to integrate or verify the index data against the provider's records. <br>Using the official product ID ensures that the correct data is used and minimizes the risk of mismatches or errors, particularly when importing or updating index data from the provider.</td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_4.png" data-desc-position="bottom"><img alt="index_configurations" src="../images/index_curve_definition_4.png"></a></p>
+</li>
+<li>
+<p>By correctly filling out these fields, you will ensure that all necessary information is captured for accurate pricing and invoicing. This structured setup enables the system to reference the index data seamlessly across various screens and modules, supporting efficient data management and reporting throughout the application. </p>
+</li>
+</ol>
+<h4 id="configuring-tabs">Configuring tabs<a class="headerlink" href="#configuring-tabs" title="Permanent link">¶</a></h4>
+<p>The <strong>Index configuration</strong> screen also consists of multiple tabs which provide a comprehensive framework for defining an index within the system. Each tab contains specific settings and fields that help classify and configure the index according to its usage, type, and integration with other parts of the system. This structure ensures that each index is appropriately organized and applied in the relevant contexts, such as pricing agreements, third-party integrations, and pipeline associations.</p>
+<h5 id="general-tab">General tab<a class="headerlink" href="#general-tab" title="Permanent link">¶</a></h5>
+<p>The <strong>General</strong> tab is the primary configuration area where most of the index’s defining characteristics are set. This tab contains several fields, each serving a specific purpose to ensure accurate setup and integration of the index in the system.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_5.png" data-desc-position="bottom"><img alt="general_tab" src="../images/index_curve_definition_5.png"></a></p>
+<p>Below are the fields and their descriptions:</p>
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Status</td>
+<td>A dropdown with two options: Active and Inactive. <br>Setting the index to Active enables it to appear in other screens and modules, making it available for use across the system. The Inactive status hides the index from other screens, effectively disabling it without deleting the record.</td>
+</tr>
+<tr>
+<td>Index type</td>
+<td>A dropdown with three options: Published, Internal, and LDC. <br> 1. Published: Indicates that the index is published by a provider (e.g., ICE, Platts). <br>2. Internal: Refers to indexes created within the system based on other indexes or benchmark values, such as NYMEX and Basis. <br>3. LDC: Designates indexes published by a Local Distribution Company (LDC).</td>
+</tr>
+<tr>
+<td>Index effective dates</td>
+<td>Date selectors for start and end dates, defining the period during which the index is valid. This range determines when the index data will be available for use, ensuring that only current and relevant indexes are applied.</td>
+</tr>
+<tr>
+<td>Enable index for retail pricing</td>
+<td>A checkbox that, when checked, enables the index for retail pricing. If left unchecked, the index will not be applied in retail pricing scenarios.</td>
+</tr>
+<tr>
+<td>Enable index for wholesale/financial pricing</td>
+<td>A checkbox that allows the index to be used in wholesale or financial pricing. Leaving this unchecked excludes the index from wholesale pricing applications.</td>
+</tr>
+<tr>
+<td>Index can be selected for basis values</td>
+<td>A checkbox indicating whether the index can be selected as a basis. When checked, the index is available as a basis option for pricing or other applications that require a basis selection.</td>
+</tr>
+<tr>
+<td>Index can be selected for cashout values</td>
+<td>A checkbox relevant to retail configurations, enabling the index for cashout selections when checked. This setting ensures the index is available for any cashout-related calculations.</td>
+</tr>
+<tr>
+<td>Optional Index Sub-Group</td>
+<td>A dropdown used to categorize the index into subgroups, which helps organize indexes by specific classifications. <br>Index groups are discussed further in the <strong>"Index group"</strong> section below.</td>
+</tr>
+<tr>
+<td>Holiday schedule</td>
+<td>A dropdown populated based on holiday schedules configured in the "Holiday Set" screen. Selecting a holiday set allows the index to account for holidays, ensuring that holidays are factored into index calculations.</td>
+</tr>
+<tr>
+<td>Expiry schedule</td>
+<td>A dropdown where users can define the expiration schedule for the index. This schedule determines when the index expires and is no longer valid for use.</td>
+</tr>
+<tr>
+<td>Index contains future daily pricing</td>
+<td>A checkbox that, when checked, indicates that the index contains daily pricing for future dates. Checking this option enables the use of both historical and future prices within the index.</td>
+</tr>
+<tr>
+<td>Group this index curve with parent index</td>
+<td>A checkbox that, when checked, allows the index to be grouped with a parent index. Once enabled, a dropdown appears to select the relevant parent index. This setting helps in scenarios where the index needs to be grouped with another to form a hierarchical relationship.</td>
+</tr>
+<tr>
+<td>Parent index/curve</td>
+<td>A dropdown list populated with other indexes created within the system. This dropdown only becomes active if the <strong>"Group this index curve with parent index"</strong> checkbox is checked, allowing users to specify the parent index.</td>
+</tr>
+<tr>
+<td>This is a Composite of Other Indexes</td>
+<td>When checked, marks the index as a composite index. Composite indexes are combinations of other indexes and are discussed further in the "Composite Index" section below.</td>
+</tr>
+<tr>
+<td>Index is inclusive of NYMEX</td>
+<td>A checkbox that, when checked, indicates that the index includes NYMEX pricing. This is useful for indexes that incorporate NYMEX values, ensuring that this inclusion is clear in the index definition.</td>
+</tr>
+<tr>
+<td>Monthly values are all-in</td>
+<td>A checkbox that, when checked, specifies that the index is monthly and represents an all-in value. Monthly indexes provide one value per month, which is used across daily pricing applications.</td>
+</tr>
+<tr>
+<td>Daily values are all-in</td>
+<td>A checkbox indicating that the index is a daily index with 30 or 31 values per month. Each day of the month has its own value, making it suitable for applications needing daily pricing details.</td>
+</tr>
+<tr>
+<td>Index values remain constant until changed</td>
+<td>A checkbox that, when selected, keeps the index value constant until a new value is manually set. This setting is helpful in scenarios where index values are not updated frequently.</td>
+</tr>
+<tr>
+<td>Create daily index records during monthly initialization</td>
+<td>A checkbox enabling the creation of daily index records as part of the monthly initialization process. When checked, this setting ensures daily records are automatically generated, streamlining data management.</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>A free-text field where users can enter any additional information or notes about the index. This field is flexible and can include observations, instructions, or other relevant details.</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these fields within the <strong>General</strong> tab is integral to establishing a detailed and functional index configuration, allowing for fine-tuned adjustments in how the index behaves and interacts with other system elements.</p>
+<h5 id="associated-ldcs">Associated LDCs<a class="headerlink" href="#associated-ldcs" title="Permanent link">¶</a></h5>
+<p>In the <strong>Associated LDCs</strong> tab, you can assign specific <strong>Local Distribution Companies (LDCs)</strong> to the index. This assignment ensures that only the selected LDCs will have this Index populated in their respective transactions. If an LDC is not selected, it will not utilize the Index in any operations involving it.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_6.png" data-desc-position="bottom"><img alt="associated_ldcs" src="../images/index_curve_definition_6.png"></a></p>
+<ul>
+<li><strong>Table structure:</strong> The tab contains a comprehensive table listing all LDCs currently assigned to the Index.</li>
+<li><strong>Create button:</strong> This button opens a pop-up window where users can assign or unassign LDCs using the <em>left/right/top/bottom</em> arrow keys.</li>
+<li><strong>Delete button:</strong> This function allows users to remove the currently selected LDC record from the index.</li>
+</ul>
+<h5 id="associated-pipelines">Associated pipelines<a class="headerlink" href="#associated-pipelines" title="Permanent link">¶</a></h5>
+<p>The <strong>Associated pipelines</strong> tab functions similarly to the LDCs tab, providing you with the ability to link specific pipelines to the Index. Only the selected pipelines will have access to this Index for any relevant transactions, while unselected pipelines will not utilize it.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_7.png" data-desc-position="bottom"><img alt="associated_pipelines" src="../images/index_curve_definition_7.png"></a></p>
+<ul>
+<li><strong>Table structure:</strong> The tab features a table listing all pipelines assigned to the Index. </li>
+<li><strong>Create button:</strong> This button launches a pop-up window where you can assign or unassign pipelines using the <em>left/right/top/bottom</em> arrow keys. </li>
+<li><strong>Delete button:</strong> You can click this button to delete the currently selected pipeline from the index.</li>
+</ul>
+<h5 id="price-agreements">Price agreements<a class="headerlink" href="#price-agreements" title="Permanent link">¶</a></h5>
+<p>The <strong>Price agreements</strong> tab serves a vital role within the retail side of the system. It consolidates all price agreements that have been configured in conjunction with the Index. This centralization allows for easy management and oversight of pricing strategies associated with the Index, ensuring that all relevant agreements are accounted for and accessible.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_8.png" data-desc-position="bottom"><img alt="price_agreements" src="../images/index_curve_definition_8.png"></a></p>
+<h5 id="index-groups">Index Groups<a class="headerlink" href="#index-groups" title="Permanent link">¶</a></h5>
+<p>In the <strong>Index groups</strong> tab, you can assign the index to a specific group of related indexes, which enhances organizational clarity and simplifies management. You can create a new Index group using the New button, allowing for greater flexibility in categorizing and associating indexes. You also have the option to either edit, update, modify or save the record.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_9.png" data-desc-position="bottom"><img alt="index_group" src="../images/index_curve_definition_9.png"></a></p>
+<h5 id="composite-members">Composite members<a class="headerlink" href="#composite-members" title="Permanent link">¶</a></h5>
+<p>In this section, you will be able to manage composite indexes, which allow for the calculation of one or more indexes through a defined set of formulas and calculation methods. This tab is critical for aggregating data from various indexes to derive meaningful insights or values.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_10.png" data-desc-position="bottom"><img alt="composite_members" src="../images/index_curve_definition_10.png"></a></p>
+<p>Below are the fields available on this tab and their detailed explanation:</p>
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Composite Calculation Method</td>
+<td>This field is presented as a dropdown menu from which users can select the method for calculating the composite index. The chosen calculation method dictates how the index values will be processed and combined. Users must select an appropriate method that aligns with their desired calculation approach.</td>
+</tr>
+<tr>
+<td>Sample Date Test</td>
+<td>This is a date selection dropdown where users can pick a specific date. The selected date serves as a reference point to evaluate the composite index value on that day. After selecting both the composite calculation method and the sample date, users can click the Test Price button to proceed.</td>
+</tr>
+<tr>
+<td>Composite Price</td>
+<td>After the Test Price button is clicked, the calculated price for the composite index will populate this field. This price is derived based on the selected method and date. It is crucial for users to verify that the computed price aligns with their expectations and the logic of the calculation method selected.</td>
+</tr>
+<tr>
+<td>Add/Edit/Delete/Cancel/Save</td>
+<td>You can manage the underlying data that contribute to the composite index's final value. You’ll be able to either create a new record, modify, clear, delete or save the changes to the record.</td>
+</tr>
+<tr>
+<td>Re-Calculate Composite Values</td>
+<td>Using the Re-Calculate Composite Values button, you can trigger a recalculation of the composite values whenever the calculation method is modified, ensuring that any changes are reflected in the derived values.</td>
+</tr>
+</tbody>
+</table>
+<p>There is another section that is comprised of seven columns, each configured to support the formulation of composite index calculations:</p>
+<table>
+<thead>
+<tr>
+<th>Columns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Composite Member</td>
+<td>This column lists the origin indexes that serve as the foundation for the composite index. Users must select which indexes to incorporate into their composite calculations.</td>
+</tr>
+<tr>
+<td>Index Point</td>
+<td>Here, you can specify where the values of the selected indexes will be drawn from for calculation purposes. This defines the source data for the composite index.</td>
+</tr>
+<tr>
+<td>Multiplier</td>
+<td>This field requires users to input a numeric value. The multiplier is utilized in conjunction with an operator to perform calculations on the index values.</td>
+</tr>
+<tr>
+<td>Sample Value</td>
+<td>You can input a sample value here, which helps estimate and visualize the potential outcomes of the calculations.</td>
+</tr>
+<tr>
+<td>Operator</td>
+<td>This dropdown allows users to select the type of operation that will be applied to the index values. Different operators can yield significantly different results, depending on the chosen calculation method.</td>
+</tr>
+<tr>
+<td>Published Rate</td>
+<td>This column displays the actual value of the origin index for the selected entry, allowing users to cross-check calculated values against the published rates to ensure accuracy.</td>
+</tr>
+<tr>
+<td>Daily</td>
+<td>This is a checkbox indicating whether the index is considered a daily index. When checked, it signifies that the associated calculations will pertain to daily data.</td>
+</tr>
+</tbody>
+</table>
+<p>This comprehensive structure within the Composite Members tab not only facilitates the configuration and management of composite indexes but also ensures that users can effectively validate and adjust calculations based on their specific needs and parameters.</p>
+<h5 id="used-in-composites">Used in composites<a class="headerlink" href="#used-in-composites" title="Permanent link">¶</a></h5>
+<p>The <strong>Used in composites</strong> tab provides insight into whether the selected index is utilized in any composite index calculations. This feature is beneficial for tracking the origin index's role in composite calculations, enhancing the user's understanding of the index's overall impact within the system.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_11.png" data-desc-position="bottom"><img alt="used_in_composites" src="../images/index_curve_definition_11.png"></a></p>
+<h5 id="3rd-party-integration">3<sup>rd</sup> party integration<a class="headerlink" href="#3rd-party-integration" title="Permanent link">¶</a></h5>
+<p>The <strong>3<sup>rd</sup> party integration</strong> tab facilitates connections with external systems through API integration. This feature allows the nGenue system to interface with external Energy Trading and Risk Management (ETRM) systems, enabling the transfer of index values and other relevant data. Once the appropriate values and endpoints are selected and configured, the Index values will be sourced from the external ETRM, ensuring that the nGenue system remains synchronized with external data streams. This integration is crucial for users who require real-time data exchange and comprehensive operational flexibility.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/index_curve_definition_12.png" data-desc-position="bottom"><img alt="used_in_composites" src="../images/index_curve_definition_12.png"></a></p>
+<h2 id="final-thoughts">Final thoughts<a class="headerlink" href="#final-thoughts" title="Permanent link">¶</a></h2>
+<p>The <strong>Index curve definition</strong> is an essential part of configuring pricing data within the system, impacting both retail and wholesale processes. By effectively setting up the filters, main data, and tab configurations, users can ensure that the Index definitions are comprehensive and accurate for pricing applications. The screen's flexibility, with features for creating, editing, saving, and organizing Index data, allows for efficient and precise management of Index records. Mastering the use of this screen supports consistent pricing strategies and smooth invoice generation across various business operations.</p>
+<hr>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback! Help us improve this page by <a href="https://docs.google.com/forms/d/e/1FAIpQLSffAczVa5Q6C_YP9pabBqzj-qiQwYQOsYRibUgXnQwRl_yLGQ/viewform?usp=dialog" target="_blank" rel="noopener">filing an issue</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../indices_and_curves/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Understand">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Understand
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../valuation_pools/" class="md-footer__link md-footer__link--next" aria-label="Next: Understand">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Understand
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 nGenue
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ngenue" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/c/ngenue" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ngenue" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/ngenue" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "announce.dismiss", "content.tabs.link", "navigation.sections", "navigation.footer", "content.code.annotate", "search.suggest", "header.autohide"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../assets/js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/js/typewriter.js"></script>
+      
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      
+        <script src="../../assets/js/removeCredits.js"></script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

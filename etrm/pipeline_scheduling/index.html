@@ -1,0 +1,2526 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ngenue documentation portal">
+      
+      
+        <meta name="author" content="Dipender Sharma">
+      
+      
+        <link rel="canonical" href="https://www.ngenue.com/etrm/pipeline_scheduling/">
+      
+      
+        <link rel="prev" href="../../deal_management/evergreen_deal/">
+      
+      
+        <link rel="next" href="../configure_pipeline_scheduling/">
+      
+      
+      <link rel="icon" href="../../assets/images/ngenue_favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Understand - nGenue Help Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+      <link rel="stylesheet" href="../../assets/css/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3MKL9HS3NJ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3MKL9HS3NJ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3MKL9HS3NJ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#understanding-pipeline-scheduling-and-nominations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ngenue.com" title="nGenue Help Center" class="md-header__button md-logo" aria-label="nGenue Help Center" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nGenue Help Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Understand
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ETRM
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../retail_market/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Retail
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../edi/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  EDI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prospect_quote_engine/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  PQE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ngenue.com" title="nGenue Help Center" class="md-nav__button md-logo" aria-label="nGenue Help Center" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_favicon.svg" alt="logo">
+
+    </a>
+    nGenue Help Center
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../introduction/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    ETRM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ETRM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../etrm_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ETRM workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addressing_etrm_aspects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How nGenue addresses ETRM aspects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    ETRM components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            ETRM components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/inbook_structure/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Book structure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/supply_region/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Supply region
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/counterparty/counterparty/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Counterparty structure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/pipeline/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Pipeline, zones, and location
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../deal_management/overview/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Deal management
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_6" id="__nav_3_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pipeline scheduling and nominations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Pipeline scheduling and nominations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-pipeline-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is pipeline scheduling?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-nominations" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is nominations?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configure_pipeline_scheduling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../indices_and_curves/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Indices and curves
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../valuation_pools/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Supply valuation pool
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/transport_contract/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Transport contract
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../pricing/pricing_overview/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Pricing and invoices
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../market_to_market/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    MTM and price exposure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../inventory_valuation/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Inventory valuation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../counterparty_credit/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Counterparty credit
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../retail_market/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Retail
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../edi/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    EDI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prospect_quote_engine/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    PQE
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-pipeline-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is pipeline scheduling?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-nominations" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is nominations?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="understanding-pipeline-scheduling-and-nominations">Understanding pipeline scheduling and nominations<a class="headerlink" href="#understanding-pipeline-scheduling-and-nominations" title="Permanent link">¶</a></h1>
+<h2 id="what-is-pipeline-scheduling">What is pipeline scheduling?<a class="headerlink" href="#what-is-pipeline-scheduling" title="Permanent link">¶</a></h2>
+<p>The <strong>pipeline scheduling</strong> module in the nGenue application is a critical component for managing gas nominations, overseeing delivery schedules, and ensuring balanced allocations across pipeline networks. This module allows users to configure transport agreements, assign contract numbers, and specify receipt and delivery points, all of which are essential for accurate and timely gas deliveries.</p>
+<p>Pipeline scheduling primarily involves transferring gas from one point to another, facilitating movement from one counterparty to another. These counterparties may include Local Distribution Companies (LDCs), brokers, or other trading entities. To achieve this transfer, pipelines or interconnects are utilized to ensure that gas is successfully scheduled from the origin point (Point A) to the destination (Point B).</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/effective_pipeline_scheduling.svg" data-desc-position="bottom"><img alt="effective_pipeline_scheduling_process" src="../images/effective_pipeline_scheduling.svg"></a></p>
+<p>For gas scheduling, several critical elements must be in place:</p>
+<ul>
+<li><strong>Pipeline information:</strong> The start and end points of the pipeline or interconnect that will be used to transport the gas.</li>
+<li><strong>Agreements:</strong> A valid deal between the counterparties and a transport agreement to ensure a legally binding framework for the transfer.</li>
+<li><strong>Nominated volume:</strong> The specific gas volume that is to be transported as agreed upon in the nomination.</li>
+</ul>
+<p>Once these elements are in place, a nomination is created. This nomination captures all scheduling details, which are then processed to schedule the gas transfer. The nomination details can be tracked and reviewed in the <a href="../../deal_management/overview/">Deal management</a> section under the relevant deal.</p>
+<h2 id="what-is-nominations">What is nominations?<a class="headerlink" href="#what-is-nominations" title="Permanent link">¶</a></h2>
+<p><strong>Nominations</strong> refer to the scheduling and allocation of natural gas quantities across various points in the supply chain. Nominations ensure proper coordination between buyers, sellers, pipelines, interconnects, and storage facilities to meet contractual obligations and operational requirements.</p>
+<!-- ## Configure pipeline scheduling
+
+The following article provides step-by-step instructions to assist users in efficiently scheduling gas nominations, handling transportation agreements, and monitoring gas flow across pipelines. The aim is to support accurate planning, seamless scheduling, and streamlined operations within the pipeline management process.
+
+### Prerequisites
+
+1. You should have the required permissions to _add_ or _modify_ the **Pipeline scheduling** module within the application.
+2. Necessary transport contracts, pipelines, and relevant LDC data must be pre-configured.
+3. All associated entities, such as receipt points, delivery points, and fuel rates, should be available for accurate scheduling.
+
+### Process steps
+
+#### Step 1: Navigate to the Pipeline scheduling screen
+
+1.  Log in to the **nGenue** application.
+2.  Click on the **Search** icon and enter *pipeline scheduling* in the search bar.  
+3.  Double-click **Pipeline scheduling** to open the respective screen where you can begin configuring pipeline scheduling.
+4. The next screen is divided into two sections: **Nomination settings** and **Nomination creation and management.**
+
+##### Nomination settings
+
+The **Nomination settings** serves as the initial step in the pipeline scheduling process. Here, you can apply specific filters to refine data and narrow down the pipelines available for scheduling. This focused selection of records ensures efficiency in locating the precise pipeline and nomination details required for scheduling gas transfers.
+
+Also, you can create a nomination by specifying essential details such as the start and end dates, transport agreements, and pipeline nominations. This section is critical for ensuring that all nominations align with contractual requirements and desired gas flow paths.
+
+The table below describes the available fields and their functions:
+
+| Fields      | Description                          |
+| ----------- | ------------------------------------ |
+| Pipeline  | This filter uses a dropdown list populated with all configured pipelines, which must be selected to schedule the gas transfer. If no pipelines have been created in the system, this dropdown will remain empty, underscoring the need for prior pipeline configuration. |
+| External legal entity   | This dropdown filter lists all external legal entities available in the system, pulling data from the **External legal entity** screen. Only entities configured in that screen will appear here. Selecting an external legal entity helps identify the counterparty involved in the transfer. |
+| Internal legal entity | This dropdown filter lists internal legal entities configured in the “Book Structure” screen, enabling users to designate the internal entity responsible for the deal. |
+| External business unit | This dropdown allows users to select from business units defined as external, drawing data from the **External business unit** screen. This filter provides further specificity regarding the counterparty’s business structure. |
+| Internal business unit | Similar to the **External business unit,** the internal business unit dropdown is populated with data from the **Book structure** screen. Selecting an internal business unit enables the user to specify the internal business unit involved in the scheduling transaction. |
+| Market area | This dropdown lists market areas available in the system and draws data from the **Master data** tab on the **PZL** screen. Selecting a market area narrows down the records to the designated area. This data only appears if the market areas have been configured in the **Master data** tab. |
+| Operating area | The **Operating area** dropdown, also sourced from the **Master data** tab in the **PZL** screen, allows users to refine their scheduling to a particular operational zone. This filter becomes essential when coordinating specific regional schedules and routes.|
+| Zone | The **Zone** dropdown allows users to select specific zones for scheduling, pulling data from the **Zones and Locations** tab on the **PZL** screen. Only configured zones will appear in this dropdown, further refining the results by geographical division.|
+| Scheduling date | The **Scheduling date** filter is a date picker dropdown where users select the intended date for gas scheduling. The chosen date must align with the deal’s active period, falling within the start and end dates specified in the **Deal management** screen. If the selected date lies outside the active range of the deal, the data will not populate, as this is a required criterion for scheduling.|
+| Load records | This action button displays the data matching in the **Nomination creation and management** section based on the chosen filter criteria, ensuring that only the relevant pipeline and nomination information appears. |
+
+There are additional fields that is primarily used when you create a new nominations. These fields are explained under [create a nomination](#create-a-nomination) section.
+
+##### Nomination creation and management
+
+In the **Nomination creation and management** section, after selecting the filters and loading the records, deal records for the specified scheduling date and pipeline will populate based on the deal type. These deal records appear in either the **Buys** or **Sells** sections, depending on whether it is a buy or a sell deal.
+
+The initial volume specified while configuring a deal is displayed as the **Planned volume** in this scheduling screen. From here, the nomination process begins, requiring you to define where and how the gas should be scheduled, through which pipeline it will travel, and its end destination.
+
+The nomination requires selecting start and end points for gas transfer. If any interconnects are available, they may be chosen as endpoints, depending on the selected pipeline. The next step involves entering nomination volumes for both the start and end points in the **New Nom** column, which initiates the scheduling process. 
+
+Each of the six sections in this module— **Buys**, **Sells**, **Receipt Interconnects, Delivery Interconnects, Receipt Pool and Storage,** and **Delivery Pool and Storage** plays a role in defining, scheduling, and tracking the volume. Below is a breakdown of each section and column.
+
+###### Buys
+
+The **Buys** section is critical for managing gas purchase transactions within the pipeline system. It provides a detailed view of each buy deal, including scheduled volumes, nomination details, and key identifiers. Here is a breakdown of the columns in this section, each serving a specific role in tracking and executing gas purchase nominations:
+
+| Fields | Description |
+|--- | --- |
+| Select (checkbox) | A selection checkbox that allows users to choose specific records for further actions, such as adjustments or confirmations. |
+| Scheduled | Displays the volume of gas that has already been scheduled for the particular deal, helping to monitor what has been arranged versus what remains. |
+| Nom_vol | The nomination volume, representing the amount of gas designated to be transferred for this deal. It is the primary volume set for scheduling in the nomination process. |
+| Unscheduled | Shows the volume of gas that has not yet been scheduled. This helps in identifying the remaining volume that requires scheduling actions. |
+| Zone_name | Specifies the zone associated with the deal, which aids in categorizing deals based on geographical or operational zones within the pipeline network. |
+| Market_area | The market area related to the deal, helping users determine where the gas is being purchased for distribution or consumption. |
+| Operational_area | Denotes the operational area in which the deal is conducted, providing additional insight into the regional aspects of the transaction. |
+| Up_id | The upstream identifier associated with the pipeline. This unique ID helps trace the gas source within the network. |
+| Up_k | The unique key identifier for the upstream source, allowing for detailed tracking of upstream points in the transaction. |
+| Pipe_abbrev | The abbreviation of the pipeline name where the gas is scheduled, facilitating quick identification of the pipeline. |
+| Counterparty_abbrev | Abbreviation of the counterparty’s name, helping to quickly identify the external party involved in the purchase transaction. |
+| Location_abbrev | Location abbreviation, often indicating the geographic point of the gas, such as "US" for the United States, to easily identify where the gas is located. |
+| Meter_id | Unique identifier for the meter associated with this deal’s location, allowing for tracking of the measurement point. |
+| Deal_date | The date on which the deal was agreed upon, providing a time reference for scheduling and historical analysis. |
+| Bav_vol | The buy-allocated volume (BAV) for the deal, which indicates the allocated volume assigned specifically for this purchase. |
+| Planned_vol | The initially planned volume for this deal, which serves as a baseline for the scheduling process. |
+| Bav_type_code | The specific code identifying the type of buy allocation volume, categorizing the deal according to allocation methods. |
+| Daily_rec_volume_noms | Displays the daily receipt volume nominations for the transaction, assisting in tracking day-to-day volume movements. |
+| Daily_fuel_volume_noms | Daily nominations for fuel volumes, representing the amount of fuel allocated each day for operational requirements. |
+| Rec_volume_noms | Total receipt volume nominations, providing an aggregated view of all receipt volumes scheduled under this deal. |
+| Fuel_volume_noms | Total fuel volume nominations, showing the total amount of fuel required for the transport of the gas. |
+| Del_volume_noms | Total delivery volume nominations, indicating the volume scheduled for delivery in the transaction. |
+| Is_bav | A marker that indicates if the deal includes buy-allocated volume, aiding in sorting and managing records based on allocation type. |
+| Note | Field for any additional notes regarding the deal, which may include special instructions, comments, or status information. |
+| Dt_updated | The date when the record was last updated, providing an audit trail for modifications. |
+| Updated_by | The user who last modified the record, supporting accountability and traceability. |
+| Rec_or_del | Specifies whether the record is for a receipt or a delivery, helping to clarify the type of movement associated with the volume. |
+| Location_name | Full name of the location associated with the transaction, making it easier to identify and reference. |
+| Bav_type_name | The descriptive name of the buy allocation volume type, which explains the allocation methodology applied to the volume. |
+| Pipe_name | The full name of the pipeline involved in the deal, providing clear identification of the transport route. |
+| Trx_type | Type of transaction being conducted (e.g., buy, sell), helping to distinguish the nature of each record. |
+| Counterparty_name | Full name of the counterparty organization, providing a reference to the other party involved in the transaction. |
+| Supplier_id | Unique identifier for the supplier, linking the deal to the supplying organization. |
+| Accounting_group_id | Identifier for the accounting group, which is useful for tracking financial aspects and reporting within specified groups. |
+| Business_unit_id | Identifier for the business unit responsible for the deal, allowing tracking and reporting within the organization. |
+| Portfolio_id | Identifier for the portfolio that includes this deal, providing insight into the grouping of deals for risk and financial management. |
+| Strategy_id | Identifier for the strategy associated with the deal, helping align the transaction with broader business objectives. |
+| Nomination_bav_type_id | ID that links the deal to a specific nomination buy allocation volume type, assisting in the organization of nomination records. |
+| Supply_region_id | Identifier for the supply region, denoting the region of origin for the gas. |
+| Pipeline_location_id | ID for the specific location on the pipeline where the gas is scheduled, ensuring precise location tracking. |
+| Deal_point | Specific point within the deal, adding detail to the transaction’s physical or contractual location. |
+| Supply_tier_id | Identifier for the supply tier, which may indicate priority or categorization of the supply source. |
+| Supply_deal_daily_volume_id | ID for the daily volume associated with the supply deal, tracking day-by-day volumes. |
+| Supply_deal_id | The overall identifier for the supply deal, linking all related records to the main transaction. |
+| Description | Detailed description of the deal, providing context and any additional relevant information about the transaction. |
+| External_ref_no | External reference number, which may link the deal to external systems or documentation. |
+| Uom | Unit of measure for the transaction, which is essential for clarity in volume, weight, or energy metrics. |
+| Ldc_name | Name of the Local Distribution Company (LDC) involved, which provides last-mile distribution or local network integration. |
+
+###### Sells
+
+The **Sells** section provides comprehensive details for each selling deal scheduled on a specified date and pipeline. This area encompasses key information, including volume, fuel rate, counterparty, and other transaction details needed for managing gas sales transactions.
+
+| Fields | Description |
+|--- | --- |
+| Select (Checkbox) | Allows users to select specific records for further actions, such as processing or making nominations. |
+| Scheduled | Displays the volume of gas that has already been scheduled for the deal, reflecting committed quantities. |
+| Nom_vol | Indicates the nomination volume, or the intended amount of gas to be sold in the transaction. |
+| Unscheduled | Represents the unscheduled volume, or the remaining quantity of gas that has not yet been scheduled in the deal. |
+| Fuel_rate | The rate applied to account for any fuel consumed or lost during the transfer process. |
+| Fuel_loss | The calculated volume lost due to fuel consumption, ensuring accurate accounting of gas quantity delivered. |
+| Deal_vol | Total volume designated for this specific sales transaction, showing the overall volume contracted. |
+| Down_id | Identifies the downstream location or party involved in the transaction, providing reference for routing. |
+| Down_k | A unique key identifier for the downstream pipeline, ensuring precise tracking of the route and destination. |
+| Counterparty_abbreviation | The abbreviated name of the counterparty or buyer involved in the transaction. |
+| Location_abbreviation | Abbreviated code for the transaction location, often used for quick reference in reports and documentation. |
+| Meter_id | The unique identifier for the meter monitoring gas flow at the transaction point. |
+| Deal_date | Date on which the sales deal was made, crucial for transaction timelines. |
+| Planned_vol | Planned volume or quantity intended for sale as per the scheduling records. |
+| Bav_type_code | Code that identifies the type of Buy Allocation Volume (BAV) relevant to this sales deal. |
+| Daily_rec_volume_noms | Daily volume nominations for gas receipts, giving insight into daily intake levels. |
+| Daily_fuel_volume_noms | Daily nominations for fuel volume, capturing the amount allocated for fuel requirements each day. |
+| Daily_del_volume_noms | Daily delivery nominations, reflecting the daily volume intended for delivery to fulfill the contract. |
+| Rec_volume_noms | Total volume nominated for receipt, indicating the gas quantity planned to be received. |
+| Fuel_volume_noms | Overall fuel volume nominated, accounting for fuel consumption in the delivery process. |
+| Del_volume_noms | Total delivery nominations, summarizing the amount of gas set for dispatch or delivery to the buyer. |
+| Is_bav | A flag indicating if this entry represents a Buy Allocation Volume (BAV) in the transaction. |
+| Note | Field to input additional comments or notes related to the transaction, facilitating record-keeping or clarifications. |
+| Dt_updated | The last update date of the record, providing a timestamp for recent modifications. |
+| Updated_by | Shows the user or system account responsible for the last update, enabling traceability. |
+| Rec_or_del | Specifies whether the entry is for a receipt or an actual sales deal. |
+| Location_name | Full name of the transaction location, adding context beyond the abbreviation. |
+| Bav_type_name | Descriptive name of the BAV type, enhancing the understanding of the type of allocation. |
+| Pipe_name | Full name of the pipeline involved in the deal, essential for logistical details. |
+| Trx_type | Indicates the transaction type, such as sale, transfer, or other transaction modes. |
+| Counterparty_name | Complete name of the counterparty, providing clear identification for stakeholders. |
+| Supplier_id | Identifier for the supplier connected with the transaction, vital for linking to supply sources. |
+| Accounting_group_id | Accounting group ID tied to the transaction, crucial for financial reporting. |
+| Business_unit_id | Identifier for the business unit handling the transaction, helping in organization-level tracking. |
+| Portfolio_id | Portfolio ID under which the deal is managed, aligning the deal with broader business strategies. |
+| Strategy_id | ID associated with the strategy guiding the transaction, indicating its purpose or objectives. |
+| Nomination_bav_type_id | ID for the type of BAV related to nominations, used for managing allocation specifics. |
+| Supply_region_id | Identifier for the region where the gas is sourced, important for regional distribution logistics. |
+| Pipeline_location_id | Location ID of the pipeline, essential for tracking where the transaction takes place. |
+| Deal_point | Specific point within the transaction, such as a stage or location, providing finer detail for tracking. |
+| Supply_tier_id | Identifier for the supply tier, indicating the level or category of supply within the transaction. |
+| Supply_deal_daily_volume_id | Daily volume ID for the supply deal, recording the quantity allotted for each day. |
+| Supply_deal_id | Overall unique identifier for the supply deal, consolidating related daily volumes and transactions. |
+| Description | A more detailed description of the deal, providing additional context on terms or specifics. |
+| External_ref_no | External reference number, linking the deal to any external tracking or record systems. |
+| Uom | The unit of measurement for the transaction, defining the scale (e.g., MMBtu or Mcf). |
+| Pipe_uom_id | Pipeline-specific UOM ID, ensuring units align with pipeline standards. |
+| Ldc_pool_name | Name of the Local Distribution Company (LDC) pool associated with the sale, important for retail gas distribution. |
+| Ldc_pool_account | The account associated with the LDC pool, identifying its financial or transaction account. |
+| Pool_nomination | Volume nominated for the pool, indicating allocation to a shared distribution point. |
+| Retail_pool_requirement | Specifies the volume requirement for the retail pool, aligning with customer demand. |
+| Pool_alloc_volume | The volume allocated to the pool, setting aside quantities for specific distribution needs. |
+| Pool_pnt_imbalance | Records any imbalance at the pool point, showing discrepancies that need reconciliation. |
+| Zone_name | Name of the zone where the transaction occurs, detailing geographic or operational areas. |
+| Market_area | Market area for the transaction, connecting the deal to regional or sector-specific markets. |
+| Operational_area | Operational area associated with the deal, indicating where logistical actions are managed. |
+| Ldc_name | Full name of the Local Distribution Company, establishing a clear reference to the distribution partner. |
+
+###### Receipt interconnects
+
+The **Receipt interconnects** section focuses on managing the entry points where gas is received, known as interconnects. These interconnects serve as critical gateways, facilitating the transfer of gas into designated locations and ensuring an efficient flow into the pipeline system. This section encompasses fields that capture both the physical and contractual aspects essential for managing receipt interconnects, from the specifics of volume scheduling to the identifiers for locations and meters involved. 
+
+The information below outlines the key fields and their purposes, ensuring comprehensive tracking and management of receipt interconnect details.
+
+| Field | Description |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Select (Checkbox) | A checkbox to allow users to select specific interconnect records for actions such as nominations or scheduling adjustments. |
+| Nom_vol | This field represents the nominated volume for transfer at the interconnect, showing the intended amount of gas designated for movement through this entry point. |
+| Scheduled | The total volume already confirmed and scheduled for transfer at this interconnect, indicating quantities that are actively assigned for flow. |
+| IC bal (Interconnect balance) | Displays the current balance available at the interconnect, representing gas volume that can still be allocated or adjusted. |
+| Interconnect | A unique identifier or name assigned to each interconnect, providing quick reference to the specific entry point involved in the transaction. |
+| Location | The primary physical location associated with the interconnect, describing where the transfer point is geographically or operationally situated. |
+| Up_down_bal_source | Identifies the source of balance, whether upstream or downstream, that relates to the interconnect’s gas flow and allocation. |
+| Loc 1 (Primary location) | Designates the first (primary) location associated with this interconnect, often the point where gas initially enters or is measured. |
+| Meter 1 (Primary meter id) | The unique identifier of the meter located at the primary location, tracking gas volume readings at this initial measurement point. |
+| Loc 2 (Secondary location) | A secondary location associated with the interconnect, if applicable, to represent a backup or alternate transfer point within the network. |
+| Meter 2 (Secondary meter id) | ID of the meter located at the secondary location, serving as an additional measurement point if multiple locations are used for the interconnect. |
+| Pipeline 1 (Primary pipeline identifier) | The identifier for the first pipeline connected to this interconnect, crucial for defining which pipeline is actively linked to the interconnect point. |
+| Pipe 1 (Primary pipeline abbreviation) | An abbreviated name or code for the primary pipeline, used for quick reference and within reports or operational tracking. |
+| Location 1 (Pipeline 1 location name) | The name of the location associated with the primary pipeline, providing a geographic or operational context for where gas is received. |
+| Pipeline 2 (Secondary pipeline identifier) | The identifier for an alternative or secondary pipeline that can serve as a fallback or additional transfer channel for the interconnect. |
+| Pipe 2 (Secondary pipeline abbreviation) | An abbreviated code for the secondary pipeline, used to streamline reporting and tracking when multiple pipelines are involved. |
+| Location 2 (Pipeline 2 location name) | Name of the location linked to the secondary pipeline, designating a secondary receiving point associated with this interconnect. |
+| Active_meterid | The identifier for the currently active meter being used at the interconnect, indicating the primary meter tracking real-time gas transfer. |
+| Active_pipeline_id | Identifier of the pipeline actively being used for gas transfer through the interconnect, representing the primary operational pipeline. |
+| Active_pipeline_location_id | Location ID associated with the active pipeline, marking the precise location for current gas receipt or transfer. |
+| Pipeline_location_id_1 | Location ID tied to the first pipeline, designating where gas initially flows through the interconnect. |
+| Pipeline_location_id_2 | Location ID associated with the secondary pipeline, capturing any additional or backup location utilized for gas flow. |
+| Pipeline_id_1 | Identifier for the primary pipeline, establishing the connection between this interconnect and the main pipeline for gas transfer. |
+| Pipeline_id_2 | Identifier for the secondary pipeline linked to the interconnect, providing an alternative flow route as needed. |
+| UOM | Specifies the unit of measurement applied for the gas volume at this interconnect, such as MMBtu or Mcf, to standardize tracking and reporting. |
+| UOM conv | A factor used to convert the current unit of measurement to other units as required by reporting or operational standards. |
+| Zone_name | Identifies the operational zone associated with the interconnect, helping categorize the geographical area for the gas transfer. |
+| Market_area | Describes the market area where this interconnect is located, aligning the interconnect with specific market zones for strategic tracking. |
+| Operational_area | Details the operational area for this interconnect, often reflecting jurisdictional or functional zones within the pipeline network. |
+| Projected remaining | An estimation of the remaining volume that can be transferred through the interconnect, aiding in capacity planning. |
+| Projected volume | The total projected gas volume for the interconnect, offering a forecast to support scheduling and capacity allocation decisions. |
+
+###### Delivery interconnects
+
+The **Delivery interconnects** section is dedicated to managing the points where gas is delivered through specific interconnects within the network. It includes comprehensive information on nominated volumes, scheduled quantities, location details, and pipeline connections relevant to each delivery point. This section enables tracking and scheduling gas deliveries through the interconnects, ensuring an accurate flow across the network and assisting in resource allocation.
+
+Below are the detailed descriptions of each field within this section.
+
+| Field | Description |
+|--------|-------------|
+| Select (Checkbox) | A selectable checkbox enabling users to choose specific delivery interconnect records for further actions, such as nomination adjustments or scheduling. |
+| Nom_value (Nominated volume) | This field captures the nominated volume of gas designated for delivery through the interconnect, specifying the quantity expected for transfer at this point. |
+| Scheduled | Displays the volume of gas already scheduled for delivery at the interconnect, indicating confirmed quantities planned for transfer. |
+| IC_bal (Interconnect balance) | Reflects the available gas balance at the delivery interconnect, showing the current volume that can still be allocated for delivery. |
+| Interconnect | The unique identifier or name of the delivery interconnect, providing quick reference to the specific interconnect being managed. |
+| Location | Specifies the physical location of the delivery interconnect, helping operators understand the geographic placement and logistical details of the delivery point. |
+| Up_down_bal_source (Balance Source) | Identifies whether the balance source is upstream or downstream, offering context for the balance information at the delivery interconnect. |
+| Loc_1 (Primary location) | The first or primary location associated with the delivery interconnect, serving as the main site where gas is delivered and measured. |
+| Meter_1 (Primary meter id) | The ID of the meter situated at the primary location, responsible for tracking the actual volume delivered at this site. |
+| Loc_2 (Secondary location) | If applicable, a secondary location associated with the delivery interconnect, which may serve as an alternative delivery site within the network. |
+| Meter_2 (Secondary meter id) | The identifier of the meter positioned at the secondary location, allowing for gas measurement at an additional point if multiple locations are in use. |
+| Pipeline_1 (Primary pipeline identifier) | The unique identifier of the primary pipeline associated with this delivery interconnect, representing the main channel for gas transfer. |
+| Pipe_1 (Primary pipeline abbreviation) | An abbreviated name for the primary pipeline linked to the delivery interconnect, used for efficient reference and reporting. |
+| Location_1 (Pipeline 1 location name) | The name of the primary location associated with Pipeline 1, helping to geographically locate where gas is delivered from this pipeline. |
+| Pipeline_2 (Secondary pipeline identifier) | The identifier for an alternative or secondary pipeline connected to this delivery interconnect, providing additional routing options. |
+| Pipe_2 (Secondary pipeline abbreviation) | A short or abbreviated form of the secondary pipeline’s name, facilitating quick identification within tracking and reporting systems. |
+| Location_2 (Pipeline 2 location name) | The name of the secondary location associated with Pipeline 2, offering insight into additional or backup delivery sites. |
+| Active_meter_id (Active meter Id) | The identifier of the meter currently active at the delivery interconnect, which is responsible for real-time volume tracking. |
+| Active_pipeline_id | The ID of the pipeline presently in use at the delivery interconnect, marking the active channel for gas flow. |
+| Active_pipeline_location_id | Location ID for the active pipeline, pinpointing the exact location where gas is currently being delivered. |
+| Pipeline_interconnect_id | A unique identifier specific to the pipeline interconnect, denoting the point of connection between the pipeline and the delivery location. |
+| Pipeline_location_id_1 (Primary location id) | The ID for the first (primary) pipeline location, specifying where the pipeline connects with the delivery interconnect. |
+| Pipeline_location_id_2 (Secondary location id) | If relevant, the ID for a secondary pipeline location, allowing for tracking at an additional delivery point. |
+| Pipeline_id_1 | Identifier of the primary pipeline used in gas delivery, creating a direct link between the pipeline and the delivery interconnect. |
+| Pipeline_id_2 (Secondary pipeline id) | The identifier for a secondary pipeline associated with the interconnect, enabling an alternate or backup delivery route. |
+| UOM (Unit of measurement) | Indicates the unit of measurement (e.g., MMBtu or Mcf) used for recording gas volume at the delivery interconnect, ensuring standardized data. |
+| UOM_conv (Unit conversion factor) | A factor applied to convert the specified unit of measurement into other units as needed, supporting versatile reporting requirements. |
+| Zone_name | Defines the operational zone for the delivery interconnect, helping categorize its location within broader geographic or operational areas. |
+| Market_area | Describes the market area associated with this delivery interconnect, aligning the location with specific market zones for strategic planning. |
+| Operational_area | Specifies the operational area encompassing the delivery interconnect, often reflecting jurisdictional or functional zones within the network. |
+| Projected_remaining (Projected remaining volume) | An estimate of the remaining gas volume available for delivery at the interconnect, aiding in future capacity planning. |
+| Projected_volume (Projected total volume) | Represents the total projected gas volume for delivery through this interconnect, supporting scheduling and allocation decisions. |
+
+###### Receipt pool and storage
+
+The **Receipt pool and storage** section is dedicated to managing the pools and storage facilities where gas is received, tracked, and allocated. It includes details such as the scheduled volumes, contracts, locations, balances, and associated pipelines, ensuring efficient tracking and management of gas in storage or pooling arrangements.
+
+The table below list down the fields available on this section and its detailed description:
+
+| Field | Description |
+|--------|-------------|
+| Select (Checkbox) | A selectable checkbox that allows users to choose specific records for further actions, such as updating, modifying, or processing receipts in the pool or storage system. |
+| Scheduled | The volume of gas that has been scheduled to be received into the pool or storage facility. This field provides clarity on the quantity of gas that has been planned for reception at the interconnect point. |
+| Nom_vol (Nomination volume) | The nominated volume of gas, representing the quantity that has been officially requested or nominated for receipt. This field is critical for ensuring that the correct volume of gas is allocated for storage or pooling. |
+| Contract_name | The name of the contract associated with the receipt of gas into the pool or storage area. This contract may outline the terms of storage, withdrawal, and other relevant conditions tied to the transaction. |
+| Strg_rel_contract | The unique identifier or number for the storage or release contract linked to the pool or storage. This contract governs the terms and conditions of gas storage and withdrawal. |
+| Loc_abbreviation (Location abbreviation) | A shortened form of the location name, used for easy reference and to save space in reports or interfaces. |
+| Loc_name (Location name) | The full name of the location where the gas is received, stored, or pooled. This field is important for understanding where the gas is being processed or kept. |
+| Is_commonly_used | A field indicating whether the specific storage or pool location is frequently used. This helps prioritize commonly accessed storage locations, ensuring efficient gas flow management. |
+| Meterid (Meter id) | The unique identifier of the meter associated with the storage or pool. The meter records the actual volume of gas being received, stored, or withdrawn at that location. |
+| Pipe_abbreviation (Pipeline abbreviation) | A short code or abbreviation for the pipeline associated with the storage or pool location. This provides quick identification of the pipeline linked to the gas receipt or storage point. |
+| Pipe_location_id | The unique identifier for the location of the pipeline within the network. It helps track where the pipeline intersects with the storage or pool facility. |
+| Pipeline_storage_contract_id | The identifier for the pipeline storage contract, which specifies the terms for storing gas in the pipeline system. It is crucial for ensuring that gas is stored according to the agreed conditions. |
+| Storage_abbreviation (Storage abbreviation) | A shorthand or abbreviation for the storage location name, used to easily refer to the facility where gas is stored. |
+| Storage_name | The full name of the storage facility or location. This is used for reference in reports, agreements, and tracking records. |
+| Location_type_name (Location type) | Defines the type of location, such as a storage facility, pool, or another specific categorization. It helps differentiate various types of locations in the system. |
+| Pool_balance | Represents the current balance of gas within the pool. It reflects the total volume of gas that is available or accounted for within the pooling system. |
+| Storage_balance | The volume of gas currently stored in the facility. This balance indicates how much gas is held in storage, helping manage inventory levels and ensuring that gas is available when needed. |
+| Is_pool | A field that specifies whether the current facility or location is a pool. This helps distinguish between storage locations and pooling areas, which are used to manage gas differently. |
+| UOM | The unit of measurement used for recording the volumes of gas in the pool or storage facility. This could include units such as cubic feet, gallons, or megatons, depending on the system configuration. |
+| Zone_name | The name of the zone in which the storage or pool facility is located. Zones are used to define geographical or operational areas, ensuring gas is managed within specific regions. |
+| Market_name | The market area associated with the storage or pool. This helps connect gas storage and pooling operations with specific energy markets, ensuring that gas deliveries and receipts align with market requirements. |
+| Operational_area | The operational area to which the storage or pool location belongs. This field typically refers to the logistical or operational zones within a larger network, aiding in resource management. |
+| Planned_storage | The volume of gas that is planned to be stored within the facility. This planned volume can be part of a contract or operational plan to manage gas reserves. |
+| Planned_remaining | The remaining volume of gas that is planned to be stored or received. It helps in projecting future storage needs and provides insight into how much capacity remains for further gas receipts or withdrawals. |
+
+###### Delivery pool and storage
+
+The **Delivery pool and storage** section is designed to manage the storage and delivery pools of gas, providing critical information on scheduled volumes, contractual agreements, and pipeline locations. This section tracks essential data such as contract details, delivery planning, and volume management, ensuring the efficient operation of gas delivery and storage processes. 
+
+Below is an elaboration of the key fields in this section.
+
+| Field | Description |
+|--------|-------------|
+| Select (Checkbox) | This checkbox allows users to select specific records for further actions, such as nomination, approval, or other processes. It provides an easy way to select multiple entries for batch operations. |
+| Scheduled | This field represents the volume of gas that has already been scheduled for delivery into the storage pool. It indicates the amount of gas that is planned to be delivered at a specific time, helping to manage scheduling and ensure the appropriate amount of gas is available for delivery. |
+| Nom_vol (Nomination Volume) | This is the volume of gas nominated for storage or delivery, which reflects the amount requested by the parties involved in the contract. The nomination volume is a critical factor in ensuring that the storage or delivery volumes are in alignment with contractual agreements and operational requirements. |
+| Fuel_rate | The fuel rate is a defined factor used to adjust for losses during transportation. It is applied to the gas volumes to account for the energy used or lost during delivery, helping ensure that the agreed-upon volume is accurately measured after adjustments for losses. |
+| Fuel_loss | Fuel loss is the amount of gas lost during the delivery or storage process due to factors such as transportation inefficiencies or pipeline losses. This field helps in tracking and accounting for those losses, ensuring that adjustments can be made to reflect the actual volume delivered. |
+| Del_vol (Delivery Volume) | This represents the total volume of gas that is designated for delivery as part of the storage or pool contract. It is important for monitoring the gas available for delivery and aligning with contractual delivery obligations. |
+| Burn | This refers to the volume of gas that is designated for combustion or end-use within the scope of the contract. It reflects the gas that is consumed for energy production or other industrial purposes as part of the contractual agreement. |
+| Contract_name | This field captures the name of the specific contract associated with the delivery or storage arrangement. The contract name serves as a reference for identifying the terms and conditions that govern the gas delivery and storage process. |
+| Strg_rel_contract | The unique identifier or contract number for the storage or release agreement. This reference number is crucial for tracking the contract details, ensuring that the gas delivery and storage processes are aligned with the terms outlined in the contract. |
+| Loc_abbreviation (Location Abbreviation) | A shortened version of the location name, typically used to save space in reports and system interfaces. This field is useful for quickly referencing the location where the gas is being stored or delivered. |
+| Loc_name (Location Name) | The full name of the delivery or storage location, providing more detail about the specific site involved in the contract. This name helps identify where the gas is being stored or delivered, supporting logistics and operational coordination. |
+| Is_commonly_used | This indicator shows whether the delivery or storage location or contract is frequently used. A "Yes" value indicates that the location or contract is commonly accessed, which may highlight important or critical facilities in the network. |
+| Meterid (Meter ID) | This is the unique identifier for the meter associated with the delivery or storage pool. The meter records the actual volume of gas being delivered or stored, providing real-time tracking and monitoring of gas flow. |
+| Pipe_abbreviation (Pipeline Abbreviation) | A shortened version of the pipeline name or identifier. This field helps quickly identify the pipeline associated with the delivery or storage, reducing the need for full pipeline names in operational reports. |
+| Pipeline_location_id | The unique identifier for the specific location within the pipeline network where the gas is being delivered or stored. It helps track the exact point in the pipeline system associated with the delivery or storage operation. |
+| Pipeline_storage_contract_id | The ID of the contract tied to the pipeline storage agreement. This contract governs the terms for storing gas within the pipeline, and the ID provides a reference to ensure that all actions align with the terms of the pipeline storage contract. |
+| Location_type_name (Location Type) | The descriptive name that defines the type of location, such as "Delivery Point," "Storage Facility," or other categorizations. This helps differentiate between various types of locations in the system and ensures clarity in reporting and tracking. |
+| Storage_name | The full name of the storage facility associated with the contract. This field provides clarity on where the gas is stored, allowing for better management and identification of storage resources. |
+| Storage_abbreviation (Storage Abbreviation) | A shortened version of the storage facility’s name. This abbreviation is useful for space-constrained environments like reports, dashboards, and interfaces. |
+| Is_pull | An indicator that specifies whether the gas volume is being pulled from the storage pool (as opposed to being pushed or injected). This field helps track whether the gas is being withdrawn or added to the storage, a critical part of managing gas inventories. |
+| UOM (Unit of Measure) | The unit of measurement used for recording volumes in the delivery or storage context. Common units may include cubic feet, gallons, or megatons, depending on the operational requirements. |
+| Zone_name | The name of the geographical zone associated with the storage or delivery location. Zones help organize and manage gas delivery and storage operations within specific geographic areas, improving efficiency in logistics and volume management. |
+| Market_area | The market area linked to the delivery or storage pool, which identifies the broader economic or energy market in which the gas is being stored or delivered. This is important for understanding how market dynamics may affect gas flows and pricing. |
+| Operational_area | The operational area responsible for overseeing the delivery or storage pool. This could refer to specific regions or divisions within a gas utility or network, ensuring that gas delivery and storage activities are efficiently managed. |
+| Planned_storage | The volume of gas that is planned to be stored in the pool or storage facility according to forecasts or contractual obligations. This planned storage helps manage inventory and align with expected usage or delivery schedules. |
+| Planned_remaining | The remaining volume of gas that is planned for storage or delivery after accounting for any volumes already scheduled. This field helps provide a clear picture of how much capacity remains for future deliveries or storage planning. |
+
+#### Create a nomination
+
+You can create a nomination by specifying essential details such as the start and end dates, transport agreements, and pipeline nominations. This section is critical for ensuring that all nominations align with contractual requirements and desired gas flow paths. Once the necessary details are configured, click on the **Create Nom** button will generate the nomination.
+
+Below are the fields and configurations available in this section for precise nomination management:
+
+| Field | Description |
+|--------|-------------|
+| Start_date | The date when the nomination becomes effective, marking the beginning of gas delivery or storage under the nominated agreement. Setting this date ensures that the nomination aligns with the desired operational timeline. |
+| End_date | The date on which the nomination period concludes, indicating the last day for the scheduled gas flow. This is essential for managing contract timelines and ensuring compliance with scheduled agreements. |
+| Transportation_contract | The transport agreement or contract that governs the nomination. Selecting the correct contract is crucial for ensuring that the gas transportation adheres to contractual terms, including volume limits and delivery requirements. |
+| Todays_imbalance | The current imbalance for the day, reflecting any discrepancies between nominated and actual volumes. Managing this imbalance helps in balancing supply and demand effectively, ensuring no over- or under-delivery. |
+| MDQ_rel (Maximum daily quantity adjustment) | Adjustments to the Maximum Daily Quantity (MDQ) for release or nomination. This value helps accommodate volume flexibility while adhering to the maximum limits set in the contract. |
+| Remaining | The remaining volume available for nomination within the current contract or pipeline. This figure assists users in avoiding over-nomination and staying within the permissible limits. |
+| Pathing_model | The pathing model used for gas transport. It may represent various routing or pathing strategies to ensure efficient gas delivery along the pipeline network. This setting impacts route selection and gas flow optimization. |
+| Nomination_type | The type of nomination, such as firm, interruptible, or storage, indicating the level of commitment and flexibility of the nomination. Different types affect priority and guarantees in gas delivery. |
+| Up_id_name | The identifier or name of the upstream point where gas enters the pipeline system. This information helps track the entry point of the gas and aligns with the start location for the nominated path. |
+| Nom_up_k | The nominated volume for the upstream location, representing the quantity of gas intended to flow into the pipeline at the upstream point. This is key for balancing nominations between upstream and downstream points. |
+| Down_id_name | The identifier or name of the downstream point where gas exits the pipeline system. This exit location must align with the end point of the nomination, ensuring accurate delivery tracking. |
+| Nom_down_k | The nominated volume for the downstream location, representing the amount of gas scheduled for delivery or storage at the downstream point. This value should align with delivery requirements at the endpoint. |
+| PKG_id | The package ID associated with the nomination, used for tracking and managing specific nomination groups. This ID provides an additional layer of organization, especially for bulk nominations. |
+| Transaction_type | The type of transaction for the nomination, such as delivery, storage, or transfer. Selecting the correct type ensures the nomination aligns with the purpose of the gas movement. |
+| Third_party_baid | The Business Associate ID of a third party involved in the nomination, if applicable. This field tracks external partners associated with the nomination, improving collaboration and accountability. |
+| Third_party_duns | The DUNS (Data Universal Numbering System) number of a third party, providing a unique identifier for that organization. This is useful for tracking and verifying third-party involvement in the nomination process. |
+| Third_party_k | Any additional reference ID for a third-party organization associated with the nomination. This can be useful for contractual tracking and ensuring all parties involved are accurately recorded. |
+
+Once all fields are configured accurately, click **Create Nom** to finalize the nomination. This action locks in the specified parameters and officially records the nomination, making it accessible for further operational processes and tracking.
+
+#### View the nominations details
+
+A comprehensive overview of all nominations that have been created can be seen in the **Nomination listing** sections. Here, you can review the details of each nomination, track quantities, and manage important information related to scheduled gas flows. An excel export feature is available, allowing you to save the data to a file that can be shared with pipelines to facilitate scheduling.
+
+The following fields are available for viewing and exporting, each offering key information for managing nominations.
+
+| Field | Description |
+|--------|-------------|
+| Pipe | The pipeline name or identifier through which the nominated gas will flow. |
+| Supplier | The supplier involved in the nomination, providing or receiving gas as per the contract. |
+| Transport_agmt | The transportation agreement linked to the nomination, specifying terms and conditions for gas movement. |
+| Period_contract | A unique identifier for the contract period, helping track nominations within specific contractual timeframes. |
+| F_IT | Specifies whether the nomination is Firm or Interruptible, indicating the level of service commitment. |
+| MDQ (Maximum Daily Quantity) | The highest volume allowed for transport per day under the agreement, guiding volume limits. |
+| MSQ (Maximum Storage Quantity) | The maximum storage capacity within the nominated contract, ensuring storage limits are maintained. |
+| Nom_id | Unique identifier for the nomination, enabling easy tracking and reference. |
+| Receipt_pt | The receipt point where gas enters the pipeline network. |
+| Delivery_pt | The delivery point where gas exits the pipeline network. |
+| Start_date | The starting date of the nomination period, marking when gas flow begins. |
+| End_date | The ending date of the nomination, specifying the final day of scheduled gas flow. |
+| Path_model | The routing model selected for the nomination, affecting the gas flow path within the pipeline. |
+| Del_vol | Total volume designated for delivery, recorded in the contract. |
+| Rec_vol | Volume recorded at the receipt point, helping balance intake and outflow. |
+| Fuel_loss | Amount of gas lost due to fuel consumption during transport. |
+| Up_rank | Ranking for upstream nominations, used for prioritizing sources. |
+| Down_rank | Ranking for downstream nominations, helpful in prioritizing deliveries. |
+| Notes | Field for additional remarks or notes on the nomination, allowing custom documentation. |
+| Nom_up_k | Nominated volume for upstream flows, specifying the volume at the receipt location. |
+| Nom_down_k | Nominated volume for downstream flows, indicating the volume at the delivery point. |
+| Sum_receipt | Sum of received volumes across nominations, useful for auditing total intake. |
+| Sum_fuel | Total fuel loss across all nominations, allowing tracking of fuel usage. |
+| Sum_delivered | Aggregate of delivered volumes, helping monitor overall outflows. |
+| Nom_type_code | Code representing the nomination type, used for quick reference. |
+| Nom_type | Description of the nomination type (e.g., firm or interruptible), outlining the service level. |
+| Planned | Planned volume for the nomination period, aiding in future scheduling. |
+| Date_created | Date when the nomination record was initially created. |
+| Last_update | Date of the most recent modification to the nomination record. |
+| Updated_by | User or system that last modified the nomination record. |
+| Multi_seg | Indicator if the nomination spans multiple segments or regions. |
+| Pipeline_name | Full name of the pipeline involved in the nomination. |
+| Nomination_type_name | Detailed name for the type of nomination (e.g., storage, transportation). |
+| MDQ_calc_point | Calculated point for MDQ, helping in volume tracking. |
+| Transport_agmt_name | Full name of the transport agreement, for detailed referencing. |
+| Supplier_name | Complete name of the supplier for clarity. |
+| Receipt_pt_name | Full name of the receipt point for better identification. |
+| Receipt_meter | The meter ID at the receipt point, for accurate tracking. |
+| Delivery_pt_name | Full name of the delivery point for clear identification. |
+| Delivery_meter | Meter ID at the delivery point, aiding in precise volume measurement. |
+| Pathing_model_name | Descriptive name for the selected pathing model. |
+| Created_by | User who created the nomination record. |
+| Nomination_type_id | Identifier for the nomination type, enabling detailed tracking. |
+| Nomination_pathing_model_id | ID for the pathing model, linking to specific routing methods. |
+| Pipeline_transport_agmt_id | Unique ID for the transport agreement tied to the pipeline. |
+| Supplier_id | Identifier for the supplier, helping manage relationships. |
+| Nom_status | Status of the nomination, showing if it’s active, pending, or completed. |
+| Nomination_multi_segment_id | ID indicating if the nomination involves multiple segments. |
+| Delivery_point_id | Unique identifier for the delivery point. |
+| Receipt_point_id | Unique identifier for the receipt point. |
+| Contract_rank | Rank of the contract for priority sorting. |
+| Is_physical_receipt | Indicates if the receipt point is a physical location. |
+| Is_physical_delivery | Indicates if the delivery point is a physical location. |
+| Ranked_down_k | Ranked volume for the downstream flow, aiding in prioritization. |
+| Upstream_deal_id | Identifier for upstream deals associated with the nomination. |
+| Ranked_up_k | Ranked volume for the upstream flow. |
+| Downstream_deal_id | Identifier for downstream deals. |
+| Up_pipeline_storage_contract_id | ID for the upstream pipeline storage contract. |
+| Down_pipeline_storage_contract_id | ID for the downstream pipeline storage contract. |
+| Rec_pipeline_interconnect_id | ID for interconnections at the receipt point. |
+| Package_id | ID for the nomination package. |
+| Del_pipeline_interconnect_id | ID for interconnections at the delivery point. |
+| Transaction_type | Type of transaction (e.g., delivery, storage), indicating the nomination’s purpose. |
+| Up_id | Upstream ID for precise tracking. |
+| Up_k | Nominated volume at the upstream location. |
+| Down_id | Downstream ID for tracking. |
+| Down_k | Nominated volume at the downstream location. |
+| Pkg_id | Package ID for grouping and tracking nominations. |
+| BA_G_id | Business Associate Group ID for managing group affiliations. |
+| DUNS_num | DUNS number for third-party identification, improving record accuracy. |
+| Third_party_k | Third-party reference for additional tracking or contracts. |
+
+The nomination details can be reviewed within the [Deal management](../deal_management/overview.md) module under the **Nominations** tab. This tab allows users to verify the specific nominations associated with each deal, including the scheduled dates, delivery points, and pipeline allocations.
+
+Additionally, users can gain insights into scheduled versus pending nominations by navigating to the **Deal volumes** tab and selecting the **View by BAV (Balance at volume)** section. Here, a detailed breakdown is provided, showing which volumes are scheduled for particular dates and identifying any unscheduled (or pending) dates. This section is instrumental for tracking nomination statuses, ensuring timely adjustments, and aligning scheduled volumes with operational needs.
+ -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback! Help us improve this page by <a href="https://docs.google.com/forms/d/e/1FAIpQLSffAczVa5Q6C_YP9pabBqzj-qiQwYQOsYRibUgXnQwRl_yLGQ/viewform?usp=dialog" target="_blank" rel="noopener">filing an issue</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../../deal_management/evergreen_deal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Evergreen deals">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Evergreen deals
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../configure_pipeline_scheduling/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Configure
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 nGenue
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ngenue" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/c/ngenue" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ngenue" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/ngenue" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "announce.dismiss", "content.tabs.link", "navigation.sections", "navigation.footer", "content.code.annotate", "search.suggest", "header.autohide"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../assets/js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/js/typewriter.js"></script>
+      
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      
+        <script src="../../assets/js/removeCredits.js"></script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

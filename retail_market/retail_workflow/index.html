@@ -1,0 +1,2003 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ngenue documentation portal">
+      
+      
+        <meta name="author" content="Dipender Sharma">
+      
+      
+        <link rel="canonical" href="https://www.ngenue.com/retail_market/retail_workflow/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../ldcs/ldcs_overview/">
+      
+      
+      <link rel="icon" href="../../assets/images/ngenue_favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Retail workflow - nGenue Help Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+      <link rel="stylesheet" href="../../assets/css/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3MKL9HS3NJ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3MKL9HS3NJ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3MKL9HS3NJ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#retail-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://ngenue.com" title="nGenue Help Center" class="md-header__button md-logo" aria-label="nGenue Help Center" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nGenue Help Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Retail workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting started
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../etrm/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ETRM
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Retail
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../edi/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  EDI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prospect_quote_engine/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  PQE
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://ngenue.com" title="nGenue Help Center" class="md-nav__button md-logo" aria-label="nGenue Help Center" data-md-component="logo">
+      
+  <img src="../../assets/images/ngenue_favicon.svg" alt="logo">
+
+    </a>
+    nGenue Help Center
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../introduction/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../etrm/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    ETRM
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Retail
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Retail
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Retail workflow
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Retail workflow
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow explanation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    LDC configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            LDC configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ldcs/ldcs_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ldcs/ldcs_navigate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../ldcs/ldcs_configure/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    LDC Pool configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            LDC Pool configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ldcs/pool_management/understand_pool_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ldcs/pool_management/configure_pool_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5">
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    End users management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            End users management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/end_users/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/end_users/navigate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../getting_started/end_users/create_end_user/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6">
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Facility management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Facility management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facility_management/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../facility_management/add_facility/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Configure
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7">
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Data management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_management/billing_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Billing generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_management/invoice_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generate an invoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_management/print_invoice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Print invoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../edi/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    EDI
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../prospect_quote_engine/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    PQE
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow explanation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="retail-workflow">Retail workflow<a class="headerlink" href="#retail-workflow" title="Permanent link">¶</a></h1>
+<p>Let's explore the retail workflow in nGenue with the following diagram:</p>
+<div class="puml-container"><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="827px" preserveAspectRatio="xMidYMid meet" style="width:957px;height:827px;background:#F5F5F3;" version="1.1" viewBox="0 0 957 827" width="957px" zoomAndPan="magnify" class="diagram"><defs><filter height="300%" id="fgm5isckmxx1o" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#F5F5F3" height="827" style="stroke:none;stroke-width:1;" width="957" x="0" y="0"/><rect fill="none" height="825.4387" rx="10" ry="10" style="stroke:#F5F5F3;stroke-width:1;" width="931.5226" x="0" y="0"/><g class="cluster" data-entity="Data Management" data-source-line="354" data-uid="ent0020" id="cluster_Data Management"><rect fill="#FFFFFF" filter="url(#fgm5isckmxx1o)" height="192.12" rx="10" ry="10" style="stroke:#1281AC;stroke-width:1;" width="191" x="492.32" y="486.68"/><text fill="#1281AC" font-family="Roboto, sans-serif, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="124.4004" x="525.6198" y="501.8187">Data Management</text></g><g class="entity" data-entity="Meter Reading" data-source-line="355" data-uid="ent0021" id="entity_Meter Reading"><ellipse cx="567.3238" cy="536.9008" fill="#F1F1F1" rx="59.1038" ry="14.2208" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="87.8203" x="523.4137" y="540.3851">Meter Reading</text></g><g class="entity" data-entity="Invoice Generation" data-source-line="356" data-uid="ent0023" id="entity_Invoice Generation"><ellipse cx="578.3223" cy="646.4605" fill="#F1F1F1" rx="69.7023" ry="16.3405" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="113.6602" x="521.4922" y="649.9448">Invoice Generation</text></g><g class="entity" data-entity="Supplier" data-source-line="339" data-uid="ent0002" id="entity_Supplier"><ellipse cx="34.3242" cy="22" fill="#0079C9" rx="16" ry="16" style="stroke:#0079C9;stroke-width:1;"/><path d="M34.3242,42 C38.3242,42 41.3242,42 45.3242,38 C53.3242,38 61.3242,46 61.3242,54 L61.3242,58 C61.3242,62 57.3242,66 53.3242,66 L15.3242,66 C11.3242,66 7.3242,62 7.3242,58 L7.3242,54 C7.3242,46 15.3242,38 23.3242,38 C27.3242,42 30.3242,42 34.3242,42" fill="#0079C9"/><text fill="#0079C9" font-family="Roboto, sans-serif, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="56.6484" x="6" y="80.1387">Supplier</text></g><g class="entity" data-entity="Customer" data-source-line="340" data-uid="ent0003" id="entity_Customer"><ellipse cx="578.3266" cy="760.8" fill="#0079C9" rx="16" ry="16" style="stroke:#0079C9;stroke-width:1;"/><path d="M578.3266,780.8 C582.3266,780.8 585.3266,780.8 589.3266,776.8 C597.3266,776.8 605.3266,784.8 605.3266,792.8 L605.3266,796.8 C605.3266,800.8 601.3266,804.8 597.3266,804.8 L559.3266,804.8 C555.3266,804.8 551.3266,800.8 551.3266,796.8 L551.3266,792.8 C551.3266,784.8 559.3266,776.8 567.3266,776.8 C571.3266,780.8 574.3266,780.8 578.3266,780.8" fill="#0079C9"/><text fill="#0079C9" font-family="Roboto, sans-serif, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="65.0332" x="545.81" y="818.9387">Customer</text></g><g class="entity" data-entity="LDC Configuration" data-source-line="342" data-uid="ent0004" id="entity_LDC Configuration"><ellipse cx="464.3192" cy="44.9878" fill="#F1F1F1" rx="67.9392" ry="15.9878" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="109.5" x="409.5692" y="48.4722">LDC Configuration</text></g><g class="entity" data-entity="GMN6" data-source-line="343" data-uid="ent0007" id="entity_GMN6"><path d="M567.37,41 L567.37,40.99 L532.35,44.99 L567.37,48.99 L567.37,48.9688 A10,10 0 0 0 577.37,58.9688 L845.2802,58.9688 A10,10 0 0 0 855.2802,48.9688 L855.2802,41 L845.2802,31 L577.37,31 A10,10 0 0 0 567.37,41" fill="#D9EBF6" filter="url(#fgm5isckmxx1o)" style="stroke:#1281AC;stroke-width:1;"/><path d="M845.2802,31 L845.2802,36 A5,5 0 0 0 850.2802,41 L855.2802,41 L845.2802,31" fill="#D9EBF6" style="stroke:#1281AC;stroke-width:1;"/><text fill="#000000" font-family="Roboto, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="262.9102" x="575.37" y="49.1387">Defines charge definitions and rate classes.</text></g><g class="entity" data-entity="Pool Configuration" data-source-line="345" data-uid="ent0009" id="entity_Pool Configuration"><ellipse cx="464.3198" cy="180.038" fill="#F1F1F1" rx="68.3398" ry="16.068" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="110.4492" x="409.0952" y="183.5223">Pool Configuration</text></g><g class="entity" data-entity="End User Configuration" data-source-line="347" data-uid="ent0011" id="entity_End User Configuration"><ellipse cx="464.3246" cy="293.6809" fill="#F1F1F1" rx="80.8546" ry="18.5709" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="139.166" x="394.7416" y="297.1653">End User Configuration</text></g><g class="entity" data-entity="GMN13" data-source-line="348" data-uid="ent0014" id="entity_GMN13"><path d="M580.13,289.69 L580.13,289.68 L545.61,293.68 L580.13,297.68 L580.13,297.6587 A10,10 0 0 0 590.13,307.6587 L916.5226,307.6587 A10,10 0 0 0 926.5226,297.6587 L926.5226,289.69 L916.5226,279.69 L590.13,279.69 A10,10 0 0 0 580.13,289.69" fill="#D9EBF6" filter="url(#fgm5isckmxx1o)" style="stroke:#1281AC;stroke-width:1;"/><path d="M916.5226,279.69 L916.5226,284.69 A5,5 0 0 0 921.5226,289.69 L926.5226,289.69 L916.5226,279.69" fill="#D9EBF6" style="stroke:#1281AC;stroke-width:1;"/><text fill="#000000" font-family="Roboto, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="321.3926" x="588.13" y="297.8287">Configures pricing agreements and stores addresses.</text></g><g class="entity" data-entity="Price Agreement" data-source-line="350" data-uid="ent0016" id="entity_Price Agreement"><ellipse cx="362.3229" cy="406.4646" fill="#F1F1F1" rx="64.0729" ry="15.2146" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="100.207" x="312.2194" y="409.949">Price Agreement</text></g><g class="entity" data-entity="Facility Setup" data-source-line="352" data-uid="ent0018" id="entity_Facility Setup"><ellipse cx="567.3229" cy="406.4606" fill="#F1F1F1" rx="55.5229" ry="14.0506" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="81.4043" x="526.6208" y="409.945">Facility Setup</text></g><g class="link" data-entity-1="Supplier" data-entity-2="LDC Configuration" data-source-line="342" data-uid="lnk5" id="link_Supplier_LDC Configuration"><path d="M64.9,44.99 C133.5,44.99 295.04,44.99 389.9,44.99" fill="none" id="Supplier-to-LDC Configuration" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="395.9,44.99,386.9,40.99,390.9,44.99,386.9,48.99,395.9,44.99" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="291.9434" x="85.02" y="37.1287">Configures Local Distribution Companies (LDCs).</text></g><g class="link" data-entity-1="LDC Configuration" data-entity-2="Pool Configuration" data-source-line="345" data-uid="lnk10" id="link_LDC Configuration_Pool Configuration"><path d="M464.32,61.25 C464.32,86.78 464.32,131.86 464.32,157.55" fill="none" id="LDC Configuration-to-Pool Configuration" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="464.32,163.55,468.32,154.55,464.32,158.55,460.32,154.55,464.32,163.55" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="202.0605" x="467.32" y="129.1087">Sets up pools for gas distribution.</text></g><g class="link" data-entity-1="Pool Configuration" data-entity-2="End User Configuration" data-source-line="347" data-uid="lnk12" id="link_Pool Configuration_End User Configuration"><path d="M464.32,196.56 C464.32,217.05 464.32,247.05 464.32,268.7" fill="none" id="Pool Configuration-to-End User Configuration" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="464.32,274.7,468.32,265.7,464.32,269.7,460.32,265.7,464.32,274.7" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="195.1289" x="467.32" y="240.2487">Associates end users with pools.</text></g><g class="link" data-entity-1="End User Configuration" data-entity-2="Price Agreement" data-source-line="350" data-uid="lnk17" id="link_End User Configuration_Price Agreement"><path d="M407.51,307.2 C388.93,314.27 370.28,325.26 359.32,342.25 C349.98,356.75 351.5711,371.471 355.4811,385.151" fill="none" id="End User Configuration-to-Price Agreement" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="357.13,390.92,358.5027,381.1673,355.7559,386.1125,350.8107,383.3658,357.13,390.92" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="159.0352" x="362.32" y="356.3887">Defines price agreements.</text></g><g class="link" data-entity-1="End User Configuration" data-entity-2="Facility Setup" data-source-line="352" data-uid="lnk19" id="link_End User Configuration_Facility Setup"><path d="M491.71,311.61 C503.8,319.91 517.66,330.62 528.32,342.25 C542.44,357.65 551.6093,373.5122 558.4193,387.0222" fill="none" id="End User Configuration-to-Facility Setup" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="561.12,392.38,560.6408,382.5428,558.8694,387.9152,553.4971,386.1438,561.12,392.38" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="166.8281" x="545.32" y="356.3887">Links end users to facilities.</text></g><g class="link" data-entity-1="Facility Setup" data-entity-2="Meter Reading" data-source-line="355" data-uid="lnk22" id="link_Facility Setup_Meter Reading"><path d="M567.32,420.73 C567.32,445.34 567.32,491.82 567.32,516.52" fill="none" id="Facility Setup-to-Meter Reading" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="567.32,522.52,571.32,513.52,567.32,517.52,563.32,513.52,567.32,522.52" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="158.8242" x="570.32" y="465.8187">Records gas consumption.</text></g><g class="link" data-entity-1="Meter Reading" data-entity-2="Invoice Generation" data-source-line="356" data-uid="lnk24" id="link_Meter Reading_Invoice Generation"><path d="M568.72,551.52 C570.76,571.53 573.9584,602.8113 576.1184,623.8913" fill="none" id="Meter Reading-to-Invoice Generation" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="576.73,629.86,579.7918,620.4991,576.2203,624.886,571.8334,621.3146,576.73,629.86" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="118.875" x="577.32" y="595.2587">Generates invoices.</text></g><g class="link" data-entity-1="Invoice Generation" data-entity-2="Customer" data-source-line="357" data-uid="lnk25" id="link_Invoice Generation_Customer"><path d="M578.32,663.25 C578.32,682.77 578.32,710.69 578.32,737.42" fill="none" id="Invoice Generation-to-Customer" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="578.32,743.42,582.32,734.42,578.32,738.42,574.32,734.42,578.32,743.42" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="302.4023" x="581.32" y="708.9387">Customer receives invoices and makes payments.</text></g></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="827px" preserveAspectRatio="xMidYMid meet" style="width:957px;height:827px;background:#F5F5F3;" version="1.1" viewBox="0 0 957 827" width="957px" zoomAndPan="magnify" class="diagram"><defs><filter height="300%" id="f1l0u3216217x9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#F5F5F3" height="827" style="stroke:none;stroke-width:1;" width="957" x="0" y="0"/><rect fill="none" height="825.4387" rx="10" ry="10" style="stroke:#F5F5F3;stroke-width:1;" width="931.5226" x="0" y="0"/><g class="cluster" data-entity="Data Management" data-source-line="354" data-uid="ent0020" id="cluster_Data Management"><rect fill="#FFFFFF" filter="url(#f1l0u3216217x9)" height="192.12" rx="10" ry="10" style="stroke:#1281AC;stroke-width:1;" width="191" x="492.32" y="486.68"/><text fill="#1281AC" font-family="Roboto, sans-serif, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="124.4004" x="525.6198" y="501.8187">Data Management</text></g><g class="entity" data-entity="Meter Reading" data-source-line="355" data-uid="ent0021" id="entity_Meter Reading"><ellipse cx="567.3238" cy="536.9008" fill="#313139" rx="59.1038" ry="14.2208" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="87.8203" x="523.4137" y="540.3851">Meter Reading</text></g><g class="entity" data-entity="Invoice Generation" data-source-line="356" data-uid="ent0023" id="entity_Invoice Generation"><ellipse cx="578.3223" cy="646.4605" fill="#313139" rx="69.7023" ry="16.3405" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="113.6602" x="521.4922" y="649.9448">Invoice Generation</text></g><g class="entity" data-entity="Supplier" data-source-line="339" data-uid="ent0002" id="entity_Supplier"><ellipse cx="34.3242" cy="22" fill="#0079C9" rx="16" ry="16" style="stroke:#0079C9;stroke-width:1;"/><path d="M34.3242,42 C38.3242,42 41.3242,42 45.3242,38 C53.3242,38 61.3242,46 61.3242,54 L61.3242,58 C61.3242,62 57.3242,66 53.3242,66 L15.3242,66 C11.3242,66 7.3242,62 7.3242,58 L7.3242,54 C7.3242,46 15.3242,38 23.3242,38 C27.3242,42 30.3242,42 34.3242,42" fill="#0079C9"/><text fill="#0079C9" font-family="Roboto, sans-serif, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="56.6484" x="6" y="80.1387">Supplier</text></g><g class="entity" data-entity="Customer" data-source-line="340" data-uid="ent0003" id="entity_Customer"><ellipse cx="578.3266" cy="760.8" fill="#0079C9" rx="16" ry="16" style="stroke:#0079C9;stroke-width:1;"/><path d="M578.3266,780.8 C582.3266,780.8 585.3266,780.8 589.3266,776.8 C597.3266,776.8 605.3266,784.8 605.3266,792.8 L605.3266,796.8 C605.3266,800.8 601.3266,804.8 597.3266,804.8 L559.3266,804.8 C555.3266,804.8 551.3266,800.8 551.3266,796.8 L551.3266,792.8 C551.3266,784.8 559.3266,776.8 567.3266,776.8 C571.3266,780.8 574.3266,780.8 578.3266,780.8" fill="#0079C9"/><text fill="#0079C9" font-family="Roboto, sans-serif, sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="65.0332" x="545.81" y="818.9387">Customer</text></g><g class="entity" data-entity="LDC Configuration" data-source-line="342" data-uid="ent0004" id="entity_LDC Configuration"><ellipse cx="464.3192" cy="44.9878" fill="#313139" rx="67.9392" ry="15.9878" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="109.5" x="409.5692" y="48.4722">LDC Configuration</text></g><g class="entity" data-entity="GMN6" data-source-line="343" data-uid="ent0007" id="entity_GMN6"><path d="M567.37,41 L567.37,40.99 L532.35,44.99 L567.37,48.99 L567.37,48.9688 A10,10 0 0 0 577.37,58.9688 L845.2802,58.9688 A10,10 0 0 0 855.2802,48.9688 L855.2802,41 L845.2802,31 L577.37,31 A10,10 0 0 0 567.37,41" fill="#D9EBF6" filter="url(#f1l0u3216217x9)" style="stroke:#1281AC;stroke-width:1;"/><path d="M845.2802,31 L845.2802,36 A5,5 0 0 0 850.2802,41 L855.2802,41 L845.2802,31" fill="#D9EBF6" style="stroke:#1281AC;stroke-width:1;"/><text fill="#000000" font-family="Roboto, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="262.9102" x="575.37" y="49.1387">Defines charge definitions and rate classes.</text></g><g class="entity" data-entity="Pool Configuration" data-source-line="345" data-uid="ent0009" id="entity_Pool Configuration"><ellipse cx="464.3198" cy="180.038" fill="#313139" rx="68.3398" ry="16.068" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="110.4492" x="409.0952" y="183.5223">Pool Configuration</text></g><g class="entity" data-entity="End User Configuration" data-source-line="347" data-uid="ent0011" id="entity_End User Configuration"><ellipse cx="464.3246" cy="293.6809" fill="#313139" rx="80.8546" ry="18.5709" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="139.166" x="394.7416" y="297.1653">End User Configuration</text></g><g class="entity" data-entity="GMN13" data-source-line="348" data-uid="ent0014" id="entity_GMN13"><path d="M580.13,289.69 L580.13,289.68 L545.61,293.68 L580.13,297.68 L580.13,297.6587 A10,10 0 0 0 590.13,307.6587 L916.5226,307.6587 A10,10 0 0 0 926.5226,297.6587 L926.5226,289.69 L916.5226,279.69 L590.13,279.69 A10,10 0 0 0 580.13,289.69" fill="#D9EBF6" filter="url(#f1l0u3216217x9)" style="stroke:#1281AC;stroke-width:1;"/><path d="M916.5226,279.69 L916.5226,284.69 A5,5 0 0 0 921.5226,289.69 L926.5226,289.69 L916.5226,279.69" fill="#D9EBF6" style="stroke:#1281AC;stroke-width:1;"/><text fill="#000000" font-family="Roboto, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="321.3926" x="588.13" y="297.8287">Configures pricing agreements and stores addresses.</text></g><g class="entity" data-entity="Price Agreement" data-source-line="350" data-uid="ent0016" id="entity_Price Agreement"><ellipse cx="362.3229" cy="406.4646" fill="#313139" rx="64.0729" ry="15.2146" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="100.207" x="312.2194" y="409.949">Price Agreement</text></g><g class="entity" data-entity="Facility Setup" data-source-line="352" data-uid="ent0018" id="entity_Facility Setup"><ellipse cx="567.3229" cy="406.4606" fill="#313139" rx="55.5229" ry="14.0506" style="stroke:#E7E7E7;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="81.4043" x="526.6208" y="409.945">Facility Setup</text></g><g class="link" data-entity-1="Supplier" data-entity-2="LDC Configuration" data-source-line="342" data-uid="lnk5" id="link_Supplier_LDC Configuration"><path d="M64.9,44.99 C133.5,44.99 295.04,44.99 389.9,44.99" fill="none" id="Supplier-to-LDC Configuration" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="395.9,44.99,386.9,40.99,390.9,44.99,386.9,48.99,395.9,44.99" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="291.9434" x="85.02" y="37.1287">Configures Local Distribution Companies (LDCs).</text></g><g class="link" data-entity-1="LDC Configuration" data-entity-2="Pool Configuration" data-source-line="345" data-uid="lnk10" id="link_LDC Configuration_Pool Configuration"><path d="M464.32,61.25 C464.32,86.78 464.32,131.86 464.32,157.55" fill="none" id="LDC Configuration-to-Pool Configuration" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="464.32,163.55,468.32,154.55,464.32,158.55,460.32,154.55,464.32,163.55" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="202.0605" x="467.32" y="129.1087">Sets up pools for gas distribution.</text></g><g class="link" data-entity-1="Pool Configuration" data-entity-2="End User Configuration" data-source-line="347" data-uid="lnk12" id="link_Pool Configuration_End User Configuration"><path d="M464.32,196.56 C464.32,217.05 464.32,247.05 464.32,268.7" fill="none" id="Pool Configuration-to-End User Configuration" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="464.32,274.7,468.32,265.7,464.32,269.7,460.32,265.7,464.32,274.7" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="195.1289" x="467.32" y="240.2487">Associates end users with pools.</text></g><g class="link" data-entity-1="End User Configuration" data-entity-2="Price Agreement" data-source-line="350" data-uid="lnk17" id="link_End User Configuration_Price Agreement"><path d="M407.51,307.2 C388.93,314.27 370.28,325.26 359.32,342.25 C349.98,356.75 351.5711,371.471 355.4811,385.151" fill="none" id="End User Configuration-to-Price Agreement" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="357.13,390.92,358.5027,381.1673,355.7559,386.1125,350.8107,383.3658,357.13,390.92" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="159.0352" x="362.32" y="356.3887">Defines price agreements.</text></g><g class="link" data-entity-1="End User Configuration" data-entity-2="Facility Setup" data-source-line="352" data-uid="lnk19" id="link_End User Configuration_Facility Setup"><path d="M491.71,311.61 C503.8,319.91 517.66,330.62 528.32,342.25 C542.44,357.65 551.6093,373.5122 558.4193,387.0222" fill="none" id="End User Configuration-to-Facility Setup" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="561.12,392.38,560.6408,382.5428,558.8694,387.9152,553.4971,386.1438,561.12,392.38" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="166.8281" x="545.32" y="356.3887">Links end users to facilities.</text></g><g class="link" data-entity-1="Facility Setup" data-entity-2="Meter Reading" data-source-line="355" data-uid="lnk22" id="link_Facility Setup_Meter Reading"><path d="M567.32,420.73 C567.32,445.34 567.32,491.82 567.32,516.52" fill="none" id="Facility Setup-to-Meter Reading" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="567.32,522.52,571.32,513.52,567.32,517.52,563.32,513.52,567.32,522.52" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="158.8242" x="570.32" y="465.8187">Records gas consumption.</text></g><g class="link" data-entity-1="Meter Reading" data-entity-2="Invoice Generation" data-source-line="356" data-uid="lnk24" id="link_Meter Reading_Invoice Generation"><path d="M568.72,551.52 C570.76,571.53 573.9584,602.8113 576.1184,623.8913" fill="none" id="Meter Reading-to-Invoice Generation" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="576.73,629.86,579.7918,620.4991,576.2203,624.886,571.8334,621.3146,576.73,629.86" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="118.875" x="577.32" y="595.2587">Generates invoices.</text></g><g class="link" data-entity-1="Invoice Generation" data-entity-2="Customer" data-source-line="357" data-uid="lnk25" id="link_Invoice Generation_Customer"><path d="M578.32,663.25 C578.32,682.77 578.32,710.69 578.32,737.42" fill="none" id="Invoice Generation-to-Customer" style="stroke:#616161;stroke-width:2;"/><polygon fill="#616161" points="578.32,743.42,582.32,734.42,578.32,738.42,574.32,734.42,578.32,743.42" style="stroke:#616161;stroke-width:2;"/><text fill="#616161" font-family="Inter-SemiBold, sans-serif, sans-serif" font-size="12" lengthAdjust="spacing" textLength="302.4023" x="581.32" y="708.9387">Customer receives invoices and makes payments.</text></g></g></svg></div></div>
+
+<h2 id="workflow-explanation">Workflow explanation<a class="headerlink" href="#workflow-explanation" title="Permanent link">¶</a></h2>
+<p>The <strong>nGenue retail gas workflow</strong> outlines the step-by-step process involved in configuring gas distribution, managing customers, and handling billing. The workflow follows a structured approach, starting from <strong>supplier-side configurations</strong> to <strong>customer invoicing and payments</strong>.</p>
+<ol>
+<li>
+<p><strong>LDC configuration</strong></p>
+<ol>
+<li>The <strong>supplier</strong> configures <strong>Local Distribution Company (LDC)</strong> to define charge definitions and rate classes.</li>
+<li>This step ensures that gas distribution is categorized appropriately based on pricing structures and market regulations.</li>
+</ol>
+</li>
+<li>
+<p><strong>Pool configuration</strong></p>
+<ol>
+<li>Pools are set up to manage <strong>gas distribution</strong> efficiently.</li>
+<li>A pool groups multiple end users, allowing streamlined gas allocation and usage tracking.</li>
+</ol>
+</li>
+<li>
+<p><strong>End user configuration</strong></p>
+<ol>
+<li>End users (customers receiving gas supply) are assigned to respective pools.</li>
+<li>This step involves configuring <strong>pricing agreements</strong> and <strong>storing end-user addresses</strong>.</li>
+</ol>
+</li>
+<li>
+<p><strong>Price agreement</strong></p>
+<ol>
+<li>These agreements ensure transparency in billing and compliance with regulatory standards.</li>
+<li>Price agreements are defined based on <strong>contractual terms, market rates, and business policies</strong>.</li>
+</ol>
+</li>
+<li>
+<p><strong>Facility setup</strong></p>
+<ol>
+<li>Facilities (customer locations) are linked to respective <strong>end users</strong>.</li>
+<li>This setup is necessary to track gas consumption at a granular level for accurate billing.</li>
+</ol>
+</li>
+<li>
+<p><strong>Data management</strong>
+This section handles the operational aspects of <strong>meter readings, invoicing, and customer billing</strong>.</p>
+<ol>
+<li>
+<p><strong><em>Meter reading</em></strong></p>
+<ul>
+<li>Gas consumption is recorded based on periodic <strong>meter reads</strong>.</li>
+<li>These readings form the foundation for <strong>accurate billing and usage tracking</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Invoice generation</em></strong></p>
+<ul>
+<li>Based on the recorded meter readings, invoices are generated.</li>
+<li>The system applies the appropriate charges, taxes, and rate calculations as per the <strong>LDC configurations and price agreements</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Customer interaction</em></strong></p>
+<ul>
+<li>The <strong>customer receives invoices</strong> for the gas consumed.</li>
+<li>They <strong>make payments</strong> based on the generated invoices, completing the billing cycle.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">¶</a></h2>
+<p>This workflow ensures an <strong>organized, efficient, and transparent</strong> approach to retail gas distribution. By systematically configuring LDCs, pools, end users, and facilities, the system streamlines the entire process from <strong>gas distribution to invoicing and payment collection</strong>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback! Help us improve this page by <a href="https://docs.google.com/forms/d/e/1FAIpQLSffAczVa5Q6C_YP9pabBqzj-qiQwYQOsYRibUgXnQwRl_yLGQ/viewform?usp=dialog" target="_blank" rel="noopener">filing an issue</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Understanding retail gas business in nGenue">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Understanding retail gas business in nGenue
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../ldcs/ldcs_overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Understand">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Understand
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 nGenue
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ngenue" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/c/ngenue" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ngenue" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/ngenue" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "announce.dismiss", "content.tabs.link", "navigation.sections", "navigation.footer", "content.code.annotate", "search.suggest", "header.autohide"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../assets/js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/js/typewriter.js"></script>
+      
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      
+        <script src="../../assets/js/removeCredits.js"></script>
+      
+        <script src="../../assets/js/extra.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
