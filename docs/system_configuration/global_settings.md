@@ -1,6 +1,6 @@
-# Global settings overview
+# Understanding global settings
 
-The **Global settings** serves as a centralized hub for managing default configurations across various screens and tabs within the application. These settings allow administrators to define system-wide preferences, ensuring consistency and streamlining the user experience. By configuring options such as default values, display preferences, and behavior settings, organizations can establish values that will automatically apply across relevant fields— reducing the need for repetitive data entry and promoting standardized configuration.
+The **global settings** serves as a centralized hub for managing default configurations across various screens and tabs within the application. These settings allow administrators to define system-wide preferences, ensuring consistency and streamlining the user experience. By configuring options such as default values, display preferences, and behavior settings, organizations can establish values that will automatically apply across relevant fields— reducing the need for repetitive data entry and promoting standardized configuration.
 
 !!!note "Note"
 
@@ -8,15 +8,15 @@ The **Global settings** serves as a centralized hub for managing default configu
 
 ## Key default configurations
 
-1. **File Path default:** If a default file path is set, any file-related actions will save the files to the specified location automatically, ensuring consistent storage and easy retrieval.
+1. **File path default:** If a default file path is set, any file-related actions will save the files to the specified location automatically, ensuring consistent storage and easy retrieval.
 
-2. **Field-Specific defaults:** When default values are configured for specific fields— such as Standard Pricing or Unit of Measurement— these values will pre-fill on applicable screens, saving time and improving data accuracy. 
+2. **Field-specific defaults:** When default values are configured for specific fields— such as Standard Pricing or Unit of Measurement— these values will pre-fill on applicable screens, saving time and improving data accuracy. 
 
 3. **Format defaults:** Setting default formats for items such as invoices or dates ensures that users see information presented in a uniform manner across the application.
 
-4. **Color Scheme default:** Setting a color scheme as a default allows users to customize the application’s appearance to fit branding needs or personal preferences. Once a color scheme is selected in the Global Settings module, it is applied consistently across all screens, menus, and toolbars— providing a cohesive visual experience. This can be especially useful for distinguishing different environments (e.g. Test, Development, Production) or for enhancing accessibility with high-contrast options.
+4. **Color scheme default:** Setting a color scheme as a default allows users to customize the application’s appearance to fit branding needs or personal preferences. Once a color scheme is selected in the Global Settings module, it is applied consistently across all screens, menus, and toolbars— providing a cohesive visual experience. This can be especially useful for distinguishing different environments (e.g. Test, Development, Production) or for enhancing accessibility with high-contrast options.
 
-## Procedure to configure
+## Procedure to configure global settings
 
 This section outlines the steps to configure the **Global settings** in nGenue.
 
@@ -26,7 +26,7 @@ This section outlines the steps to configure the **Global settings** in nGenue.
 * A thorough understanding of the organization's requirements for screen and tab configurations is essential.
 * Any dependent configurations, such as roles or permissions, are already set up.
 
-### Procedure
+### Process steps
 
 #### Step 1: Access the Global settings screen
 

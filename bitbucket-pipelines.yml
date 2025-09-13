@@ -1,0 +1,22 @@
+# Bitbucket Pipelines configuration
+image: python:3.9
+pipelines:
+  default:
+    - step:
+        name: Deploy
+        caches:
+          - pip
+          - custom
+        script:
+          - pip install mkdocs-material
+          - pip install mkdocs-glightbox
+          - pip install mkdocs_puml
+          - pip install mkdocs-git-revision-date-localized-plugin
+          - pip install mkdocs-git-committers-plugin-2
+          - pip install mkdocs-git-authors-plugin
+          - pip install mkdocs-include-markdown-plugin
+          - mkdocs gh-deploy --force
+definitions:
+  caches:
+    pip: ~/.cache/pip
+    custom: .cache

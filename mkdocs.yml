@@ -1,8 +1,8 @@
 # Project info
-site_name: nGenue
+site_name: nGenue Help Center
 site_description: Ngenue documentation portal
 site_author: Dipender Sharma
-site_url: https://ngenue.com
+site_url: https://www.ngenue.com
 
 # Repository
 # repo_name: 'nGenue'
@@ -10,33 +10,33 @@ site_url: https://ngenue.com
 # edit_uri: ''
 
 # Copyright
-copyright: Copyright &copy; 2024 nGenue
+copyright: Copyright &copy; 2025 nGenue
 
 # Configuration
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/images/ngenue_logo.jpeg
-  favicon: assets/images/ngenue_logo.jpeg
+  logo: assets/images/ngenue_favicon.svg
+  favicon: assets/images/ngenue_favicon.svg
   icon:
     repo: fontawesome/brands/github
   palette:
     # - media: "(prefers-color-scheme: light)"
     - scheme: default
-      primary: white
-      accent: deep purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-5
         name: "Switch to dark mode"
     # - media: "(prefers-color-scheme: dark)"
     - scheme: slate
-      primary: white
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-2
         name: "Switch to light mode"
   font:
-      text: Noto Sans
+      text: Roboto
       code: Roboto Mono
   features:
     - navigation.instant
@@ -50,7 +50,7 @@ theme:
     - content.code.copy
     - toc.follow
     - announce.dismiss
-    # - content.tabs.link
+    - content.tabs.link
     # - content.tooltips
     # - search.highlight
     - navigation.sections
@@ -58,14 +58,40 @@ theme:
     # - content.action.edit
     # - content.action.view
     - content.code.annotate
+    - search.suggest
+    - header.autohide
+
+
+extra_css:
+  - assets/css/custom.css
+  - assets/css/puml.css
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/typewriter.js
+  - https://unpkg.com/typewriter-effect@latest/dist/core.js
+  - assets/js/removeCredits.js
+  - assets/js/extra.js
 
 
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ngenue
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/c/ngenue
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ngenue
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ngenue
+  generator: false
+  status:
+    new: Recently added
+    update: Recently updated
   homepage: https://ngenue.com
-  generator: true
   analytics:
     provider: google
-    property: 
+    property: G-3MKL9HS3NJ
     feedback:
           title: Was this page helpful?
           ratings:
@@ -79,31 +105,17 @@ extra:
               data: 0
               note: >- 
                 Thanks for your feedback! Help us improve this page by
-                <a href="" target="_blank" rel="noopener">filing an issue</a>.
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ngenue
-    - icon: fontawesome/brands/youtube
-      link: https://youtube.com/c/ngenue
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ngenue
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/ngenue
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSffAczVa5Q6C_YP9pabBqzj-qiQwYQOsYRibUgXnQwRl_yLGQ/viewform?usp=dialog" target="_blank" rel="noopener">filing an issue</a>.
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
 
-extra_css:
-  - assets/css/custom.css
-  - assets/css/puml.css
-extra_javascript:
-  - assets/js/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-  - assets/js/typewriter.js
-  - https://unpkg.com/typewriter-effect@latest/dist/core.js
-
-extra:
-  status:
-    new: Recently added
-    update: Recently updated
-    add: Need rework
+  # version:            // provide a version number for the documentation
+  #   provider: mike
 
 
 # Extensions
@@ -124,10 +136,6 @@ markdown_extensions:
         emoji_index: !!python/name:material.extensions.emoji.twemoji
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.keys
-  # - pymdownx.magiclink:
-  #     user: hummingbot
-  #     repo: hummingbot
-  #     repo_url_shorthand: true
   - pymdownx.smartsymbols
   - pymdownx.highlight:
       anchor_linenums: true
@@ -152,6 +160,7 @@ markdown_extensions:
   - tables
 
 plugins:
+  # - tags
   - include-markdown
   - glightbox:
        touchNavigation: true
@@ -171,90 +180,66 @@ plugins:
        manual: false
   - search
   - plantuml:
-      puml_url: https://www.plantuml.com/plantuml/
+      puml_url: https://www.plantuml.com/plantuml
 
-  
   # - git-authors
 
   # - git-committers:
-  #    repository: sarahjones123/nGenue_docs
-  #    branch: main
+      # repository: sarahjones123/nGenue_docs
+      # branch: main
       
   # - git-revision-date-localized:
-  #    enable_creation_date: true
+      # enable_creation_date: true
       
 
 # Navigation
 nav:
   - Home: index.md
 
-  - Documentation: 
+  - Getting started: 
     - Introduction to nGenue: 
       - introduction/index.md
-      # - nGenue overview: home.md
       - Key features and benefits: features.md
-      - System requirements: system_requirements.md
-      - Initial setup: installation.md
+      - Why choose nGenue?: choose_ngenue.md
 
-    - Getting started: 
-      - getting_started/index.md
-      - Legal Entity, Business Unit, Strategy, and Portfolio: getting_started/inbook_structure.md
-      - Supply region: getting_started/supply_region.md
-      - Pipeline: getting_started/pipeline.md
-      - Counterparty:
-          - Overview: getting_started/counterparty/counterparty.md
-          - Configure: getting_started/counterparty/create_counterparty.md
-      - Rates and tariff: getting_started/rate_schedule.md
-      # - Transport contract: getting_started/transport_contract.md
-      - End users: 
-          - Overview: getting_started/end_users/overview.md
-          - Configure: getting_started/end_users/create_end_user.md
-
-    - ETRM:
-      - etrm/index.md
-      - Deal management: 
-        - Overview: deal_management/overview.md
-        - Create a deal:
-          - Physical deal: deal_management/physical_deal.md
-          - Physical retail deal: deal_management/physical_retail_deal.md
-          - Swap deal: deal_management/swap_deal.md
-          - Future deal: deal_management/future_deal.md
-          - Physical NG deal: deal_management/ng_deal.md
-          - Production deal: deal_management/production_deal.md
-          - Cash deal: deal_management/cash_deal.md
-          - Physical wellhead deal: deal_management/wellhead_deal.md
-      #  - Swap deal blotter: Swap deal blotter
-      #  - Futures deal blotter: Futures deal blotter
-      # - Evergreen deals process: Evergreen deals process
-      #  - Deal activity log: Deal activity log
-      - Pricing configurations: pricing/index.md 
-      - Nominations: etrm/nominations.md
-      - Settlements: etrm/settlements.md
-
+      # - Getting started: 
+      #   - getting_started/index.md
+    - Installation guide:
+      - installation_guide/index.md
+      - System requirements: installation_guide/system_requirements.md
+      - Installation steps:
+        # - installation_guide/index.md
+        - Install Microsoft SQL Server: installation_guide/sql_server_installation.md
+        - Restore a database backup: installation_guide/restore_database.md
+        - Run nGenue application: installation_guide/run_ngenue_application.md
+        # - Post installation steps:
+          # - installation_guide/post_installation/index.md
+        - SSRS configuration: installation_guide/post_installation/ssrs_configure.md
+          # - EDI configuration: installation_guide/post_installation/edi_configure.md
     - System configuration:
-      - system_configuration/index.md
-      - Menu configuration: system_configuration/menu_configurations.md
       - Global setting: system_configuration/global_settings.md
+      - Menu configuration: system_configuration/menu_configurations.md
+      - Chart of accounts: system_configuration/chart_of_accounts.md
+      - GL Transactions: system_configuration/gl_transactions.md
 
-
-#    - How-to: 
+        #    - How-to: 
 #      - how_to/index.md   
 
     - FAQs: 
       - faqs/index.md
 
-    - Use cases:
-      - use_cases/index.md
+    # - Use cases:
+    #   - use_cases/index.md
 
-    - Troubleshootings: 
-      - troubleshootings/index.md
+    # - Troubleshootings: 
+    #   - troubleshootings/index.md
 
     - Glossary: 
       - glossary/index.md
 
-#    - Template: 
-#      - template/index.md
-      # - Markdown syntax: template/markdown_syntax_code.md
+    # - Template: 
+    #   - template/index.md
+    #   - Markdown syntax: template/markdown_syntax_code.md
 
 #  - Releases:
 #    - Releases: releases/index.md
@@ -264,3 +249,176 @@ nav:
   
 #  - Blog: 
 #    - blog/index.md
+
+  - ETRM:
+    - etrm/index.md
+    - etrm/etrm_workflow.md
+    - etrm/addressing_etrm_aspects.md
+    - ETRM components:
+      - Book structure: 
+        - Understand: getting_started/inbook_structure.md
+        - Configure: getting_started/configure_book_structure.md
+
+      - Supply region: 
+        - Understand: getting_started/supply_region.md
+        - Configure: getting_started/configure_supply_region.md
+
+      - Counterparty structure:
+        - Understand: getting_started/counterparty/counterparty.md
+        - Configure: getting_started/counterparty/create_counterparty.md
+
+      - Pipeline, zones, and location: 
+          # - pipeline_management/index.md
+          - Understand: getting_started/pipeline.md
+          - Configure: getting_started/configure_pipeline.md
+          - Rates and tariff: getting_started/rates_tariffs.md
+
+      - Deal management:
+        # - deal_management/index.md
+        - Understand: deal_management/overview.md
+        - Navigate: deal_management/navigate.md
+        - Configure: 
+            - deal_management/create_deal.md
+            - deal_management/copy_deal.md
+            - deal_management/child_deal.md
+            - deal_management/evergreen_deal.md
+      
+      - Pipeline scheduling and nominations: 
+        - Understand: etrm/pipeline_scheduling.md
+        - Configure: etrm/configure_pipeline_scheduling.md
+
+      - Indices and curves: 
+        - Understand: etrm/indices_and_curves.md
+        - Configure: etrm/configure_indices_and_curves.md
+
+      - Supply valuation pool: 
+        - Understand: etrm/valuation_pools.md
+        - Configure: etrm/configure_valuation_pools.md
+
+      - Transport contract: 
+        - Understand: getting_started/transport_contract.md
+        - Configure: getting_started/configure_transport_contract.md
+
+      - Pricing and invoices: 
+        - Understand: pricing/pricing_overview.md
+        - Configure: pricing/configure_pricing.md
+
+      - MTM and price exposure: 
+        - Understand: etrm/market_to_market.md
+        - Configure: etrm/configure_market_to_market.md
+
+      - Inventory valuation: 
+        - Understand: etrm/inventory_valuation.md
+        - Configure: etrm/configure_inventory_valuation.md
+
+      - Counterparty credit:
+        - Understand: etrm/counterparty_credit.md
+        - Configure: etrm/configure_counterparty_credit.md
+
+
+  - Retail:
+    - retail_market/index.md
+    # - Role of LDCs: retail_market/LDCs/index.md
+    - Retail workflow: retail_market/retail_workflow.md
+    - LDC configuration: 
+      - Understand: ldcs/ldcs_overview.md
+      - Navigate: ldcs/ldcs_navigate.md
+      - Configure: 
+        - Create LDC: ldcs/ldcs_configure.md
+        - LDC rate riders: ldcs/ldcs_rider/configure_ldcs_riders.md
+        - LDC charge definition: ldcs/charge_definition.md
+    # - LDC rate and rider:
+    #   - Understand: ldcs/ldcs_rider/understand_ldcs_riders.md
+    - LDC Pool configuration:
+      - Understand: ldcs/pool_management/understand_pool_management.md
+      - Configure: ldcs/pool_management/configure_pool_management.md
+
+    - End users management: 
+      # - endusers/index.md
+      - Understand: getting_started/end_users/overview.md
+      - Navigate: getting_started/end_users/navigate.md
+      - Configure: 
+        - Create an end user: getting_started/end_users/create_end_user.md
+        - Add address to end user: getting_started/end_users/add_address.md
+        - Add sales contract to end user: getting_started/end_users/add_sales_contract.md
+        - Add price agreement: getting_started/end_users/add_price_agreement.md
+        - Add facility to end user: getting_started/end_users/add_facility.md
+        - Create a sales commission: getting_started/end_users/create_sales_commission.md
+        - Create event for end user: getting_started/end_users/create_event.md
+        - Validate and activate an end user: getting_started/end_users/validate_end_user.md
+
+    - Facility management:
+      - Understand: facility_management/overview.md
+      - Configure: 
+        - Add a facility to end user: facility_management/add_facility.md
+        - Validate a facility: facility_management/validate_facility.md
+        - Transfer facility to another end user: facility_management/transfer_facility.md
+        - Submit an enrollment: facility_management/submit_enrollment.md
+        - Cancel a facility: facility_management/cancel_facility.md
+    - Data management:
+      # - Price agreement configuration: Price agreement configuration
+      # - Meter reading and consumption data: Meter reading and consumption data
+      - Billing generation: data_management/billing_generation.md
+      - Generate an invoice: data_management/invoice_generation.md
+      - Print invoice: data_management/print_invoice.md
+      
+  - EDI:
+    - edi/index.md
+    # - EDI benefits in natural gas industry: edi/edi_benefits.md
+    - Key EDI transactions supported: edi/edi_transaction_supported.md
+    - EDI messages formats and protocol: edi/edi_formats_protocols.md
+        # - EDI protocols: edi/edi_message_protocols/edi_protocols.md
+
+    - EDI transactions:
+        # - edi/edi_transactions/index.md 
+        - EDI 814 transactions:
+          - Enrollment transactions: 
+            - Understand: edi/edi_transactions/edi_814/enrollment/understand_enrollment.md
+            - Configure: edi/edi_transactions/edi_814/enrollment/configure.md
+          - Change transactions: 
+            - Understand: edi/edi_transactions/edi_814/change/understand_change.md
+            - Configure: 
+              - Configure bill type: edi/edi_transactions/edi_814/change/change_bill_type.md
+              - Configure rate code: edi/edi_transactions/edi_814/change/change_rate_code.md
+              - Configure commodity price: edi/edi_transactions/edi_814/change/change_commodity_price.md
+              - Configure customer tax rate: edi/edi_transactions/edi_814/change/change_customer_tax_rate.md
+              - Configure account number: edi/edi_transactions/edi_814/change/change_account_number.md
+              - Post change request configuration: edi/edi_transactions/edi_814/change/outbound_and_inbound.md
+          - Drop transactions: 
+            - Understand: edi/edi_transactions/edi_814/drop/understand.md
+            - Configure: edi/edi_transactions/edi_814/drop/configure.md
+          - Reinstatement transactions:
+            - Understand: edi/edi_transactions/edi_814/reinstatement/understand_reinstatement.md
+            - Configure: edi/edi_transactions/edi_814/reinstatement/configure_reinstatement.md
+          - Advance notification drop: edi/edi_transactions/edi_814/advance_drop/edi_advance_notification_drop.md
+        - EDI 810 transactions:
+          - Invoice transactions: edi/edi_transactions/edi_810/edi_invoice_810.md
+        - EDI 867 transactions:
+          - Monthly Usage (MU) transactions: edi/edi_transactions/edi_867/monthly_867/mu_transactions.md
+          - Historical Usage (HU) transactions: edi/edi_transactions/edi_867/historical_usage_867/hu_transactions.md
+        - EDI 997 transactions:
+          - Acknowledgement transactions: edi/edi_transactions/edi_997/acknowledgment_997.md
+        - EDI 248 transactions:
+          - Write off transactions: edi/edi_transactions/edi_248/edi_writeoff_248_transaction.md
+        - EDI 820 transactions:
+          - Payment transactions: edi/edi_transactions/edi_820/payment_820/understand_payment.md
+
+    - Reference:
+        - EDI transactions error handling:  edi/reference/troubleshooting.md
+
+  - PQE:
+    - prospect_quote_engine/index.md
+    - Configuration requirements: prospect_quote_engine/configuration_requirements.md
+    - Configure:
+      - LDC pricing product: prospect_quote_engine/ldc_pricing_product_configuration.md
+      - Mass marketing: prospect_quote_engine/mass_marketing.md
+      - Create a prospect: prospect_quote_engine/prospect_creation.md
+      - Process a quote: prospect_quote_engine/quote_process.md
+      - Prospect conversion to end user: prospect_quote_engine/convert_to_end_user.md
+      - Price lock and liquidation configuration: prospect_quote_engine/lock_liquidation.md
+      - Billing configuration: prospect_quote_engine/billing_configuration.md
+    - Reference:
+      - Sync retail contact details to prospect: prospect_quote_engine/reference/sync_retail_contact_info.md
+      - Manage bulk quotes for prospects: prospect_quote_engine/reference/buyers_group.md
+      - Unit of measurement (UOM) conversion: prospect_quote_engine/reference/uom_conversion.md
+      - Extend quote term request: prospect_quote_engine/reference/quote_extension.md

@@ -141,7 +141,7 @@ sequenceDiagram
   loop Healthcheck
       John->>John: Fight against hypochondria
   end
-  Note right of John: Rational thoughts!
+  Note right of John: Rational thought!
   John-->>Alice: Great!
   John->>Bob: How about you?
   Bob-->>John: Jolly good!
@@ -190,5 +190,7 @@ theme:
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
     text__, images, ... basically anything that can be written in Markdown.
 
+The HTML specification is maintained by the W3C.
 
-{% include-markdown "./varriable.md" %}
+*[HTML]: Hyper Text Markup Language
+*[W3C]: World Wide Web Consortium

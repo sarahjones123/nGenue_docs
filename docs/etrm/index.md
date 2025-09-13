@@ -1,108 +1,406 @@
 ---
-status: new
 hide:
  - toc
 ---
 
-# ETRM overview
+# Understanding ETRM
 
-**ETRM** stands for *Energy Trading, and Risk Management.*
+nGenue’s **Energy Trading, and Risk Management (ETRM)** process is specifically designed to meet the needs of natural gas market participants, including utilities, marketers, and pipeline operators. It provides a unified platform to manage energy trading, financial risk, counterparty credit assessment, and compliance with risk limits. By integrating these functionalities, nGenue enables organizations to streamline trading operations, mitigate financial risks, and ensure regulatory compliance while maintaining efficiency and accuracy.
 
-ETRM in nGenue focuses on managing the full lifecycle of wholesale natural gas transactions. It integrates trading, transportation, risk management, and reporting capabilities into a unified platform, tailored to the unique requirements of wholesale operations.
+## Key components of ETRM
 
-**Key wholesale processes supported by nGenue's ETRM include**:
+<!-- ![nGenue_ETRM](./images/nGenue_etrm.png) -->
 
-* **Trading**: Facilitates the buying and selling of natural gas in wholesale markets.
-* **Contract management**: Manages long-term and short-term contracts with suppliers, buyers, and transporters.
-* **Transportation logistics**: Optimizes pipeline scheduling, nominations, and storage.
-* **Risk assessment**: Monitors price volatility, credit exposure, and operational risks.
-* **Regulatory compliance**: Ensures adherence to industry standards and legal requirements.
-![nGenue_ETRM](./images/nGenue_etrm.png)
+![nGenue_ETRM](./images/etrm_components.svg)
 
-## ETRM Workflow
+### 1. Trading
+
+The trading is all about efficiently manage energy trades by offering:
+
+* **Trade capture and management:** Enables users to record and track transactions across multiple markets.
+* **Market price integration:** Real-time price feeds ensure accurate valuation of traded contracts.
+* **Position management:** Provides visibility into current positions, enabling better decision-making.
+* **Contract and transaction execution:** Facilitates trade execution for long-term and short-term contracts.
+
+This feature is designed to provide real-time visibility, automation, and control over trading activities, reducing manual errors and improving efficiency.
+
+### 2. Risk management
+
+nGenue’s risk management capabilities help businesses assess and mitigate financial exposure due to market fluctuations. Key features include:
+
+* **Market risk analysis:** Provides insights into exposure due to price movements in the natural gas market.
+* **Value at risk (VaR) calculation:** Measures potential portfolio losses under different market conditions.
+* **Hedging strategies:** Supports derivative instruments such as swaps and options to offset risks.
+* **Scenario analysis and forecasting:** Simulates different price scenarios and their impact on trading portfolios.
+
+With nGenue’s risk management features, organizations can make data-driven decisions to protect profitability and ensure financial stability.
+
+### 3. Counterparty credit management
+
+Since trading involves multiple counterparties, **nGenue** includes a comprehensive counterparty credit management system to minimize the risk of defaults. It provides:
+
+* **Credit Scoring & Limits:** Assigns credit scores to counterparties and establishes appropriate limits.
+* **Exposure Monitoring:** Tracks real-time credit exposure across all transactions.
+* **Collateral & Payment Tracking:** Manages security deposits, payments, and guarantees to secure transactions.
+* **Risk Alerts & Notifications:** Triggers alerts when counterparties approach or exceed their credit limits.
+
+By proactively managing counterparty risk, **nGenue** ensures secure and reliable energy transactions.
+
+### 4. Risk limits
+
+To maintain financial discipline and regulatory adherence, nGenue enforces risk limits through:
+
+* **Predefined exposure limits:** Sets position and credit limits to prevent excessive risk-taking.
+* **Automated risk alerts:** Notifies users when exposure approaches predefined thresholds.
+* **Regulatory compliance reporting:** Ensures adherence to industry regulations such as NAESB and FERC guidelines.
+* **Audit and Governance controls:** Tracks all transactions and risk management activities for transparency and accountability.
+
+By enforcing risk limits, nGenue helps organizations maintain financial stability while meeting compliance requirements.
+
+---
+
+<!--
+## ETRM workflow
 
 Let's understand the workflow of ETRM in nGenue through below flow diagram:
 
-<!-- This is commented out. 
-### Workflow 1
-
-```puml
-@startuml
-
-skinparam backgroundColor #F9F9F9
-skinparam participantBackgroundColor #D6EAF8
-skinparam participantBorderColor #2874A6
-skinparam sequenceArrowColor #2874A6
-skinparam noteBackgroundColor #FAD7A0
-skinparam noteBorderColor #D35400
-
-actor Trader #yellow
-participant "ETRM system" as System #lightgreen
-
-note over Trader, System
-The process starts with creating a deal and verifying configurations.
-Prerequisite configurations are mandatory before proceeding.
-end note
-
-Trader -> System: Create a deal
-alt Are configurations complete?
-    System -> System: Proceed to Configure Prerequisites
-    loop Configure Prerequisites
-        System -> System: Configure Legal Entity, Business Unit, Strategy, and Portfolio
-        System -> System: Configure Supply Region
-        System -> System: Configure Pipeline
-        System -> System: Configure Pipeline Location
-        System -> System: Configure Pipeline Zone
-        System -> System: Configure Counterparty
-        System -> System: Create Rate Schedule
-    end
-    System -> Trader: Configurations Completed
-else Configurations are complete
-    System -> Trader: Proceed to Deal type selection
-end
-
-alt Buy Deal
-    Trader -> System: Create Buy Deal
-else Sell Deal
-    Trader -> System: Create Sell Deal
-end
-
-System -> System: Create Transport Contract
-note right of System: The transport contract outlines terms for gas movement.
-
-System -> System: Proceed to Nominations
-loop Create Nominations
-    Trader -> System: Select Nomination Type
-    note right 
-    Nomination types:
-    - Buy Nominations: Requests related to purchased energy being transported or stored.
-    - Sell Nominations: Requests related to sold energy being transported to the buyer.
-    - Interconnects: Nominations specifying energy flow between different pipeline systems or facilities.
-    - Pool and Storage: Nominations involving injection into or withdrawal from storage facilities or pooling points.
-end note
-    System -> System: Process Nomination
-end
-System -> System: Finalize Nomination
-
-System -> System: Perform Settlement Process
-note right of System: Reconcile financials and operational data.
-
-System -> Trader: Print Settlement Report
-
-@enduml
-```
--->
-
 ```puml
 
 @startuml
 
-skinparam backgroundColor #F9F9F9
-skinparam activityBackgroundColor #D6EAF8
-skinparam activityBorderColor #2874A6
-skinparam arrowColor #2874A6
-skinparam noteBackgroundColor #FAD7A0
-skinparam noteBorderColor #D35400
+scale max 1000 width
+
+skinparam backgroundColor #F5F5F3
+skinparam Shadowing 10
+skinparam BoundaryBackgroundColor #ffffff
+skinparam BoundaryBorderColor #4ca0d9
+skinparam DiagramBorderColor #F5F5F3
+skinparam BoundaryFontColor #0079c9
+skinparam BoundaryFontStyle bold
+skinparam defaultTextAlignment center
+skinparam SequenceMessageAlign center
+skinparam ReferenceBorderThickness 2
+skinparam padding 2
+skinparam roundCorner 20
+skinparam ActorShadowing false
+skinparam TitleFontColor #000000
+skinparam TitleFontSize 18
+skinparam BoxPadding 10
+
+skinparam default {
+  FontName Inter-SemiBold, SansSerif, sans-serif
+  FontStyle plain
+  FontSize 12
+}
+
+skinparam actorStyle awesome
+
+skinparam sequence {
+
+'Users and boundries (DBS for example)
+    ActorBorderThickness 1
+   	ActorBorderColor ##0079c9
+	ActorBackgroundColor #0079c9
+	ActorFontColor #0079c9
+	ActorFontName Roboto, SansSerif, sans-serif
+    ActorFontStyle bold
+
+    AgentBackgroundColor red
+
+'Arrows
+   	ArrowFontColor #616161
+    ArrowColor #616161
+    ArrowThickness 2
+
+    RectangleBorderThickness 3
+
+
+'Capability
+   	BoxFontColor #000000
+   	BoxFontName Roboto, SansSerif, sans-serif
+   	BoxFontStyle bold
+   	BoxFontSize 14
+
+    BoxBackgroundColor #e9eaeb
+    BoxBorderColor transparent
+
+    BoundaryBackgroundColor #1281ac
+    BoundaryBorderColor #1281ac
+    BoundaryFontColor #1281ac
+    BoundryFontName Roboto, SansSerif, sans-serif
+    BoundaryStereotypeFontColor #616161
+
+    ClassBorderColor #1281ac
+    ComponentBorderColor #1281ac
+
+' Lifelines and dividers/separators
+    DividerBackgroundColor #f5f5f5
+    DividerBorderColor #a2a2a2
+    DividerBorderThickness 1
+    DividerFontColor #616161
+    DividerFontName Roboto, SansSerif, sans-serif
+
+   	LifeLineBorderColor #4ca0d9
+
+' Loops but not the title text
+    GroupBorderColor #4CA0D9
+    GroupBorderThickness 1
+    GroupFontName Roboto, SansSerif, sans-serif
+    GroupFontColor #0079c9
+    GroupBackgroundColor #D9EBF6
+    GroupBodyBackGroundColor #FFFFFF
+
+'Title text for loops
+    GroupHeaderFontColor #000000
+    GroupHeaderFontName Roboto, SansSerif, sans-serif
+    GroupHeaderFontStyle bold
+
+'Services
+   	ParticipantBorderColor #4ca0d9
+   	ParticipantBackgroundColor white
+   	ParticipantFontSize 12
+   	ParticipantFontStyle bold
+   	ParticipantFontName Roboto, SansSerif, sans-serif
+   	ParticipantFontColor #0079c9
+    ParticipantBorderThickness 1
+    StereotypeFontColor #616161
+
+    ReferenceBorderThickness 2
+
+
+'   SwimlaneBorderThickness 2
+
+    TitleFontColor #1281ac
+    TitleFontName Roboto, SansSerif, sans-serif
+    TitleFontSize 18
+    TitleBorderThickness 5
+
+}
+skinparam interface {
+  BackgroundColor #FFFFFF
+  BorderColor #1281ac
+  BorderThickness 1
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 14
+  FontStyle bold
+
+}
+
+skinparam note {
+
+  BackgroundColor #d9ebf6
+  BorderColor #1281ac
+  BorderThickness 1
+
+  RoundCorner 0
+
+  StartColor #00548c
+  BarColor #00548c
+  EndColor #00548c
+
+  FontColor #000000
+  FontStyle plain
+  FontSize 12
+  FontName Roboto, SansSerif, sans-serif
+
+}
+
+skinparam activity {
+
+  BackgroundColor #FFFFFF
+  DiamondBackgroundColor #FFFFFF
+  DiamondBorderColor #1281ac
+  BorderColor #1281ac
+  BorderThickness 4
+
+  DiamondFontColor #1281ac
+  DiamondFontName Roboto, SansSerif, sans-serif
+  DiamondFontSize 12
+
+  StartColor #1281ac
+  BarColor #1281ac
+  EndColor #1281ac
+
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 14
+  FontStyle bold
+
+}
+
+skinparam rectangle {
+
+    BorderColor #4ca0d9
+    BackgroundColor white
+    FontSize 12
+    FontStyle bold
+    FontName Roboto, SansSerif, sans-serif
+    FontColor #0079c9
+    BorderThickness 1
+
+  StartColor #00548c
+  BarColor #00548c
+  EndColor #00548c
+
+}
+
+skinparam cloud {
+
+  BackgroundColor #FFFFFF
+
+  BorderColor #1281ac
+  BorderThickness 4
+
+  StartColor #1281ac
+  BarColor #1281ac
+  EndColor #1281ac
+
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 14
+  FontStyle bold
+
+}
+
+skinparam class {
+
+  BackgroundColor #FFFFFF
+
+  BorderColor #1281ac
+  BorderThickness 1
+
+  StartColor #1281ac
+  BarColor #1281ac
+  EndColor #1281ac
+
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 14
+  FontStyle bold
+
+
+
+}
+
+'For services
+skinparam component {
+
+    BorderColor #4ca0d9
+    BackgroundColor white
+    StereotypeFontColor #616161
+
+    FontSize 12
+    FontStyle bold
+    FontName Roboto, SansSerif, sans-serif
+    FontColor #0079c9
+    BorderThickness 1
+
+}
+
+
+
+'databases
+skinparam database {
+
+  BackgroundColor #ffffff
+
+  BorderColor #4ca0d9
+  BorderThickness 1
+
+  FontColor #0079c9
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 12
+  FontStyle bold
+
+}
+
+
+'For Capabilities
+skinparam frame {
+
+  StereotypeFontColor #616161
+
+  BorderColor #4CA0D9
+  BorderThickness 1
+  FontName Roboto, SansSerif, sans-serif
+  FontColor #0079c9
+  FontStyle bold
+  BackgroundColor #FFFFFF
+  BodyBackGroundColor #FFFFFF
+}
+
+' External systems in architecture diagrams
+skinparam node {
+
+  BorderThickness 1
+  BackgroundColor #FFFFFF
+  BorderColor #4ca0d9
+
+  FontColor #0079c9
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 12
+  FontStyle bold
+
+}
+
+skinparam package {
+  BorderThickness 1
+  BackgroundColor #FFFFFF
+  BorderColor #1281ac
+
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 12
+  FontStyle bold
+
+}
+
+' Activity diagrams, for different capabilities
+
+skinparam partition {
+
+  BackgroundColor #f3f3f3
+
+  BorderColor #1281ac
+  BorderThickness 2
+
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 12
+  FontStyle bold
+
+}
+
+
+skinparam file {
+  BorderThickness 1
+  BackgroundColor #FFFFFF
+  BorderColor #1281ac
+
+  FontColor #1281ac
+  FontName Roboto, SansSerif, sans-serif
+  FontSize 12
+  FontStyle bold
+
+}
+
+' ref (erences)
+skinparam sequenceReferenceBorderColor #4ca0d9
+skinparam sequenceReferenceBackgroundColor #ffffff
+skinparam sequenceReferenceHeaderBackgroundColor #d9ebf6
+
+skinparam queue {
+    BackgroundColor #ffffff
+    BorderThickness 1
+    BorderColor #4ca0d9
+    FontColor #0079c9
+    FontStyle italic
+}
+
+skinparam legend {
+BackgroundColor #ffffff
+}
 
 start
 
@@ -214,62 +512,43 @@ The system reconciles financial and operational data as part of the settlement p
 9. **Print [settlement report](../etrm/settlements.md)**<br>
 The workflow concludes with the trader printing a settlement report for record-keeping and compliance.
 
-## How nGenue addresses ETRM aspects
+-->
 
-Below is a detailed explanation of how nGenue addresses key aspects of ETRM:
+## Related topics that you might be interested
 
-### 1. Deal and contract management
+<div class="grid cards" markdown>
 
-- **What it manages**: Centralizes the management of trading deals and contracts across the value chain.
+-   :material-format-paint:{ .lg .middle } __ETRM workflow__
 
-* **Capabilities**:
+    ---
 
-    * Facilitates deal creation, execution, and settlement for both physical and financial trades.  
-    * Tracks contract terms, pricing structures, and expiration dates.  
-    * Supports hedging strategies to mitigate market risks.
+    Understand the workflow of ETRM in nGenue.
 
-- **Benefits**: Streamlines trading operations and ensures contractual compliance.
 
-### 2. Pipeline path operations
+    [:octicons-arrow-right-24: Know more](./etrm_workflow.md)
 
-- **What it manages**: Tracks and optimizes the movement of natural gas through pipeline networks. 
+-   :material-format-paint:{ .lg .middle } __How nGenue addresses ETRM aspect__
 
-- **Capabilities**:
+    ---
 
-    - Configures pipeline paths to ensure the seamless flow of gas from suppliers to end users.  
-    - Supports nomination, scheduling, and balancing to maximize throughput efficiency.  
-    - Provides detailed analytics to monitor and address pipeline constraints in real time. 
+    Learn how nGenue addresses ETRM aspect.
 
-- **Benefits**: Minimizes transportation costs and ensures reliable gas delivery.
+    [:octicons-arrow-right-24: Know more](./addressing_etrm_aspects.md)    
 
-### 3. LDC configurations
+-   :material-upload-network:{ .lg .middle } __Configuring a deal__
 
-- **What it manages**: Customizes configurations for Local Distribution Companies (LDCs). 
+    ---
 
-- **Capabilities**:  
-    - Manages contracts between LDCs and suppliers or marketers.  
-    - Tracks volumes, delivery schedules, and rate structures specific to LDC agreements.  
-    - Automates compliance with LDC-specific operational rules and regulations.
+    Learn how to configure a deal in nGenue.
 
-- **Benefits**: Enhances efficiency in serving LDCs and reduces manual intervention.
+    [:octicons-arrow-right-24: Know more](../deal_management/overview.md)
 
-### 4. Storage and distribution
+-   :material-directions-fork:{ .lg .middle } __Internal book structure__
 
-- **What it manages**: Handles the storage and distribution of natural gas to balance supply and demand. 
+    ---
 
-- **Capabilities**:  
-    - Supports inventory management for gas stored in underground or off-site facilities.  
-    - Optimizes withdrawal and injection cycles based on market conditions.  
-    - Provides tools to allocate storage costs to relevant contracts or deals.  
-- **Benefits**: Ensures energy availability during peak demand and maximizes storage profitability.
+    Learn more about legal entity, business unit, portfolio, and strategy which makes a book structure.
 
-### 5. Risk management
+    [:octicons-arrow-right-24: Know more](../getting_started/inbook_structure.md)
 
-- **What it manages**: Identifies, assesses, and mitigates risks associated with trading and operations.  
-- **Capabilities**:  
-    - Monitors market volatility and provides price forecasting tools.  
-    - Enables scenario analysis to evaluate the impact of market changes on profitability.  
-    - Tracks credit and operational risks associated with counterparties and logistics.  
-- **Benefits**: Protects against financial losses and promotes informed decision-making.
-
-nGenue’s ETRM platform empowers businesses to achieve operational excellence while staying competitive in an ever-changing energy market.
+</div>

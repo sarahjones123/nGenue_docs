@@ -1,6 +1,6 @@
-# Menu configuration overview
+# Understanding menu configuration
 
-The Menu configuration system in nGenue is designed to streamline the organizing of screens by assigning them to specific menu [**categories,**](menu_configurations.md#configure-menu-category) which can then be mapped to a particular [**menu layout.**](menu_configurations.md#configure-menu-layout) This allows for a flexible and dynamic structure where multiple screens can be grouped under relevant categories, and these categories are arranged in a defined layout for easy navigation. You can add screens to a category, adjust their order, and ensure that each category fits into the overall menu design, making it easier to manage and customize the user interface based on configuration.
+The **menu configuration** feauture in nGenue is designed to streamline the organizing of screens by assigning them to specific menu [categories,](menu_configurations.md#configure-menu-category) which can then be mapped to a particular [menu layout.](menu_configurations.md#configure-menu-layout) This allows for a flexible and dynamic structure where multiple screens can be grouped under relevant categories, and these categories are arranged in a defined layout for easy navigation. You can add screens to a category, adjust their order, and ensure that each category fits into the overall menu design, making it easier to manage and customize the user interface based on configuration.
 
 ## Procedure to configure menu category and layouts
 
@@ -12,7 +12,7 @@ Configuring a menu category involves grouping related screens under a single cat
 
 ### Configure menu category
 
-#### Step 1: Navigate to Menu configuration screen
+#### Step 1: Navigate to the Menu configuration screen
 
 1. Log in to the **nGenue** application.
 
@@ -59,7 +59,7 @@ Configuring a menu category involves grouping related screens under a single cat
  
 ### Configure menu layout
 
-#### Step 1: Navigate to Menu configuration screen
+#### Step 1: Navigate to the Menu configuration screen
 
 1. Log in to the **nGenue** application.
 
@@ -104,6 +104,8 @@ Configuring a menu category involves grouping related screens under a single cat
 4. The assigned categories will reflect in the **Layout details** section.
     ![layout_details](images/menu_layout_5.png)
 
-    !!!note "Note"
+    !!!tip "Note"
         * **Favorites** and **Search** categories are automatically added to any layout by default.
-        * Restart the nGenue application to view the layout changes.
+        * Restart the **nGenue** application to view the layout changes.
+
+---

@@ -3,11 +3,13 @@ hide:
  - toc
 ---
 
-# Counterparty overview
+# Understanding counterparty
 
 **Counterparty** are entities that engage in commercial transactions or contracts with a business. These can be suppliers, vendors, clients, or any other party the company interacts with for buying, selling, or trading goods and services. In nGenue’s system, counterparties are crucial as they enable streamlined transaction management, allowing for clear tracking, communication, and coordination.
 
-## Key responsibilities of counterparty in nGenue
+![](../images/counterparty_division.svg)
+
+## Key counterparties responsibilities
 
 - **Contract and agreement management**
 
@@ -43,7 +45,6 @@ hide:
     
     Counterparties handle disputes or discrepancies that may arise, such as shipment issues, quality concerns, or billing errors, aiming to resolve them efficiently to maintain a healthy business relationship.
 
-Counterparties in *nGenue* are pivotal to maintaining smooth transactions, reinforcing accountability, and ensuring adherence to agreements and standards across all commercial interactions.
+Counterparties in nGenue are pivotal to maintaining smooth transactions, reinforcing accountability, and ensuring adherence to agreements and standards across all commercial interactions.
 
-
-
+---

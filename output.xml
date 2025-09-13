@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on win32)" generated="20250212 18:40:47.095" rpa="false" schemaversion="4">
+<suite id="s1" name="Letssee" source="C:\Users\rajeev.pramanik.NGENUE\Documents\GitHub\documentation\letssee.robot">
+<test id="s1-t1" name="Convert Md To Docx" line="14">
+<kw name="Convert Markdown To Docx">
+<arg>${MD_FILE_PATH}</arg>
+<arg>${DOCX_FILE_PATH}</arg>
+<kw name="Get File Content">
+<var>${md_content}</var>
+<arg>${md_file_path}</arg>
+<kw name="Get File" library="OperatingSystem">
+<var>${content}</var>
+<arg>${file_path}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20250212 18:40:47.153" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\rajeev.pramanik.NGENUE\Documents\GitHub\documentation\docs\deal_management\create_deal.md"&gt;C:\Users\rajeev.pramanik.NGENUE\Documents\GitHub\documentation\docs\deal_management\create_deal.md&lt;/a&gt;'.</msg>
+<msg timestamp="20250212 18:40:47.153" level="INFO">${content} = # Create a deal
+
+A deal involves the actual delivery of natural gas from one party to another, often including specific terms for volume, location, and timing. These transactions typically occur betwe...</msg>
+<status status="PASS" starttime="20250212 18:40:47.153" endtime="20250212 18:40:47.169"/>
+</kw>
+<msg timestamp="20250212 18:40:47.169" level="INFO">${md_content} = # Create a deal
+
+A deal involves the actual delivery of natural gas from one party to another, often including specific terms for volume, location, and timing. These transactions typically occur betwe...</msg>
+<status status="PASS" starttime="20250212 18:40:47.153" endtime="20250212 18:40:47.169"/>
+</kw>
+<kw name="Include Markdown Files">
+<var>${md_content}</var>
+<arg>${md_content}</arg>
+<kw name="Replace Include Statements">
+<var>${md_content}</var>
+<arg>${md_content}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${include_pattern}</var>
+<arg>{% include-markdown "(.*)" %}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20250212 18:40:47.169" level="INFO">${include_pattern} = {% include-markdown "(.*)" %}</msg>
+<status status="PASS" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<kw name="Get Matches">
+<var>${matches}</var>
+<arg>${md_content}</arg>
+<arg>${include_pattern}</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${matches}</var>
+<arg>import re; re.findall(r"${pattern}", "${text}")</arg>
+<arg>${pattern}</arg>
+<arg>${text}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20250212 18:40:47.169" level="FAIL">Evaluating expression 'import re; re.findall(r"{% include-markdown "(.*)" %}", "# Create a deal
+
+A deal involves the actual delivery of natural gas from one party to another, often including specific terms for volume, location, and timing. These transactions typically occur between producers, marketers, and end-users, and they require coordination of storage and transportation logistics to ensure fulfillment. Physical deals are foundational to the natural gas market as they ensure the movement of energy resources from supply points to areas of demand.
+
+## Prerequisites
+
+{% include-markdown "../variable/etrm_prerequisities.md" %}
+
+## Procedure
+
+For the below procedures, I would take the sceanrio where I need to add a physical deal in nGenue. Follow the instructions below to create and manage physical deals effectively.
+
+### Step 1: Navigate to Deal management module
+
+1. Log in to the nGenue application using your credentials.
+2. Search for **"Deal management"** in the quick search bar in the nGenue application homepage.
+3. Select **Deal management.**
+![alt text](./images/deal_management_search_bar.png)
+
+### Step 2: Create a new physical deal
+
+1. Click on **Add physical deal** or use the **(Alt+A)** keyboard shortcut.
+2. Define **Transaction information**:  
+    1. **Deal type:** Choose the deal type, i.e., buy or sell deal.
+    1. **Deal date:** Input the start and the end date of the deal.
+    1. **Trader:** Select the trader from the dropdown list and the trading initiated date.
+    1. **Delivery schedule:** Define the delivery schedule, including start and end dates, and specify daily or monthly volumes.
+    1. **Volume units:** Enter the gas volume in the appropriate unit (in MMBtu or other units) and define the Btu rate.
+    1. **Pricing type:** Enter the relevant pricing terms, including pricing type such as deal based, or location based, and specify daily or monthly pricing period.
+    1. **Supply region:** Choose the supply region for the pipeline from the dropdown list.
+    1. **Deal terms:** Select the relevant deal terms, including deal source type, deal status (e.g., active, cancelled), group identifier and deal group type from the dropdown list.
+
+        !!! note "Note"
+
+            The **Deal Source** field defaults to **Manual**. If deals are fetched through an integration, select the appropriate integration type from the dropdown. 
+
+    1.  Enter the last updated date and time and the details of the person who made the changes in the **Date/Time Updated** and **Updated By** fields, respectively.  
+
+    1. The **Date/Time Created** field is automatically populated based on the deal's configuration. If you are creating the deal, enter your name in the **Created By** field, or specify the appropriate person.
+    
+2. Assign **Pipeline and location**:  
+    1. **Pipeline:** Select the pipeline with which the deal is carried out.
+    1. **Pipeline path:** Specify the pipeline path for gas transportation by selecting from the available options.
+    1. **Meter id:** Select the **Use meter id** checkbox to enable the **Meter #** field. This will assign a unique identifier at an user location or a point in the distribution network. This is useful to track and manage consumption, billing, and other operational details.
+
+1. Assign **Counterparty configuration**:  
+    1. **Counterparty:** Select the counterparty from the dropdown list.
+    1. **Counterparty details:**
+        1. Select the counterparty relevant information such as legal entity, and business unit.
+        2. Select the associated contract and agreement.
+
+1. Define **Report groupings**:  
+    1. **Legal entity, business unit, portfolio:** Select the relevant report groupings involved in the deal including legal entity, business unit and portfolio.
+    1. **Strategy:** Choose the associated strategy for the above portfolio from the drop down list.
+
+1. Additional **Deal configurations**:
+    1. **This deal is a template**: Select the **This deal is a template** checkbox to designate the current deal as a template within the nGenue application. When this option is selected, the deal becomes a reusable framework that can be copied or referenced to streamline the creation of similar deals in the future.
+    2. **Physical autonom**: Enable the **Physical autonom** checkbox to enable the **Autonom location** and **Autonom contract** fields. These automatically generate and submit nominations based on predefined deal parameters, reducing manual input and associated errors.
+    3. Additional **deal settings:**
+        1. Select the relevant deal settings checkboxes from the list, including:  
+            * **Base load deal**
+            * **Allow scheduling**
+            * **Child deal allocation**
+            * **Is deal locked**
+            * **Trigger rights**
+            * **Evergreen deal**
+
+6. **Validate and confirm:**
+    1. Review all entered details for accuracy.
+    1. Provide any additional terms or conditions related to the deal including deals confirmation date/time stamp, and confirmation number.
+    1. Click **Save.**
+
+7. You will navigate to the **Deal summary** tab where a concise overview of a deal is displayed.
+
+## Post deal activities
+
+{% include-markdown "../variable/post_deal_activities.md" %}")' failed: ValueError: dictionary update sequence element #0 has length 1; 2 is required</msg>
+<status status="FAIL" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<status status="FAIL" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<for flavor="IN">
+<var>${match}</var>
+<value>${matches}</value>
+<iter>
+<var name="${match}"/>
+<kw name="Get Match Group">
+<var>${file_path}</var>
+<arg>${match}</arg>
+<arg>0</arg>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<kw name="Get Included Markdown File">
+<var>${included_content}</var>
+<arg>${file_path}</arg>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${md_content}</var>
+<arg>${md_content}</arg>
+<arg>${match}</arg>
+<arg>${included_content}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</iter>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</for>
+<status status="FAIL" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<status status="FAIL" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<kw name="Convert Markdown To Html">
+<var>${html_content}</var>
+<arg>${md_content}</arg>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<kw name="Create Docx From Html">
+<arg>${html_content}</arg>
+<arg>${docx_file_path}</arg>
+<status status="NOT RUN" starttime="20250212 18:40:47.169" endtime="20250212 18:40:47.169"/>
+</kw>
+<status status="FAIL" starttime="20250212 18:40:47.153" endtime="20250212 18:40:47.169"/>
+</kw>
+<doc>This test case converts a Markdown file (.md) to a DOCX file.</doc>
+<status status="FAIL" starttime="20250212 18:40:47.153" endtime="20250212 18:40:47.169">Evaluating expression 'import re; re.findall(r"{% include-markdown "(.*)" %}", "# Create a deal
+
+A deal involves the actual delivery of natural gas from one party to another, often including specific terms for volume, location, and timing. These transactions typically occur between producers, marketers, and end-users, and they require coordination of storage and transportation logistics to ensure fulfillment. Physical deals are foundational to the natural gas market as they ensure the movement of energy resources from supply points to areas of demand.
+
+## Prerequisites
+
+{% include-markdown "../variable/etrm_prerequisities.md" %}
+
+## Procedure
+
+For the below procedures, I would take the sceanrio where I need to add a physical deal in nGenue. Follow the instructions below to create and manage physical deals effectively.
+
+    [ Message content over the limit has been removed. ]
+            * **Base load deal**
+            * **Allow scheduling**
+            * **Child deal allocation**
+            * **Is deal locked**
+            * **Trigger rights**
+            * **Evergreen deal**
+
+6. **Validate and confirm:**
+    1. Review all entered details for accuracy.
+    1. Provide any additional terms or conditions related to the deal including deals confirmation date/time stamp, and confirmation number.
+    1. Click **Save.**
+
+7. You will navigate to the **Deal summary** tab where a concise overview of a deal is displayed.
+
+## Post deal activities
+
+{% include-markdown "../variable/post_deal_activities.md" %}")' failed: ValueError: dictionary update sequence element #0 has length 1; 2 is required</status>
+</test>
+<status status="FAIL" starttime="20250212 18:40:47.095" endtime="20250212 18:40:47.169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Letssee">Letssee</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

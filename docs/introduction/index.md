@@ -3,77 +3,50 @@ hide:
  - toc
 ---
 
-# nGenue overview
+# Introduction to nGenue
 
-nGenue is a comprehensive software platform designed to streamline and optimize the operations of natural gas marketers, utilities, and suppliers. Built specifically for the natural gas industry, nGenue integrates multiple functionalities into a single, robust solution, empowering businesses to efficiently manage their sales, marketing, billing, and customer service processes. With nGenue, companies can reduce operational complexity, ensure regulatory compliance, and improve profitability through automated workflows and real-time data insights.
+**nGenue** is a comprehensive, end-to-end software solution designed to optimize and streamline natural gas operations for Utilities, Marketers, and Local Distribution Companies (LDCs). It provides a robust and scalable platform that automates critical processes such as pipeline nominations, storage balancing, LDC operations, scheduling, contract management, and compliance reporting. With nGenue, businesses can enhance operational efficiency, improve accuracy, and ensure regulatory compliance while reducing manual efforts.
 
-![altext](../assets/images/ngenue_overview.png)
+![nGenue_overview](./images/ngenue_overview.svg)
+
+With a user-friendly interface and powerful automation, nGenue supports seamless data integration, enabling businesses to optimize gas procurement, distribution, and billing. Whether for suppliers, marketers, or utilities, nGenue delivers a flexible and efficient platform tailored to the evolving needs of the natural gas sector.
 
 ## Key functionalities
+![key_function](./images/key_function_nGenue.svg)
 
-The nGenue platform supports several core functionalities for Distributors, LDCs, Utilities, and Pipelines in the natural gas sector, including:
+### 1. LDC management
 
--  **Automated Pricing** </br>
-   Automatically calculates and applies pricing based on contracts, consumption, and market conditions. </br>
-   The below flowchart shows data inputs (market conditions, contracts) leading to price calculations, resulting in customer pricing outputs.
-   ```puml
+**nGenue** provides seamless integration with Local Distribution Companies (LDCs), enabling users to manage contracts, nominations, imbalances, and invoicing efficiently. The system supports multiple LDCs with different operational and tariff structures, ensuring compliance with their specific requirements. Users can track pipeline deliveries, reconcile imbalances, and generate reports to facilitate accurate billing and settlements.
 
-   @startuml
-   start
-   :Input Market Conditions;
-   :Input Contracts;
-   :Calculate Price;
-   :Output Customer Pricing;
-   stop
-   @enduml
-   ```
+### 2. Pipeline scheduling and nominations
 
-2. **Billing** </br>
-   Automates billing processes, generating accurate invoices that reflect actual consumption and contractual agreements.</br>
+Managing gas transportation across pipelines requires precise scheduling and nomination processes. nGenue automates pipeline nominations, allowing users to submit, track, and modify nominations in real-time. The system ensures compliance with pipeline rules, monitors capacity constraints, and provides alerts for critical events, reducing the risk of imbalances and penalties.
 
-3. **Scheduling** </br>
-   Manages the scheduling of deliveries and services, optimizing resource allocation and ensuring timely distribution of gas.
+### 3. Storage and balancing
 
-4. **Customer Management**</br>
-   Centralizes customer data, facilitating effective communication, account management, and personalized service.
+nGenue offers real-time visibility into gas storage assets, allowing businesses to optimize storage injections and withdrawals based on market conditions. The system helps users track inventory levels, manage storage contracts, and balance supply with demand efficiently. Automated alerts notify users of imbalance situations, ensuring proactive decision-making to minimize financial exposure.
 
-5. **Compliance**</br>
-   Automates compliance tracking and reporting, helping organizations adhere to industry regulations and avoid penalties.
-   ```puml
+### 4. Demand forecasting and supply optimization
 
-    @startuml
-    start
-    :Collect Data;
-    :Generate Reports;
-    :Submit for Review;
-    :Audit Process;
-    stop
-    @enduml
-   ```
+Accurate demand forecasting is critical for optimizing gas procurement and ensuring supply reliability. nGenue leverages historical data, weather patterns, and market trends to predict demand fluctuations. Users can align supply contracts with projected demand, optimize procurement strategies, and mitigate risks associated with over- or under-supply.
 
-6. **Integration with EDI Systems** </br>
-   Seamlessly integrates with Electronic Data Interchange (EDI) systems for secure exchange of information related to transactions, customer data, and payments.
-   ```puml
+### 5. Billing and invoicing
 
-    @startuml
-    package "nGenue" {
-        [nGenue System]
-    }
-    package "EDI System" {
-        [EDI Interface]
-    }
-    package "Utility Data Systems" {
-        [Customer Database]
-        [Payment Records]
-    }
+nGenue automates the billing and invoicing process, reducing manual errors and improving financial accuracy. The system supports complex rate structures, contract-specific pricing, and multi-tiered billing rules. Users can generate detailed invoices, track payments, and reconcile accounts with built-in financial reporting tools.
 
-    [nGenue System] --> [EDI Interface]
-    [EDI Interface] --> [Customer Database]
-    [EDI Interface] --> [Payment Records]
-    @enduml
-   ```
+### 6. Regulatory compliance and reporting
 
-<!--
-For more information about *nGenue*, visit their [official website](https://ngenue.com/ldcs-natural-gas-software-solution/).
+Compliance with industry regulations is a key requirement for natural gas businesses. nGenue includes built-in compliance tools that help organizations meet regulatory obligations, such as FERC, NAESB, and state-specific reporting requirements. The system generates compliance reports, maintains audit trails, and ensures that all transactions align with industry standards.
 
--->
+### 7. Third-party integration
+
+To enhance operational efficiency, nGenue integrates seamlessly with third-party systems, including:
+
+* **Electronic Data Interchange (EDI):** Automates data exchange with pipelines, LDCs, and trading partners.
+* **Accounting systems:** Syncs financial transactions with ERP and accounting platforms.
+* **Trading platforms:** Connects with energy trading systems for seamless deal execution.
+* **Market data providers:** Ingests real-time pricing and market intelligence for informed decision-making.
+
+These integrations enable businesses to create a fully connected ecosystem, reducing data silos and enhancing process automation.
+
+---

@@ -1,33 +1,33 @@
 ---
-hide:
- - toc
+hide: toc
 ---
 
-# Understanding legal entity, business unit, strategy, and portfolio
+# Understanding book structure (legal entity, business unit, strategy, and portfolio)
 
-The **legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals. Adding one line
+The **legal entity, business unit, strategy,** and **portfolio** form the foundational building blocks of the organizational hierarchy for a trader. These elements help segment operational, financial, and strategic activities across different divisions. Proper configuration ensures compliance, accountability, and alignment with corporate goals.
 
-* **Legal entity:** The primary company entity engaging in contracts and transactions.
+<!-- * **Legal entity:** The primary company entity engaging in contracts and transactions.
 * **Business unit:** Sub-entities within the legal entity, managing specific operations (e.g., retail gas, industrial supply).
 * **Strategy:** Defines goals like securing supply, managing costs, or maximizing revenue.
-* **Portfolio:** Groups contracts, deals, and assets under a strategy to facilitate reporting and analytics.
+* **Portfolio:** Groups contracts, deals, and assets under a strategy to facilitate reporting and analytics. -->
 
-    !!! question "Example"
+![book_structure](./images/book_structure_division.svg)
 
-        For a natural gas company, the Legal entity might be **"EnergyCorp LLC,"** with business units like **"Wholesale operations"** and **"Retail services."** A strategy could involve maximizing sales to industrial clients, while the portfolio includes contracts and pipelines supporting that goal.
+!!! example "Example"
 
-## Procedure to configure
+    For a natural gas company, the Legal entity might be **"EnergyCorp LLC,"** with business units like **"Wholesale operations"** and **"Retail services."** A strategy could involve maximizing sales to industrial clients, while the portfolio includes contracts and pipelines supporting that goal.
+
+<!-- ## Procedure to configure a book structure
 
 This guide outlines the steps to configure a legal entity, business unit, strategy, and portfolio within the application.
 
 ### Prerequisites
 
-* You must have the necessary permissions to add or modify a book structure.
-* A counterparty must be configured before setting up a book structure. For details, please refer to [how to create a counterparty.](./counterparty/create_counterparty.md)
+* You must have the necessary permissions to add or modify the **Internal book structure** screen.
 
-### Procedure
+### Process steps
 
-#### Step 1: Navigate to Internal book structure screen
+#### Step 1: Navigate to the Internal book structure screen
 
 1.	Log in to the **nGenue** application.
 2.	Click the **Search** icon and enter *book structure* in the search bar.  
@@ -71,7 +71,7 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 1. Right-click the recently created legal entity and select **Add business unit.** 
     ![add_business_unit](./images/legal_entity_2.png)
 
-2. In the **Business unit configure** screen, enter details like name, code and a short description. The **Business ID** is auto-generated once you save the configuration.
+2. In the **Business unit configure** screen, enter details like name, code, and a short description. The **Business ID** is auto-generated once you save the configuration.
 
 3. The **Legal entity** field will be auto-selected.
 
@@ -86,12 +86,12 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 4. The configured business unit will appear under the legal entity field on the left side of the screen. Expand the entity using the **(+)** button.
     ![expand _legal_enity](./images/legal_entity_6.png)
 
-#### Step 4: Add a Portfolio
+#### Step 4: Add a portfolio
 
 1. Right-click the configured business unit and select **Add portfolio.**
     ![Add portfolio](./images/legal_entity_7.png)
 
-2. In the **Portfolio configure** screen, enter details such as name, code and a short description. The **Portfolio ID** will be auto-generated upon saving.
+2. In the **Portfolio configure** screen, enter details such as name, code, and a short description. The **Portfolio ID** will be auto-generated upon saving.
 3. If not auto-selected, choose your business unit from the **Parent business group** dropdown.
 
     !!!note "Integration points"
@@ -118,3 +118,44 @@ This guide outlines the steps to configure a legal entity, business unit, strate
 
 5. Expand the legal entity, business unit, and portfolio using the **(+)** button to view the newly configured strategy.
      ![Expand strategy](./images/legal_entity_11.png)
+
+---
+
+## Related topics that you might be interested
+
+<div class="grid cards" markdown>
+
+-   :material-format-paint:{ .lg .middle } __ETRM workflow__
+
+    ---
+
+    Understand the workflow of ETRM in nGenue.
+
+
+    [:octicons-arrow-right-24: Know more](../etrm/etrm_workflow.md)
+
+-   :material-format-paint:{ .lg .middle } __Understanding ETRM__
+
+    ---
+
+    Understand the basics of ETRM and what are its key components.
+
+    [:octicons-arrow-right-24: Know more](../etrm/addressing_etrm_aspects.md)    
+
+-   :material-upload-network:{ .lg .middle } __Configuring a deal__
+
+    ---
+
+    Learn how to configure a deal in nGenue.
+
+    [:octicons-arrow-right-24: Know more](../deal_management/overview.md)
+
+-   :material-directions-fork:{ .lg .middle } __Configuring a pipeline__
+
+    ---
+
+    Learn more about how to configure a pipeline within the nGenue application.
+
+    [:octicons-arrow-right-24: Know more](../getting_started/configure_pipeline.md)
+
+</div> -->
